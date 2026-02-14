@@ -71,6 +71,9 @@ export const metadata: Metadata = {
   icons: {
     icon: "/icon.png",
   },
+  verification: {
+    google: "KOg0g-zo-WjwKiB5naZDe2DxmA4gk0rj_uQ58IoCxI0",
+  },
   manifest: "/site.webmanifest",
 };
 
