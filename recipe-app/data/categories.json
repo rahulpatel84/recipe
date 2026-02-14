@@ -1,0 +1,226 @@
+[
+  {
+    "id": "1",
+    "slug": "italian",
+    "title": "Italian",
+    "image": "https://images.unsplash.com/photo-1498579150354-977475b7ea0b?q=80&w=400&h=300&fit=crop",
+    "type": "cuisine"
+  },
+  {
+    "id": "2",
+    "slug": "mexican",
+    "title": "Mexican",
+    "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=400&h=300&fit=crop",
+    "type": "cuisine"
+  },
+  {
+    "id": "3",
+    "slug": "indian",
+    "title": "Indian",
+    "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?q=80&w=400&h=300&fit=crop",
+    "type": "cuisine"
+  },
+  {
+    "id": "4",
+    "slug": "japanese",
+    "title": "Japanese",
+    "image": "https://images.unsplash.com/photo-1580822184713-fc5400e7fe10?q=80&w=400&h=300&fit=crop",
+    "type": "cuisine"
+  },
+  {
+    "id": "5",
+    "slug": "french",
+    "title": "French",
+    "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=400&h=300&fit=crop",
+    "type": "cuisine"
+  },
+  {
+    "id": "6",
+    "slug": "asia",
+    "title": "Asia",
+    "image": "/asia.png",
+    "type": "continent"
+  },
+  {
+    "id": "7",
+    "slug": "europe",
+    "title": "Europe",
+    "image": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?q=80&w=400&h=300&fit=crop",
+    "type": "continent"
+  },
+  {
+    "id": "8",
+    "slug": "america",
+    "title": "Americas",
+    "image": "/America.png",
+    "type": "continent"
+  },
+  {
+    "id": "9",
+    "slug": "africa",
+    "title": "Africa",
+    "image": "/africa.png",
+    "type": "continent"
+  },
+  {
+    "id": "10",
+    "slug": "oceania",
+    "title": "Oceania",
+    "image": "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?q=80&w=400&h=300&fit=crop",
+    "type": "continent"
+  },
+  {
+    "id": "11",
+    "slug": "vegan",
+    "title": "Vegan",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=400&h=300&fit=crop",
+    "type": "dietary"
+  },
+  {
+    "id": "12",
+    "slug": "vegetarian",
+    "title": "Vegetarian",
+    "image": "https://images.unsplash.com/photo-1543339308-43e59d6b73a6?q=80&w=400&h=300&fit=crop",
+    "type": "dietary"
+  },
+  {
+    "id": "13",
+    "slug": "gluten-free",
+    "title": "Gluten Free",
+    "image": "https://images.unsplash.com/photo-1505576399279-565b52d4ac71?q=80&w=400&h=300&fit=crop",
+    "type": "dietary"
+  },
+  {
+    "id": "14",
+    "slug": "keto",
+    "title": "Keto",
+    "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=400&h=300&fit=crop",
+    "type": "dietary"
+  },
+  {
+    "id": "15",
+    "slug": "paleo",
+    "title": "Paleo",
+    "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=400&h=300&fit=crop",
+    "type": "dietary"
+  },
+  {
+    "id": "16",
+    "slug": "breakfast",
+    "title": "Breakfast",
+    "image": "/Breakfast.png",
+    "type": "mealType"
+  },
+  {
+    "id": "17",
+    "slug": "lunch",
+    "title": "Lunch",
+    "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=400&h=300&fit=crop",
+    "type": "mealType"
+  },
+  {
+    "id": "18",
+    "slug": "dinner",
+    "title": "Dinner",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=400&h=300&fit=crop",
+    "type": "mealType"
+  },
+  {
+    "id": "19",
+    "slug": "brunch",
+    "title": "Brunch",
+    "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?q=80&w=400&h=300&fit=crop",
+    "type": "mealType"
+  },
+  {
+    "id": "20",
+    "slug": "snacks",
+    "title": "Snacks",
+    "image": "/Snacks.png",
+    "type": "mealType"
+  },
+  {
+    "id": "21",
+    "slug": "kids",
+    "title": "Kids",
+    "image": "/kids.png",
+    "type": "audience"
+  },
+  {
+    "id": "22",
+    "slug": "pregnancy",
+    "title": "Pregnancy",
+    "image": "https://images.unsplash.com/photo-1531983412531-1f49a365ffed?q=80&w=400&h=300&fit=crop",
+    "type": "audience"
+  },
+  {
+    "id": "23",
+    "slug": "elderly",
+    "title": "Elderly",
+    "image": "https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=400&h=300&fit=crop",
+    "type": "audience"
+  },
+  {
+    "id": "24",
+    "slug": "athletes",
+    "title": "Athletes",
+    "image": "/athlete.png",
+    "type": "audience"
+  },
+  {
+    "id": "25",
+    "slug": "couples",
+    "title": "Couples",
+    "image": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=400&h=300&fit=crop",
+    "type": "audience"
+  },
+  {
+    "id": "26",
+    "slug": "usa",
+    "title": "USA",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=400&h=300&fit=crop",
+    "type": "country"
+  },
+  {
+    "id": "27",
+    "slug": "china",
+    "title": "China",
+    "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=400&h=300&fit=crop",
+    "type": "country"
+  },
+  {
+    "id": "28",
+    "slug": "india",
+    "title": "India",
+    "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?q=80&w=400&h=300&fit=crop",
+    "type": "country"
+  },
+  {
+    "id": "29",
+    "slug": "japan",
+    "title": "Japan",
+    "image": "https://images.unsplash.com/photo-1580822184713-fc5400e7fe10?q=80&w=400&h=300&fit=crop",
+    "type": "country"
+  },
+  {
+    "id": "30",
+    "slug": "italy",
+    "title": "Italy",
+    "image": "https://images.unsplash.com/photo-1498579150354-977475b7ea0b?q=80&w=400&h=300&fit=crop",
+    "type": "country"
+  },
+  {
+    "id": "31",
+    "slug": "dairy-free",
+    "title": "Dairy Free",
+    "image": "/Dairy-free.png",
+    "type": "dietary"
+  },
+  {
+    "id": "32",
+    "slug": "dessert",
+    "title": "Dessert",
+    "image": "https://images.unsplash.com/photo-1551024506-0bccd828d307?q=80&w=400&h=300&fit=crop",
+    "type": "mealType"
+  }
+]

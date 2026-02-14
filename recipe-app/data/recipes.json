@@ -1,0 +1,2037 @@
+[
+  {
+    "id": "1",
+    "slug": "spaghetti-carbonara-recipe",
+    "title": "Classic Carbonara Recipe",
+    "summary": "A creamy Roman pasta dish with eggs, pecorino romano, and guanciale.",
+    "description": "A creamy Roman pasta dish made with eggs, pecorino romano, and guanciale.",
+    "image": "https://images.unsplash.com/photo-1612874742237-6526221588e3?q=80&w=600&h=400&fit=crop",
+    "category": "Italian",
+    "cuisine": "Italian",
+    "continent": "Europe",
+    "dietary": [
+      "Gluten Free Optional"
+    ],
+    "mealType": "Dinner",
+    "audience": [
+      "Couples"
+    ],
+    "country": "Italy",
+    "prepTime": "20 mins",
+    "cookTime": null,
+    "totalTime": null,
+    "rating": 4.8,
+    "difficulty": "Medium",
+    "servings": 2,
+    "totalCalories": 650,
+    "ingredients": [
+      {
+        "name": "Spaghetti",
+        "amount": "200g",
+        "calories": 310,
+        "protein": "11g",
+        "carbs": "62g",
+        "fat": "1.5g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Guanciale",
+        "amount": "100g",
+        "calories": 250,
+        "protein": "5g",
+        "carbs": "0g",
+        "fat": "25g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Large Eggs",
+        "amount": "2",
+        "calories": 140,
+        "protein": "12g",
+        "carbs": "1g",
+        "fat": "10g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Pecorino Romano",
+        "amount": "50g",
+        "calories": 190,
+        "protein": "13g",
+        "carbs": "1g",
+        "fat": "15g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Black Pepper",
+        "amount": "1 tsp",
+        "calories": 5,
+        "protein": "0g",
+        "carbs": "1g",
+        "fat": "0g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      }
+    ],
+    "instructions": [
+      {
+        "step": 1,
+        "title": "Boil Water",
+        "text": "Bring a large pot of salted water to a boil."
+      },
+      {
+        "step": 2,
+        "title": "Fry Guanciale",
+        "text": "In a large skillet, fry guanciale until crispy."
+      },
+      {
+        "step": 3,
+        "title": "Whisk Eggs",
+        "text": "Whisk eggs and cheese together in a small bowl."
+      },
+      {
+        "step": 4,
+        "title": "Combine",
+        "text": "Toss pasta with guanciale, then remove from heat and stir in egg mixture."
+      }
+    ],
+    "story": "There is perhaps no dish more fiercely debated in the Roman culinary canon than Carbonara. Its name is said to derive from 'carbonaro'—the Italian word for charcoal burner—suggesting it was a hearty meal for men working outdoors. In the post-war era, it became a symbol of Roman resilience, fueled by the local ingredients of the Lazio region.\n\nThe beauty of a true Carbonara lies in its restraint. There is no cream here; the silkiness comes solely from the emulsification of Pecorino Romano, fresh eggs, and the starchy pasta water. Every forkful is a balance of the saltiness from the guanciale and the sharp kick of freshly cracked black pepper. To master the Carbonara is to master the art of timing and temperature, a ritual we've refined to bring the authentic taste of Rome to your table.",
+    "extra": []
+  },
+  {
+    "id": "2",
+    "slug": "avocado-toast-recipe",
+    "title": "Garden Avocado Toast Recipe",
+    "summary": "Simple breakfast with mashed avocado and poached egg.",
+    "description": "Simple and delicious breakfast with mashed avocado and poached egg.",
+    "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?q=80&w=600&h=400&fit=crop",
+    "category": "Breakfast",
+    "cuisine": "American",
+    "continent": "America",
+    "dietary": [
+      "Vegetarian"
+    ],
+    "mealType": "Breakfast",
+    "audience": [
+      "Healthy"
+    ],
+    "country": "USA",
+    "prepTime": "10 mins",
+    "cookTime": null,
+    "totalTime": null,
+    "rating": 4.5,
+    "difficulty": "Easy",
+    "servings": 1,
+    "totalCalories": 350,
+    "ingredients": [
+      {
+        "name": "Sourdough Bread",
+        "amount": "2 slices",
+        "calories": 180,
+        "protein": "6g",
+        "carbs": "36g",
+        "fat": "1g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Avocado",
+        "amount": "1 large",
+        "calories": 240,
+        "protein": "3g",
+        "carbs": "12g",
+        "fat": "22g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Eggs",
+        "amount": "2",
+        "calories": 140,
+        "protein": "12g",
+        "carbs": "1g",
+        "fat": "10g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Red Pepper Flakes",
+        "amount": "pinch",
+        "calories": 0,
+        "protein": "0g",
+        "carbs": "0g",
+        "fat": "0g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      }
+    ],
+    "instructions": [
+      {
+        "step": 1,
+        "title": "Toast Bread",
+        "text": "Toast the sourdough slices until golden brown."
+      },
+      {
+        "step": 2,
+        "title": "Mash Avocado",
+        "text": "Mash avocado with salt, pepper, and lemon juice."
+      },
+      {
+        "step": 3,
+        "title": "Poach Eggs",
+        "text": "Poach eggs in simmering water for 3 minutes."
+      },
+      {
+        "step": 4,
+        "title": "Assemble",
+        "text": "Spread avocado on toast and top with poached eggs."
+      }
+    ],
+    "story": null,
+    "extra": []
+  },
+  {
+    "id": "3",
+    "slug": "chicken-tikka-masala-recipe",
+    "title": "Chicken Tikka Masala Recipe",
+    "summary": "Smoky grilled chicken in a luxuriously creamy, spiced tomato sauce.",
+    "description": "Experience the magic of this world-renowned dish, where tender, marinated chicken pieces are grilled to smoky perfection before being simmered in a luxuriously creamy, spiced tomato sauce. Bursting with the warmth of garam masala, ginger, and garlic, this authentic Chicken Tikka Masala offers a perfect balance of heat and comfort, bringing the vibrant flavors of India straight to your kitchen.",
+    "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?q=80&w=600&h=400&fit=crop",
+    "category": "Indian",
+    "cuisine": "Indian",
+    "continent": "Asia",
+    "dietary": [],
+    "mealType": "Dinner",
+    "audience": [
+      "Family"
+    ],
+    "country": "India",
+    "prepTime": "45 mins",
+    "cookTime": "30 mins",
+    "totalTime": "1 hr 15 mins",
+    "rating": 4.9,
+    "difficulty": "Hard",
+    "servings": 4,
+    "totalCalories": 550,
+    "ingredients": [
+      {
+        "name": "Chicken Breast",
+        "amount": "500g",
+        "calories": 825,
+        "protein": "155g",
+        "carbs": "0g",
+        "fat": "18g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "370mg"
+      },
+      {
+        "name": "Yogurt",
+        "amount": "200g",
+        "calories": 120,
+        "protein": "20g",
+        "carbs": "7g",
+        "fat": "2g",
+        "fiber": "0g",
+        "sugar": "7g",
+        "sodium": "90mg"
+      },
+      {
+        "name": "Tomato Puree",
+        "amount": "400ml",
+        "calories": 130,
+        "protein": "4g",
+        "carbs": "28g",
+        "fat": "1g",
+        "fiber": "4g",
+        "sugar": "12g",
+        "sodium": "20mg"
+      },
+      {
+        "name": "Heavy Cream",
+        "amount": "100ml",
+        "calories": 340,
+        "protein": "2g",
+        "carbs": "3g",
+        "fat": "37g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      }
+    ],
+    "instructions": [
+      {
+        "step": 1,
+        "title": "Marinate Chicken",
+        "text": "Marinate chicken in yogurt and spices for at least 30 minutes."
+      },
+      {
+        "step": 2,
+        "title": "Grill Chicken",
+        "text": "Grill or sear the chicken until charred and cooked through."
+      },
+      {
+        "step": 3,
+        "title": "Make Sauce",
+        "text": "Simmer tomato puree with ginger, garlic, and spices."
+      },
+      {
+        "step": 4,
+        "title": "Finish",
+        "text": "Stir in cream and grilled chicken. Simmer for 10 minutes."
+      }
+    ],
+    "story": "The origins of Chicken Tikka Masala are as layered and flavorful as the dish itself. While its soul is undoubtedly Indian, many culinary historians believe it was actually born in the bustling curry houses of Glasgow or London in the 1960s. Legend has it that a diner complained his chicken tikka was too dry, prompting a quick-thinking chef to whip up a sauce using tomato soup and a handful of spices. \n\nToday, it stands as a symbol of culinary fusion—a bridge between cultures that has become a beloved staple in homes across the globe. At Aroma, we treat this dish with the reverence it deserves, ensuring the marinade is rich and the 'masala' (the spice blend) is perfectly toasted to release its deep, aromatic oils. It's more than just a meal; it's a piece of history on a plate.",
+    "extra": []
+  },
+  {
+    "id": "4",
+    "slug": "green-smoothie-bowl-recipe",
+    "title": "Energy Smoothie Bowl Recipe",
+    "summary": "Nutritious bowl with spinach, berries, and chia seeds.",
+    "description": "Nutritious bowl packed with spinach, berries, and chia seeds.",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=600&h=400&fit=crop",
+    "category": "Vegan",
+    "cuisine": "Modern",
+    "continent": "Global",
+    "dietary": [
+      "Vegan",
+      "Gluten Free"
+    ],
+    "mealType": "Breakfast",
+    "audience": [
+      "Healthy",
+      "Kids"
+    ],
+    "country": "Global",
+    "prepTime": "15 mins",
+    "cookTime": null,
+    "totalTime": null,
+    "rating": 4.7,
+    "difficulty": "Easy",
+    "servings": 2,
+    "totalCalories": 280,
+    "ingredients": [
+      {
+        "name": "Spinach",
+        "amount": "2 cups",
+        "calories": 15,
+        "protein": "2g",
+        "carbs": "2g",
+        "fat": "0g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Banana",
+        "amount": "1",
+        "calories": 105,
+        "protein": "1g",
+        "carbs": "27g",
+        "fat": "0g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Frozen Berries",
+        "amount": "1 cup",
+        "calories": 70,
+        "protein": "1g",
+        "carbs": "18g",
+        "fat": "1g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Almond Milk",
+        "amount": "1 cup",
+        "calories": 30,
+        "protein": "1g",
+        "carbs": "1g",
+        "fat": "3g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      }
+    ],
+    "instructions": [
+      {
+        "step": 1,
+        "title": "Blend",
+        "text": "Blend all smoothie ingredients until smooth."
+      },
+      {
+        "step": 2,
+        "title": "Pour",
+        "text": "Pour into a bowl and top with granola and fruit."
+      }
+    ],
+    "story": null,
+    "extra": []
+  },
+  {
+    "id": "5",
+    "slug": "beef-tacos-recipe",
+    "title": "Street Style Beef Tacos Recipe",
+    "summary": "Authentic tacos with cilantro, onions, and spicy salsa.",
+    "description": "Authentic tacos with cilantro, onions, and spicy salsa.",
+    "image": "https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?q=80&w=600&h=400&fit=crop",
+    "category": "Mexican",
+    "cuisine": "Mexican",
+    "continent": "America",
+    "dietary": [],
+    "mealType": "Lunch",
+    "audience": [
+      "Party"
+    ],
+    "country": "Mexico",
+    "prepTime": "30 mins",
+    "cookTime": null,
+    "totalTime": null,
+    "rating": 4.6,
+    "difficulty": "Medium",
+    "servings": 4,
+    "totalCalories": 480,
+    "ingredients": [
+      {
+        "name": "Ground Beef",
+        "amount": "500g",
+        "calories": 1250,
+        "protein": "130g",
+        "carbs": "0g",
+        "fat": "80g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Corn Tortillas",
+        "amount": "12",
+        "calories": 600,
+        "protein": "12g",
+        "carbs": "120g",
+        "fat": "6g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Onion",
+        "amount": "1",
+        "calories": 40,
+        "protein": "1g",
+        "carbs": "9g",
+        "fat": "0g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Cilantro",
+        "amount": "1 bunch",
+        "calories": 5,
+        "protein": "0g",
+        "carbs": "1g",
+        "fat": "0g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      }
+    ],
+    "instructions": [
+      {
+        "step": 1,
+        "title": "Cook Beef",
+        "text": "Brown the beef with taco seasoning until cooked."
+      },
+      {
+        "step": 2,
+        "title": "Warm Tortillas",
+        "text": "Heat tortillas in a dry skillet."
+      },
+      {
+        "step": 3,
+        "title": "Add Toppings",
+        "text": "Top with chopped onions, cilantro, and salsa."
+      }
+    ],
+    "story": null,
+    "extra": []
+  },
+  {
+    "id": "6",
+    "slug": "miso-ramen-recipe",
+    "title": "Hearty Miso Ramen Recipe",
+    "summary": "Traditional Japanese soup with noodles, bamboo shoots, and nori.",
+    "description": "Traditional Japanese soup with noodles, bamboo shoots, and nori.",
+    "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?q=80&w=600&h=400&fit=crop",
+    "category": "Japanese",
+    "cuisine": "Japanese",
+    "continent": "Asia",
+    "dietary": [],
+    "mealType": "Dinner",
+    "audience": [
+      "Foodies"
+    ],
+    "country": "Japan",
+    "prepTime": "40 mins",
+    "cookTime": null,
+    "totalTime": null,
+    "rating": 4.9,
+    "difficulty": "Hard",
+    "servings": 2,
+    "totalCalories": 600,
+    "ingredients": [
+      {
+        "name": "Ramen Noodles",
+        "amount": "200g",
+        "calories": 300,
+        "protein": "10g",
+        "carbs": "60g",
+        "fat": "2g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Miso Paste",
+        "amount": "4 tbsp",
+        "calories": 140,
+        "protein": "8g",
+        "carbs": "20g",
+        "fat": "4g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Soft Boiled Egg",
+        "amount": "1",
+        "calories": 70,
+        "protein": "6g",
+        "carbs": "1g",
+        "fat": "5g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Pork Belly",
+        "amount": "100g",
+        "calories": 500,
+        "protein": "10g",
+        "carbs": "0g",
+        "fat": "50g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      }
+    ],
+    "instructions": [
+      {
+        "step": 1,
+        "title": "Prepare Broth",
+        "text": "Whisk miso paste into simmering dashi or chicken stock."
+      },
+      {
+        "step": 2,
+        "title": "Cook Noodles",
+        "text": "Boil ramen noodles according to package instructions."
+      },
+      {
+        "step": 3,
+        "title": "Assemble",
+        "text": "Place noodles in broth and top with pork, egg, and nori."
+      }
+    ],
+    "story": null,
+    "extra": []
+  },
+  {
+    "id": "7",
+    "slug": "quinoa-salad-recipe",
+    "title": "Mediterranean Quinoa Salad Recipe",
+    "summary": "Refreshing salad with cucumbers, tomatoes, and kalamata olives.",
+    "description": "Refreshing salad with cucumbers, tomatoes, and kalamata olives.",
+    "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=600&h=400&fit=crop",
+    "category": "Salads",
+    "cuisine": "Greek",
+    "continent": "Europe",
+    "dietary": [
+      "Vegan",
+      "Gluten Free"
+    ],
+    "mealType": "Lunch",
+    "audience": [
+      "Healthy"
+    ],
+    "country": "Greece",
+    "prepTime": "15 mins",
+    "cookTime": null,
+    "totalTime": null,
+    "rating": 4.4,
+    "difficulty": "Easy",
+    "servings": 4,
+    "totalCalories": 320,
+    "ingredients": [
+      {
+        "name": "Quinoa",
+        "amount": "1 cup",
+        "calories": 220,
+        "protein": "8g",
+        "carbs": "39g",
+        "fat": "4g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Cucumber",
+        "amount": "1",
+        "calories": 30,
+        "protein": "2g",
+        "carbs": "6g",
+        "fat": "0g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Cherry Tomatoes",
+        "amount": "1 cup",
+        "calories": 30,
+        "protein": "1g",
+        "carbs": "6g",
+        "fat": "0g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Feta Cheese",
+        "amount": "50g",
+        "calories": 130,
+        "protein": "7g",
+        "carbs": "2g",
+        "fat": "10g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      }
+    ],
+    "instructions": [
+      {
+        "step": 1,
+        "title": "Cook Quinoa",
+        "text": "Boil quinoa in water or vegetable broth until tender."
+      },
+      {
+        "step": 2,
+        "title": "Chop Veggies",
+        "text": "Dice cucumber, tomatoes, and red onion."
+      },
+      {
+        "step": 3,
+        "title": "Mix",
+        "text": "Toss everything with olive oil and lemon juice."
+      }
+    ],
+    "story": null,
+    "extra": []
+  },
+  {
+    "id": "8",
+    "slug": "lentil-soup-recipe",
+    "title": "Spiced Lentil Soup Recipe",
+    "summary": "Warm and comforting soup filled with protein-rich lentils.",
+    "description": "Warm and comforting soup filled with protein-rich lentils.",
+    "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=600&h=400&fit=crop",
+    "category": "Soups",
+    "cuisine": "Turkish",
+    "continent": "Asia",
+    "dietary": [
+      "Vegan"
+    ],
+    "mealType": "Lunch",
+    "audience": [
+      "Kids",
+      "Elderly"
+    ],
+    "country": "Turkey",
+    "prepTime": "35 mins",
+    "cookTime": null,
+    "totalTime": null,
+    "rating": 4.5,
+    "difficulty": "Medium",
+    "servings": 4,
+    "totalCalories": 290,
+    "ingredients": [
+      {
+        "name": "Red Lentils",
+        "amount": "1 cup",
+        "calories": 230,
+        "protein": "18g",
+        "carbs": "40g",
+        "fat": "1g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Carrots",
+        "amount": "2",
+        "calories": 60,
+        "protein": "1g",
+        "carbs": "14g",
+        "fat": "0g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Onion",
+        "amount": "1",
+        "calories": 40,
+        "protein": "1g",
+        "carbs": "9g",
+        "fat": "0g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Cumin",
+        "amount": "1 tsp",
+        "calories": 10,
+        "protein": "0g",
+        "carbs": "1g",
+        "fat": "1g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      }
+    ],
+    "instructions": [
+      {
+        "step": 1,
+        "title": "Sauté",
+        "text": "Sauté onion and carrots in olive oil until soft."
+      },
+      {
+        "step": 2,
+        "title": "Simmer",
+        "text": "Add lentils and stock. Simmer for 20 minutes."
+      },
+      {
+        "step": 3,
+        "title": "Blend",
+        "text": "Partially blend the soup for a creamy texture."
+      }
+    ],
+    "story": null,
+    "extra": []
+  },
+  {
+    "id": "9",
+    "slug": "blueberry-pancakes-recipe",
+    "title": "Fluffy Blueberry Pancakes Recipe",
+    "summary": "Perfect weekend breakfast with fresh blueberries and maple syrup.",
+    "description": "Perfect weekend breakfast with fresh blueberries and maple syrup.",
+    "image": "https://images.unsplash.com/photo-1528207776546-365bb710ee93?q=80&w=600&h=400&fit=crop",
+    "category": "Breakfast",
+    "cuisine": "American",
+    "continent": "America",
+    "dietary": [
+      "Vegetarian"
+    ],
+    "mealType": "Brunch",
+    "audience": [
+      "Kids"
+    ],
+    "country": "USA",
+    "prepTime": "25 mins",
+    "cookTime": null,
+    "totalTime": null,
+    "rating": 4.8,
+    "difficulty": "Medium",
+    "servings": 4,
+    "totalCalories": 450,
+    "ingredients": [
+      {
+        "name": "Flour",
+        "amount": "1.5 cups",
+        "calories": 500,
+        "protein": "15g",
+        "carbs": "110g",
+        "fat": "1g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Milk",
+        "amount": "1 cup",
+        "calories": 100,
+        "protein": "8g",
+        "carbs": "12g",
+        "fat": "2g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Blueberries",
+        "amount": "1 cup",
+        "calories": 85,
+        "protein": "1g",
+        "carbs": "21g",
+        "fat": "0g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Butter",
+        "amount": "2 tbsp",
+        "calories": 200,
+        "protein": "0g",
+        "carbs": "0g",
+        "fat": "22g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      }
+    ],
+    "instructions": [
+      {
+        "step": 1,
+        "title": "Mix Batter",
+        "text": "Whisk wet and dry ingredients until just combined."
+      },
+      {
+        "step": 2,
+        "title": "Add Berries",
+        "text": "Gently fold in fresh blueberries."
+      },
+      {
+        "step": 3,
+        "title": "Cook",
+        "text": "Pour batter onto a hot griddle and cook until bubbly."
+      }
+    ],
+    "story": null,
+    "extra": []
+  },
+  {
+    "id": "10",
+    "slug": "lemon-herb-salmon-recipe",
+    "title": "Lemon Herb Salmon Recipe",
+    "summary": "Fresh salmon fillets grilled to perfection with a zesty lemon and herb butter.",
+    "description": "Fresh salmon fillets grilled to perfection with a zesty lemon and herb butter.",
+    "image": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?q=80&w=600&h=400&fit=crop",
+    "category": "Seafood",
+    "cuisine": "Modern",
+    "continent": "Global",
+    "dietary": [
+      "Gluten Free"
+    ],
+    "mealType": "Dinner",
+    "audience": [
+      "Health Conscious"
+    ],
+    "country": "Global",
+    "prepTime": "20 mins",
+    "cookTime": null,
+    "totalTime": null,
+    "rating": 4.7,
+    "difficulty": "Medium",
+    "servings": 2,
+    "totalCalories": 400,
+    "ingredients": [
+      {
+        "name": "Salmon Fillet",
+        "amount": "200g",
+        "calories": 415,
+        "protein": "45g",
+        "carbs": "0g",
+        "fat": "25g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Lemon",
+        "amount": "1",
+        "calories": 20,
+        "protein": "1g",
+        "carbs": "9g",
+        "fat": "0g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Butter",
+        "amount": "20g",
+        "calories": 145,
+        "protein": "0g",
+        "carbs": "0g",
+        "fat": "16g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Fresh Dill",
+        "amount": "small bunch",
+        "calories": 5,
+        "protein": "0g",
+        "carbs": "1g",
+        "fat": "0g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      }
+    ],
+    "instructions": [
+      {
+        "step": 1,
+        "title": "Season",
+        "text": "Season salmon with salt, pepper, and fresh dill."
+      },
+      {
+        "step": 2,
+        "title": "Grill",
+        "text": "Grill for 4-5 minutes per side until flaky."
+      },
+      {
+        "step": 3,
+        "title": "Garnish",
+        "text": "Top with lemon butter and serve immediately."
+      }
+    ],
+    "story": null,
+    "extra": []
+  },
+  {
+    "id": "11",
+    "slug": "thai-green-curry-recipe",
+    "title": "Thai Green Curry Recipe",
+    "summary": "A fragrant and spicy curry with coconut milk, bamboo shoots, and basil.",
+    "description": "A fragrant and spicy curry with coconut milk, bamboo shoots, and basil.",
+    "image": "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?q=80&w=600&h=400&fit=crop",
+    "category": "Thai",
+    "cuisine": "Thai",
+    "continent": "Asia",
+    "dietary": [
+      "Gluten Free"
+    ],
+    "mealType": "Dinner",
+    "audience": [
+      "Spice Lovers"
+    ],
+    "country": "Thailand",
+    "prepTime": "35 mins",
+    "cookTime": null,
+    "totalTime": null,
+    "rating": 4.9,
+    "difficulty": "Hard",
+    "servings": 3,
+    "totalCalories": 520,
+    "ingredients": [
+      {
+        "name": "Coconut Milk",
+        "amount": "400ml",
+        "calories": 700,
+        "protein": "4g",
+        "carbs": "12g",
+        "fat": "70g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Green Curry Paste",
+        "amount": "2 tbsp",
+        "calories": 50,
+        "protein": "1g",
+        "carbs": "8g",
+        "fat": "2g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Chicken Breast",
+        "amount": "300g",
+        "calories": 495,
+        "protein": "93g",
+        "carbs": "0g",
+        "fat": "11g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Bamboo Shoots",
+        "amount": "1 cup",
+        "calories": 40,
+        "protein": "4g",
+        "carbs": "8g",
+        "fat": "0.5g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      }
+    ],
+    "instructions": [
+      {
+        "step": 1,
+        "title": "Sauté Paste",
+        "text": "Heat curry paste with a little coconut milk until fragrant."
+      },
+      {
+        "step": 2,
+        "title": "Simmer",
+        "text": "Add remaining coconut milk and chicken, simmer until cooked."
+      },
+      {
+        "step": 3,
+        "title": "Add Veggies",
+        "text": "Toss in bamboo shoots and basil before serving."
+      }
+    ],
+    "story": null,
+    "extra": []
+  },
+  {
+    "id": "12",
+    "slug": "margherita-pizza-recipe",
+    "title": "Classic Margherita Recipe",
+    "summary": "Simple and elegant pizza with tomato sauce, fresh mozzarella, and basil.",
+    "description": "Simple and elegant pizza with tomato sauce, fresh mozzarella, and basil.",
+    "image": "https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?q=80&w=600&h=400&fit=crop",
+    "category": "Italian",
+    "cuisine": "Italian",
+    "continent": "Europe",
+    "dietary": [
+      "Vegetarian"
+    ],
+    "mealType": "Dinner",
+    "audience": [
+      "Families"
+    ],
+    "country": "Italy",
+    "prepTime": "25 mins",
+    "cookTime": null,
+    "totalTime": null,
+    "rating": 4.9,
+    "difficulty": "Medium",
+    "servings": 2,
+    "totalCalories": 800,
+    "ingredients": [
+      {
+        "name": "Pizza Dough",
+        "amount": "250g",
+        "calories": 600,
+        "protein": "18g",
+        "carbs": "120g",
+        "fat": "4g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Tomato Sauce",
+        "amount": "1/2 cup",
+        "calories": 80,
+        "protein": "2g",
+        "carbs": "16g",
+        "fat": "1g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Fresh Mozzarella",
+        "amount": "125g",
+        "calories": 300,
+        "protein": "22g",
+        "carbs": "4g",
+        "fat": "22g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Basil",
+        "amount": "handful",
+        "calories": 5,
+        "protein": "0g",
+        "carbs": "1g",
+        "fat": "0g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      }
+    ],
+    "instructions": [
+      {
+        "step": 1,
+        "title": "Stretch",
+        "text": "Stretch the dough into a 12-inch circle."
+      },
+      {
+        "step": 2,
+        "title": "Layer",
+        "text": "Spread sauce and top with mozzarella slices."
+      },
+      {
+        "step": 3,
+        "title": "Bake",
+        "text": "Bake at 500°F (260°C) for 10-12 minutes."
+      }
+    ],
+    "story": null,
+    "extra": []
+  },
+  {
+    "id": "13",
+    "slug": "greek-gyro-recipe",
+    "title": "Beef & Lamb Gyro Recipe",
+    "summary": "A flavorful wrap with seasoned meat, pita, tomato, onion, and tzatziki.",
+    "description": "A flavorful wrap with seasoned meat, pita, tomato, onion, and tzatziki.",
+    "image": "https://images.unsplash.com/photo-1593504049359-74330189a345?q=80&w=600&h=400&fit=crop",
+    "category": "Greek",
+    "cuisine": "Greek",
+    "continent": "Europe",
+    "dietary": [],
+    "mealType": "Lunch",
+    "audience": [
+      "Couples"
+    ],
+    "country": "Greece",
+    "prepTime": "30 mins",
+    "cookTime": null,
+    "totalTime": null,
+    "rating": 4.5,
+    "difficulty": "Medium",
+    "servings": 2,
+    "totalCalories": 600,
+    "ingredients": [
+      {
+        "name": "Pita Bread",
+        "amount": "2",
+        "calories": 330,
+        "protein": "11g",
+        "carbs": "66g",
+        "fat": "3g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Gyro Meat",
+        "amount": "200g",
+        "calories": 450,
+        "protein": "30g",
+        "carbs": "4g",
+        "fat": "35g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Tzatziki",
+        "amount": "4 tbsp",
+        "calories": 60,
+        "protein": "3g",
+        "carbs": "4g",
+        "fat": "4g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Red Onion",
+        "amount": "1/4",
+        "calories": 15,
+        "protein": "0g",
+        "carbs": "4g",
+        "fat": "0g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      }
+    ],
+    "instructions": [
+      {
+        "step": 1,
+        "title": "Warm",
+        "text": "Warm the pita bread in a pan until soft."
+      },
+      {
+        "step": 2,
+        "title": "Fill",
+        "text": "Add cooked gyro meat and fresh vegetables."
+      },
+      {
+        "step": 3,
+        "title": "Top",
+        "text": "Drizzle generously with tzatziki sauce."
+      }
+    ],
+    "story": null,
+    "extra": []
+  },
+  {
+    "id": "14",
+    "slug": "miso-glazed-eggplant-recipe",
+    "title": "Miso Eggplant Recipe",
+    "summary": "A delicious Japanese side dish featuring eggplant glazed with sweet and salty miso.",
+    "description": "A delicious Japanese side dish featuring eggplant glazed with sweet and salty miso.",
+    "image": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?q=80&w=600&h=400&fit=crop",
+    "category": "Japanese",
+    "cuisine": "Japanese",
+    "continent": "Asia",
+    "dietary": [
+      "Vegan",
+      "Gluten Free"
+    ],
+    "mealType": "Lunch",
+    "audience": [
+      "Health Conscious"
+    ],
+    "country": "Japan",
+    "prepTime": "25 mins",
+    "cookTime": null,
+    "totalTime": null,
+    "rating": 4.6,
+    "difficulty": "Easy",
+    "servings": 2,
+    "totalCalories": 180,
+    "ingredients": [
+      {
+        "name": "Eggplant",
+        "amount": "2 medium",
+        "calories": 70,
+        "protein": "2g",
+        "carbs": "16g",
+        "fat": "0.5g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Miso Paste",
+        "amount": "2 tbsp",
+        "calories": 60,
+        "protein": "4g",
+        "carbs": "8g",
+        "fat": "2g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Mirin",
+        "amount": "1 tbsp",
+        "calories": 40,
+        "protein": "0g",
+        "carbs": "10g",
+        "fat": "0g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Sesame Seeds",
+        "amount": "1 tsp",
+        "calories": 20,
+        "protein": "1g",
+        "carbs": "1g",
+        "fat": "2g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      }
+    ],
+    "instructions": [
+      {
+        "step": 1,
+        "title": "Halve",
+        "text": "Halve the eggplants and score the flesh."
+      },
+      {
+        "step": 2,
+        "title": "Glaze",
+        "text": "Brush with miso, mirin, and sugar mixture."
+      },
+      {
+        "step": 3,
+        "title": "Broil",
+        "text": "Broil until caramelized and tender."
+      }
+    ],
+    "story": null,
+    "extra": []
+  },
+  {
+    "id": "paneer-paratha-001",
+    "slug": "paneer-paratha-recipe",
+    "title": "Paneer Paratha Recipe",
+    "summary": "A flavorful Indian stuffed flatbread filled with spiced paneer cheese.",
+    "description": "Soft whole‑wheat flatbreads stuffed with a warm, spiced paneer filling — perfect for breakfast, lunch, or dinner. Crispy on the outside and tender inside, these parathas bring comfort and spice together.",
+    "image": "/Paneer-Paratha.jpeg",
+    "category": "Indian",
+    "cuisine": "North Indian",
+    "continent": "Asia",
+    "dietary": [
+      "Vegetarian"
+    ],
+    "mealType": "Breakfast/Lunch",
+    "audience": [
+      "Families",
+      "Vegetarian"
+    ],
+    "country": "India",
+    "prepTime": "35 mins",
+    "cookTime": null,
+    "totalTime": null,
+    "rating": 5,
+    "difficulty": "Medium",
+    "servings": 2,
+    "totalCalories": 820,
+    "ingredients": [
+      {
+        "name": "Whole wheat flour",
+        "amount": "1.5 cups",
+        "calories": 570,
+        "protein": "18g",
+        "carbs": "120g",
+        "fat": "3g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Grated paneer",
+        "amount": "1 cup",
+        "calories": 260,
+        "protein": "14g",
+        "carbs": "6g",
+        "fat": "20g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Green chili",
+        "amount": "1 finely chopped",
+        "calories": 4,
+        "protein": "0.2g",
+        "carbs": "1g",
+        "fat": "0g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Cilantro (chopped)",
+        "amount": "2 tbsp",
+        "calories": 1,
+        "protein": "0.1g",
+        "carbs": "0.2g",
+        "fat": "0g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Red chili powder",
+        "amount": "1/2 tsp",
+        "calories": 4,
+        "protein": "0.2g",
+        "carbs": "0.8g",
+        "fat": "0g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Salt",
+        "amount": "to taste",
+        "calories": 0,
+        "protein": "0g",
+        "carbs": "0g",
+        "fat": "0g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Ghee or oil",
+        "amount": "2 tbsp",
+        "calories": 80,
+        "protein": "0g",
+        "carbs": "0g",
+        "fat": "9g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      }
+    ],
+    "instructions": [
+      {
+        "step": 1,
+        "title": "Make the Dough",
+        "text": "Combine whole wheat flour with a pinch of salt and water to form a soft dough."
+      },
+      {
+        "step": 2,
+        "title": "Prepare the Paneer Filling",
+        "text": "Mix grated paneer with green chili, cilantro, red chili powder, and a bit of salt."
+      },
+      {
+        "step": 3,
+        "title": "Divide Dough and Filling",
+        "text": "Portion the dough into equal balls and do the same with the paneer filling."
+      },
+      {
+        "step": 4,
+        "title": "Stuff the Paratha",
+        "text": "Flatten a dough ball, place the paneer mixture in the center, and carefully seal it."
+      },
+      {
+        "step": 5,
+        "title": "Roll Evenly",
+        "text": "Roll out the stuffed dough into a flat circle about 6–7 inches wide."
+      },
+      {
+        "step": 6,
+        "title": "Cook the Paratha",
+        "text": "Heat a skillet and cook the paratha on both sides with ghee or oil until golden spots appear."
+      },
+      {
+        "step": 7,
+        "title": "Serve Hot",
+        "text": "Serve the paneer paratha hot with yogurt, pickle, or chutney."
+      }
+    ],
+    "story": "Paneer paratha is a beloved Indian stuffed flatbread that hails from the rustic homes of North India. Traditionally made in winter when fresh paneer is plentiful, families would gather around the tava (griddle) to roll, cook, and share these flavorful breads. Over time, it became a breakfast and brunch favorite across India — celebrated for its hearty texture and rich, spiced filling.\n\nThe craftsmanship of paneer paratha lies in its balance: a soft, pliable dough and a filling that’s perfectly seasoned without being overpowering. From roadside dhabas (eateries) to home kitchens, the dish has evolved to reflect regional tastes while maintaining its comforting essence. Each bite tells a story of warmth, shared meals, and the joyous simplicity of Indian cooking.",
+    "extra": []
+  },
+  {
+    "id": "gobi-paratha-001",
+    "slug": "gobi-paratha-recipe",
+    "title": "Gobi Paratha Recipe",
+    "summary": "Classic North Indian stuffed flatbread with spiced grated cauliflower filling.",
+    "description": "Soft whole-wheat parathas generously stuffed with a flavorful, mildly spiced grated cauliflower (gobi) mixture — crispy golden outside with a tender, aromatic filling inside.",
+    "image": "/gobi-paratha.jpeg",
+    "category": "Indian",
+    "cuisine": "North Indian",
+    "continent": "Asia",
+    "dietary": [
+      "Vegetarian"
+    ],
+    "mealType": "Breakfast/Lunch/Dinner",
+    "audience": [
+      "Families",
+      "Vegetarian"
+    ],
+    "country": "India",
+    "prepTime": "40 mins",
+    "cookTime": null,
+    "totalTime": null,
+    "rating": 4.9,
+    "difficulty": "Medium",
+    "servings": 4,
+    "totalCalories": 780,
+    "ingredients": [
+      {
+        "name": "Whole wheat flour",
+        "amount": "2 cups",
+        "calories": 760,
+        "protein": "24g",
+        "carbs": "160g",
+        "fat": "4g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Grated cauliflower (gobi)",
+        "amount": "2 cups (about 1 medium head)",
+        "calories": 50,
+        "protein": "4g",
+        "carbs": "10g",
+        "fat": "0.5g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Green chili",
+        "amount": "2 finely chopped",
+        "calories": 8,
+        "protein": "0.4g",
+        "carbs": "2g",
+        "fat": "0g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Ginger",
+        "amount": "1 tsp grated",
+        "calories": 5,
+        "protein": "0.1g",
+        "carbs": "1g",
+        "fat": "0g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Cumin seeds",
+        "amount": "1 tsp",
+        "calories": 8,
+        "protein": "0.4g",
+        "carbs": "1g",
+        "fat": "0.5g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Garam masala",
+        "amount": "1/2 tsp",
+        "calories": 5,
+        "protein": "0.2g",
+        "carbs": "1g",
+        "fat": "0.2g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Red chili powder",
+        "amount": "1/2 tsp",
+        "calories": 4,
+        "protein": "0.2g",
+        "carbs": "0.8g",
+        "fat": "0g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Fresh cilantro",
+        "amount": "3 tbsp chopped",
+        "calories": 2,
+        "protein": "0.2g",
+        "carbs": "0.4g",
+        "fat": "0g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Salt",
+        "amount": "to taste",
+        "calories": 0,
+        "protein": "0g",
+        "carbs": "0g",
+        "fat": "0g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Ghee or oil",
+        "amount": "3–4 tbsp (for cooking)",
+        "calories": 360,
+        "protein": "0g",
+        "carbs": "0g",
+        "fat": "40g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      }
+    ],
+    "instructions": [
+      {
+        "step": 1,
+        "title": "Prepare the Dough",
+        "text": "Mix whole wheat flour, salt, and enough water to form a soft, smooth dough."
+      },
+      {
+        "step": 2,
+        "title": "Make the Gobi Filling",
+        "text": "Grate cauliflower finely. Squeeze out all excess water completely."
+      },
+      {
+        "step": 3,
+        "title": "Divide Dough & Filling",
+        "text": "Divide dough into 8 equal balls. Do the same with the prepared filling."
+      },
+      {
+        "step": 4,
+        "title": "Stuff the Paratha",
+        "text": "Flatten one dough ball, place a portion of filling in the center, and seal tightly."
+      },
+      {
+        "step": 5,
+        "title": "Roll Gently",
+        "text": "Dust lightly with flour and roll into a 7–8 inch circle."
+      },
+      {
+        "step": 6,
+        "title": "Cook the Paratha",
+        "text": "Cook on hot tawa, flip, spread ghee/oil, flip again and cook until golden spots appear."
+      },
+      {
+        "step": 7,
+        "title": "Serve Hot",
+        "text": "Brush with a little more ghee and serve immediately with yogurt, pickle, and/or butter."
+      }
+    ],
+    "story": "Gobi paratha is the ultimate comfort food of North Indian homes, especially during winter when fresh cauliflower floods the markets. What started as a clever way to use seasonal vegetables in Punjabi and Uttar Pradesh kitchens has become a beloved breakfast, brunch, and even dinner item across India.\n\nThe magic lies in the contrast: crisp golden exterior, soft pillowy layers, and a moist, spiced cauliflower filling that releases steam and aroma with every tear. From roadside dhabas to family kitchens, gobi paratha brings people together — there's something deeply satisfying about rolling, stuffing, and cooking these humble flatbreads on a chilly morning.",
+    "extra": [
+      "Avoid adding salt to the cauliflower until you are ready to stuff; salt releases moisture and can make the paratha soggy.",
+      "Grate the cauliflower finely — large chunks can tear the dough during rolling.",
+      "If the dough feels too tight, add a teaspoon of oil while kneading for extra elasticity."
+    ]
+  },
+  {
+    "id": "garlic-cheese-sandwich-001",
+    "slug": "garlic-cheese-sandwich-recipe",
+    "title": "Garlic Cheese Sandwich",
+    "summary": "Crispy toasted bread slathered with garlic butter and stuffed with gooey melted cheese — ultimate comfort food in sandwich form.",
+    "description": "Golden, buttery bread infused with fresh garlic aroma and loaded with perfectly melted cheese. Simple, indulgent, and ready in under 15 minutes — the perfect quick snack, lunch, or midnight craving fix.",
+    "image": "/garlic-cheese-sandwich.jpeg",
+    "category": "Quick Bites",
+    "cuisine": "Fusion / Modern",
+    "continent": "Global",
+    "dietary": [
+      "Vegetarian"
+    ],
+    "mealType": "Snack/Lunch/Breakfast",
+    "audience": [
+      "Quick Meals",
+      "Comfort Food Lovers",
+      "Kids"
+    ],
+    "country": "Global",
+    "prepTime": "5 mins",
+    "cookTime": "8 mins",
+    "totalTime": "13 mins",
+    "rating": 4.8,
+    "difficulty": "Easy",
+    "servings": 2,
+    "totalCalories": 680,
+    "ingredients": [
+      {
+        "name": "Bread slices (white or sourdough)",
+        "amount": "4 thick slices",
+        "calories": 320,
+        "protein": "12g",
+        "carbs": "60g",
+        "fat": "4g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Cheddar or mozzarella cheese (grated)",
+        "amount": "1.5 cups (about 150g)",
+        "calories": 600,
+        "protein": "36g",
+        "carbs": "6g",
+        "fat": "48g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Butter (softened)",
+        "amount": "3 tbsp",
+        "calories": 300,
+        "protein": "0g",
+        "carbs": "0g",
+        "fat": "33g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Garlic cloves",
+        "amount": "4–5 (finely minced or grated)",
+        "calories": 20,
+        "protein": "1g",
+        "carbs": "5g",
+        "fat": "0g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Fresh parsley (optional)",
+        "amount": "1 tbsp finely chopped",
+        "calories": 1,
+        "protein": "0.1g",
+        "carbs": "0.2g",
+        "fat": "0g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Salt",
+        "amount": "pinch",
+        "calories": 0,
+        "protein": "0g",
+        "carbs": "0g",
+        "fat": "0g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      }
+    ],
+    "instructions": [
+      {
+        "step": 1,
+        "title": "Make Garlic Butter",
+        "text": "Mix softened butter with minced garlic, a pinch of salt, and chopped parsley (if using) until well combined."
+      },
+      {
+        "step": 2,
+        "title": "Spread the Bread",
+        "text": "Generously spread garlic butter on one side of each bread slice."
+      },
+      {
+        "step": 3,
+        "title": "Assemble the Sandwich",
+        "text": "Place two slices butter-side down. Pile generous amount of grated cheese on top, then cover with remaining slices (butter-side up)."
+      },
+      {
+        "step": 4,
+        "title": "Toast to Perfection",
+        "text": "Heat a non-stick pan over medium heat. Place sandwiches in the pan and cook 3–4 minutes per side until bread is golden brown and cheese is completely melted."
+      },
+      {
+        "step": 5,
+        "title": "Serve Hot",
+        "text": "Cut in half (diagonal looks best!) and serve immediately while the cheese is still gooey and stretchy."
+      }
+    ],
+    "story": "The garlic cheese sandwich is the ultimate hug in food form — born from the simple desire to turn basic grilled cheese into something more flavorful and aromatic. The magic happens when fresh garlic meets butter and melts into golden bread, while cheese turns into that irresistible molten center everyone fights over.\n\nWhether it's a quick student snack, a late-night craving satisfier, or a cozy weekend treat, this sandwich has universal appeal. It's proof that the best comfort foods are often the simplest ones.",
+    "extra": [
+      "For extra indulgence, add a sprinkle of chili flakes or oregano to the garlic butter.",
+      "Use a mix of cheeses (cheddar + mozzarella) for the perfect melt and flavor balance.",
+      "Cook on medium-low heat to ensure cheese melts fully without burning the bread."
+    ]
+  },
+  {
+    "id": "chickpea-shawarma-wrap-001",
+    "slug": "chickpea-shawarma-wrap-recipe",
+    "title": "Vegan Chickpea Shawarma Wrap",
+    "summary": "Spiced roasted chickpeas wrapped in warm pita with tahini sauce, fresh veggies and pickles — Middle Eastern street food vibes, completely plant-based.",
+    "description": "Crispy, warmly spiced chickpeas stand in beautifully for traditional meat in this satisfying wrap. Paired with creamy tahini sauce, crunchy vegetables, and tangy pickles — it's fresh, flavorful, and deeply comforting.",
+    "image": "/vegan-chickpea-shawarma-wrap.png",
+    "category": "Wraps",
+    "cuisine": "Middle Eastern",
+    "continent": "Asia",
+    "dietary": [
+      "Vegan",
+      "Gluten Free Optional"
+    ],
+    "mealType": "Lunch/Dinner",
+    "audience": [
+      "Healthy",
+      "Quick Meals",
+      "Street Food Lovers"
+    ],
+    "country": "Global",
+    "prepTime": "15 mins",
+    "cookTime": "25 mins",
+    "totalTime": "40 mins",
+    "rating": 4.9,
+    "difficulty": "Easy",
+    "servings": 4,
+    "totalCalories": 520,
+    "ingredients": [
+      {
+        "name": "Canned chickpeas",
+        "amount": "2 × 400g cans (drained)",
+        "calories": 480,
+        "protein": "26g",
+        "carbs": "80g",
+        "fat": "8g"
+      },
+      {
+        "name": "Olive oil",
+        "amount": "3 tbsp",
+        "calories": 360,
+        "protein": "0g",
+        "carbs": "0g",
+        "fat": "40g"
+      },
+      {
+        "name": "Shawarma spice blend (or cumin + coriander + paprika + garlic powder + cinnamon + cayenne)",
+        "amount": "2 tbsp",
+        "calories": 40
+      },
+      {
+        "name": "Pita breads (or flatbreads)",
+        "amount": "4 large",
+        "calories": 680
+      },
+      {
+        "name": "Tahini",
+        "amount": "4 tbsp",
+        "calories": 360
+      },
+      {
+        "name": "Lemon juice",
+        "amount": "2 tbsp",
+        "calories": 10
+      },
+      {
+        "name": "Cucumber, tomato, red onion, pickles, fresh parsley",
+        "amount": "as desired",
+        "calories": 80
+      }
+    ],
+    "instructions": [
+      {
+        "step": 1,
+        "title": "Roast Chickpeas",
+        "text": "Toss drained chickpeas with olive oil and shawarma spices. Roast at 200°C (400°F) for 20–25 minutes until crispy."
+      },
+      {
+        "step": 2,
+        "title": "Make Tahini Sauce",
+        "text": "Whisk tahini with lemon juice, a little water, garlic (optional), and salt until creamy and pourable."
+      },
+      {
+        "step": 3,
+        "title": "Warm Pitas",
+        "text": "Warm pitas in a dry pan or oven for 1–2 minutes."
+      },
+      {
+        "step": 4,
+        "title": "Assemble",
+        "text": "Spread tahini sauce inside pita, add roasted chickpeas, chopped veggies, pickles, and extra herbs."
+      },
+      {
+        "step": 5,
+        "title": "Serve",
+        "text": "Roll tightly and serve immediately while everything is warm and vibrant."
+      }
+    ],
+    "story": "This plant-powered version of shawarma captures all the bold, aromatic magic of the original — without any meat. Popularized by street food stalls across the Levant and now loved worldwide, chickpea shawarma has become a go-to for vegans craving that iconic spiced, saucy wrap experience.",
+    "extra": [
+      "For extra crunch, add quick-pickled red cabbage or turnips.",
+      "Make it gluten-free with gluten-free flatbreads or lettuce wraps."
+    ]
+  },
+  {
+    "id": "mushroom-stroganoff-001",
+    "slug": "creamy-mushroom-stroganoff-recipe",
+    "title": "Creamy Vegan Mushroom Stroganoff",
+    "summary": "Rich, silky mushroom sauce over pasta — classic comfort food made completely dairy-free.",
+    "description": "Tender mushrooms in a luscious, tangy cashew-based cream sauce with hints of mustard and paprika — served over wide noodles for the ultimate cozy dinner.",
+    "image": "/Creamy-Vegan-Mushroom-Stroganoff.png",
+    "category": "Pasta",
+    "cuisine": "Russian / Fusion",
+    "continent": "Europe",
+    "dietary": [
+      "Vegan"
+    ],
+    "mealType": "Dinner",
+    "audience": [
+      "Comfort Food",
+      "Date Night"
+    ],
+    "country": "Global",
+    "prepTime": "15 mins",
+    "cookTime": "20 mins",
+    "totalTime": "35 mins",
+    "rating": 4.8,
+    "difficulty": "Medium",
+    "servings": 4,
+    "totalCalories": 580,
+    "ingredients": [
+      {
+        "name": "Chestnut/brown mushrooms",
+        "amount": "600g, sliced",
+        "calories": 130
+      },
+      {
+        "name": "Cashews (soaked)",
+        "amount": "1 cup (soaked 4+ hours)",
+        "calories": 780
+      },
+      {
+        "name": "Tagliatelle or fettuccine (egg-free)",
+        "amount": "300g dry",
+        "calories": 1050
+      },
+      {
+        "name": "Onion",
+        "amount": "1 large, finely sliced",
+        "calories": 60
+      },
+      {
+        "name": "Garlic",
+        "amount": "4 cloves, minced",
+        "calories": 20
+      },
+      {
+        "name": "Dijon mustard",
+        "amount": "1 tbsp",
+        "calories": 15
+      },
+      {
+        "name": "Smoked paprika",
+        "amount": "1 tsp"
+      },
+      {
+        "name": "Fresh parsley",
+        "amount": "handful, chopped"
+      }
+    ],
+    "instructions": [
+      {
+        "step": 1,
+        "title": "Cook Pasta",
+        "text": "Boil pasta in salted water until al dente. Reserve 1 cup pasta water."
+      },
+      {
+        "step": 2,
+        "title": "Sauté Mushrooms",
+        "text": "Cook mushrooms and onions in olive oil until golden and all liquid evaporates (8–10 mins)."
+      },
+      {
+        "step": 3,
+        "title": "Make Cream",
+        "text": "Blend soaked cashews with 1.5 cups water, mustard, paprika, garlic, salt & pepper until silky smooth."
+      },
+      {
+        "step": 4,
+        "title": "Combine",
+        "text": "Pour cashew cream into mushrooms, simmer 3–5 mins. Thin with pasta water if needed."
+      },
+      {
+        "step": 5,
+        "title": "Finish & Serve",
+        "text": "Toss with drained pasta. Garnish generously with parsley."
+      }
+    ],
+    "story": "Originally a luxurious Russian dish made with beef and sour cream, the vegan version swaps meat for hearty mushrooms and dairy for luscious cashew cream — proving once again that plants can deliver incredible richness and depth.",
+    "extra": [
+      "Add a splash of white wine or soy sauce for extra umami.",
+      "Use oyster or king oyster mushrooms for even meatier texture."
+    ]
+  },
+  {
+    "id": "lentil-bolognese-001",
+    "slug": "hearty-lentil-bolognese-recipe",
+    "title": "Vegan Lentil Bolognese",
+    "summary": "Rich, meaty lentil ragù simmered with tomatoes and herbs — perfect over pasta or polenta.",
+    "description": "Deeply savory, slow-simmered sauce packed with lentils, vegetables, red wine, and tomatoes. Tastes like it’s been cooking all day — but ready in under an hour.",
+    "image": "/vegan-lentil-bolognese.png",
+    "category": "Pasta",
+    "cuisine": "Italian",
+    "continent": "Europe",
+    "dietary": [
+      "Vegan"
+    ],
+    "mealType": "Dinner",
+    "audience": [
+      "Families",
+      "Meal Prep"
+    ],
+    "country": "Italy / Global",
+    "prepTime": "15 mins",
+    "cookTime": "40 mins",
+    "totalTime": "55 mins",
+    "rating": 4.9,
+    "difficulty": "Medium",
+    "servings": 6,
+    "totalCalories": 480,
+    "ingredients": [
+      {
+        "name": "Green or brown lentils (dry)",
+        "amount": "1.5 cups",
+        "calories": 1010
+      },
+      {
+        "name": "Crushed tomatoes",
+        "amount": "800g can",
+        "calories": 280
+      },
+      {
+        "name": "Red wine (optional but recommended)",
+        "amount": "150ml",
+        "calories": 120
+      },
+      {
+        "name": "Onion, carrot, celery",
+        "amount": "1 each, finely chopped",
+        "calories": 120
+      },
+      {
+        "name": "Garlic",
+        "amount": "4 cloves"
+      },
+      {
+        "name": "Fresh basil + oregano",
+        "amount": "to taste"
+      }
+    ],
+    "instructions": [
+      {
+        "step": 1,
+        "title": "Sofrito Base",
+        "text": "Sauté onion, carrot, celery and garlic until soft and sweet (~8 mins)."
+      },
+      {
+        "step": 2,
+        "title": "Build Flavor",
+        "text": "Add lentils, wine, herbs, and crushed tomatoes. Season well."
+      },
+      {
+        "step": 3,
+        "title": "Simmer",
+        "text": "Add 3 cups water/stock. Simmer gently 35–45 mins until thick and rich."
+      },
+      {
+        "step": 4,
+        "title": "Serve",
+        "text": "Serve over al dente pasta, polenta, or zucchini noodles. Finish with fresh basil."
+      }
+    ],
+    "story": "This hearty plant-based take on classic bolognese has become a weeknight staple in vegan households around the world — delivering all the slow-cooked comfort without hours of simmering or any animal products.",
+    "extra": [
+      "Tastes even better the next day — perfect for meal prep.",
+      "Freeze extras in portions for quick future meals."
+    ]
+  }
+]
