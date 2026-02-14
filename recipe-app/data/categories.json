@@ -52,7 +52,7 @@
     "id": "8",
     "slug": "america",
     "title": "Americas",
-    "image": "/America.png",
+    "image": "/america.png",
     "type": "continent"
   },
   {
@@ -108,7 +108,7 @@
     "id": "16",
     "slug": "breakfast",
     "title": "Breakfast",
-    "image": "/Breakfast.png",
+    "image": "/breakfast.png",
     "type": "mealType"
   },
   {
@@ -136,7 +136,7 @@
     "id": "20",
     "slug": "snacks",
     "title": "Snacks",
-    "image": "/Snacks.png",
+    "image": "/snacks.png",
     "type": "mealType"
   },
   {
@@ -213,7 +213,7 @@
     "id": "31",
     "slug": "dairy-free",
     "title": "Dairy Free",
-    "image": "/Dairy-free.png",
+    "image": "/Dairy-Free.png",
     "type": "dietary"
   },
   {
