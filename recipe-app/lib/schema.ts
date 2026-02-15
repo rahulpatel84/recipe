@@ -54,14 +54,6 @@ export function generateRecipeSchema(recipe: Recipe) {
             '@type': 'NutritionInformation',
             calories: `${recipe.totalCalories} calories`,
         },
-        aggregateRating: {
-            '@type': 'AggregateRating',
-            ratingValue: recipe.rating,
-            ratingCount: recipe.ratingCount || 15,
-            reviewCount: recipe.reviewCount || 15,
-            bestRating: 5,
-            worstRating: 1,
-        },
         author: {
             '@type': 'Organization',
             name: 'Relish Realm',
