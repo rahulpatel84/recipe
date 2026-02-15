@@ -6,16 +6,30 @@ export function parseTimeToISO8601(timeStr: string | undefined | null): string |
     let hours = 0;
     let minutes = 0;
 
-    const hourMatch = timeStr.match(/(\d+)\s*(hrs?|hours?)/i);
+    // Support formats like "1 hr 15 mins", "45 mins", "2 hours", "1.5 hrs"
+    const hourMatch = timeStr.match(/(\d+(?:\.\d+)?)\s*(hrs?|hours?)/i);
     const minMatch = timeStr.match(/(\d+)\s*(mins?|minutes?)/i);
 
-    if (hourMatch) hours = parseInt(hourMatch[1], 10);
+    if (hourMatch) hours = parseFloat(hourMatch[1]);
     if (minMatch) minutes = parseInt(minMatch[1], 10);
 
-    if (hours === 0 && minutes === 0) return undefined;
+    if (hours === 0 && minutes === 0) {
+        // Fallback for just digits if it's a simple number (assume minutes)
+        const pureMinMatch = timeStr.match(/^(\d+)$/);
+        if (pureMinMatch) {
+            minutes = parseInt(pureMinMatch[1], 10);
+        } else {
+            return undefined;
+        }
+    }
 
     let iso = 'PT';
-    if (hours > 0) iso += `${hours}H`;
+    if (hours > 0) {
+        const wholeHours = Math.floor(hours);
+        const extraMinutes = Math.round((hours - wholeHours) * 60);
+        if (wholeHours > 0) iso += `${wholeHours}H`;
+        minutes += extraMinutes;
+    }
     if (minutes > 0) iso += `${minutes}M`;
     return iso;
 }

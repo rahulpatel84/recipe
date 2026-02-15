@@ -877,6 +877,8 @@
     "cookTime": null,
     "totalTime": null,
     "rating": 4.7,
+    "ratingCount": 0,
+    "reviewCount": 0,
     "difficulty": "Medium",
     "servings": 2,
     "totalCalories": 400,
@@ -968,6 +970,8 @@
     "cookTime": null,
     "totalTime": null,
     "rating": 4.9,
+    "ratingCount": 0,
+    "reviewCount": 0,
     "difficulty": "Hard",
     "servings": 3,
     "totalCalories": 520,
@@ -1059,6 +1063,8 @@
     "cookTime": null,
     "totalTime": null,
     "rating": 4.9,
+    "ratingCount": 0,
+    "reviewCount": 0,
     "difficulty": "Medium",
     "servings": 2,
     "totalCalories": 800,
@@ -1148,6 +1154,8 @@
     "cookTime": null,
     "totalTime": null,
     "rating": 4.5,
+    "ratingCount": 0,
+    "reviewCount": 0,
     "difficulty": "Medium",
     "servings": 2,
     "totalCalories": 600,
@@ -1240,6 +1248,8 @@
     "cookTime": null,
     "totalTime": null,
     "rating": 4.6,
+    "ratingCount": 0,
+    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 2,
     "totalCalories": 180,
@@ -1332,6 +1342,8 @@
     "cookTime": null,
     "totalTime": null,
     "rating": 5,
+    "ratingCount": 0,
+    "reviewCount": 0,
     "difficulty": "Medium",
     "servings": 2,
     "totalCalories": 820,
@@ -1477,6 +1489,8 @@
     "cookTime": null,
     "totalTime": null,
     "rating": 4.9,
+    "ratingCount": 0,
+    "reviewCount": 0,
     "difficulty": "Medium",
     "servings": 4,
     "totalCalories": 780,
@@ -1660,6 +1674,8 @@
     "cookTime": "8 mins",
     "totalTime": "13 mins",
     "rating": 4.8,
+    "ratingCount": 0,
+    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 2,
     "totalCalories": 680,
@@ -1790,6 +1806,8 @@
     "cookTime": "25 mins",
     "totalTime": "40 mins",
     "rating": 4.9,
+    "ratingCount": 0,
+    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 4,
     "totalCalories": 520,
@@ -1800,7 +1818,10 @@
         "calories": 480,
         "protein": "26g",
         "carbs": "80g",
-        "fat": "8g"
+        "fat": "8g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
       },
       {
         "name": "Olive oil",
@@ -1808,32 +1829,65 @@
         "calories": 360,
         "protein": "0g",
         "carbs": "0g",
-        "fat": "40g"
+        "fat": "40g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
       },
       {
         "name": "Shawarma spice blend (or cumin + coriander + paprika + garlic powder + cinnamon + cayenne)",
         "amount": "2 tbsp",
-        "calories": 40
+        "calories": 40,
+        "protein": null,
+        "carbs": null,
+        "fat": null,
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
       },
       {
         "name": "Pita breads (or flatbreads)",
         "amount": "4 large",
-        "calories": 680
+        "calories": 680,
+        "protein": null,
+        "carbs": null,
+        "fat": null,
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
       },
       {
         "name": "Tahini",
         "amount": "4 tbsp",
-        "calories": 360
+        "calories": 360,
+        "protein": null,
+        "carbs": null,
+        "fat": null,
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
       },
       {
         "name": "Lemon juice",
         "amount": "2 tbsp",
-        "calories": 10
+        "calories": 10,
+        "protein": null,
+        "carbs": null,
+        "fat": null,
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
       },
       {
         "name": "Cucumber, tomato, red onion, pickles, fresh parsley",
         "amount": "as desired",
-        "calories": 80
+        "calories": 80,
+        "protein": null,
+        "carbs": null,
+        "fat": null,
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
       }
     ],
     "instructions": [
@@ -1892,6 +1946,8 @@
     "cookTime": "20 mins",
     "totalTime": "35 mins",
     "rating": 4.8,
+    "ratingCount": 0,
+    "reviewCount": 0,
     "difficulty": "Medium",
     "servings": 4,
     "totalCalories": 580,
@@ -1899,40 +1955,90 @@
       {
         "name": "Chestnut/brown mushrooms",
         "amount": "600g, sliced",
-        "calories": 130
+        "calories": 130,
+        "protein": null,
+        "carbs": null,
+        "fat": null,
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
       },
       {
         "name": "Cashews (soaked)",
         "amount": "1 cup (soaked 4+ hours)",
-        "calories": 780
+        "calories": 780,
+        "protein": null,
+        "carbs": null,
+        "fat": null,
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
       },
       {
         "name": "Tagliatelle or fettuccine (egg-free)",
         "amount": "300g dry",
-        "calories": 1050
+        "calories": 1050,
+        "protein": null,
+        "carbs": null,
+        "fat": null,
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
       },
       {
         "name": "Onion",
         "amount": "1 large, finely sliced",
-        "calories": 60
+        "calories": 60,
+        "protein": null,
+        "carbs": null,
+        "fat": null,
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
       },
       {
         "name": "Garlic",
         "amount": "4 cloves, minced",
-        "calories": 20
+        "calories": 20,
+        "protein": null,
+        "carbs": null,
+        "fat": null,
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
       },
       {
         "name": "Dijon mustard",
         "amount": "1 tbsp",
-        "calories": 15
+        "calories": 15,
+        "protein": null,
+        "carbs": null,
+        "fat": null,
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
       },
       {
         "name": "Smoked paprika",
-        "amount": "1 tsp"
+        "amount": "1 tsp",
+        "calories": null,
+        "protein": null,
+        "carbs": null,
+        "fat": null,
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
       },
       {
         "name": "Fresh parsley",
-        "amount": "handful, chopped"
+        "amount": "handful, chopped",
+        "calories": null,
+        "protein": null,
+        "carbs": null,
+        "fat": null,
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
       }
     ],
     "instructions": [
@@ -1991,6 +2097,8 @@
     "cookTime": "40 mins",
     "totalTime": "55 mins",
     "rating": 4.9,
+    "ratingCount": 0,
+    "reviewCount": 0,
     "difficulty": "Medium",
     "servings": 6,
     "totalCalories": 480,
@@ -1998,30 +2106,68 @@
       {
         "name": "Green or brown lentils (dry)",
         "amount": "1.5 cups",
-        "calories": 1010
+        "calories": 1010,
+        "protein": null,
+        "carbs": null,
+        "fat": null,
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
       },
       {
         "name": "Crushed tomatoes",
         "amount": "800g can",
-        "calories": 280
+        "calories": 280,
+        "protein": null,
+        "carbs": null,
+        "fat": null,
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
       },
       {
         "name": "Red wine (optional but recommended)",
         "amount": "150ml",
-        "calories": 120
+        "calories": 120,
+        "protein": null,
+        "carbs": null,
+        "fat": null,
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
       },
       {
         "name": "Onion, carrot, celery",
         "amount": "1 each, finely chopped",
-        "calories": 120
+        "calories": 120,
+        "protein": null,
+        "carbs": null,
+        "fat": null,
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
       },
       {
         "name": "Garlic",
-        "amount": "4 cloves"
+        "amount": "4 cloves",
+        "calories": null,
+        "protein": null,
+        "carbs": null,
+        "fat": null,
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
       },
       {
         "name": "Fresh basil + oregano",
-        "amount": "to taste"
+        "amount": "to taste",
+        "calories": null,
+        "protein": null,
+        "carbs": null,
+        "fat": null,
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
       }
     ],
     "instructions": [
