@@ -1,4 +1,5 @@
 import { recipes, categories, groupTypeMetadata, getGroupByType, getCategoryByItemSlug, GroupType } from '@/lib/data';
+import { generateRecipeSchema } from '@/lib/schema';
 import { notFound } from 'next/navigation';
 import RecipeDetail from '@/components/RecipeDetail';
 import GroupPage from '@/components/GroupPage';
@@ -145,10 +146,19 @@ export default async function UniversalRoutePage({ params }: Props) {
     // 3. Check if it's a Recipe Page (e.g., /spaghetti-carbonara)
     const recipe = recipes.find((r) => r.slug === slug);
     if (recipe) {
+        const recipeSchema = generateRecipeSchema(recipe);
         const relatedRecipes = recipes
             .filter((r) => r.id !== recipe.id && (r.category === recipe.category || r.cuisine === recipe.cuisine))
             .slice(0, 3);
-        return <RecipeDetail recipe={recipe} relatedRecipes={relatedRecipes} />;
+        return (
+            <>
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(recipeSchema) }}
+                />
+                <RecipeDetail recipe={recipe} relatedRecipes={relatedRecipes} />
+            </>
+        );
     }
 
     // 4. Default to 404
