@@ -35,6 +35,8 @@ db.serialize(() => {
     cook_time TEXT,
     total_time TEXT,
     rating REAL,
+    rating_count INTEGER,
+    review_count INTEGER,
     difficulty TEXT,
     servings INTEGER,
     total_calories INTEGER,
@@ -127,8 +129,8 @@ db.serialize(() => {
 
   // Insert recipes
   const recipeStmt = db.prepare(`INSERT OR REPLACE INTO recipes
-    (id, slug, title, summary, description, story, image, category, cuisine, continent, meal_type, country, prep_time, cook_time, total_time, rating, difficulty, servings, total_calories)
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`);
+    (id, slug, title, summary, description, story, image, category, cuisine, continent, meal_type, country, prep_time, cook_time, total_time, rating, rating_count, review_count, difficulty, servings, total_calories)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`);
 
   const ingredientStmt = db.prepare(`INSERT INTO ingredients
     (recipe_id, name, amount, calories, protein, carbs, fat, fiber, sugar, sodium)
@@ -176,6 +178,8 @@ db.serialize(() => {
       recipe.cookTime || null,
       recipe.totalTime || null,
       recipe.rating,
+      recipe.ratingCount || 0,
+      recipe.reviewCount || 0,
       recipe.difficulty,
       recipe.servings,
       recipe.totalCalories

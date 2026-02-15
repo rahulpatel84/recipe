@@ -39,7 +39,7 @@ db.serialize(() => {
     });
 
     // 2. Generate Recipes with all relations
-    db.all("SELECT * FROM recipes", async (err, recipes) => {
+    db.all("SELECT id, slug, title, summary, description, story, image, category, cuisine, continent, meal_type, country, prep_time, cook_time, total_time, rating, rating_count, review_count, difficulty, servings, total_calories FROM recipes", async (err, recipes) => {
         if (err) {
             console.error("Error fetching recipes:", err);
             return;
@@ -119,6 +119,8 @@ db.serialize(() => {
                 cookTime: recipe.cook_time,
                 totalTime: recipe.total_time,
                 rating: recipe.rating,
+                ratingCount: recipe.rating_count,
+                reviewCount: recipe.review_count,
                 difficulty: recipe.difficulty,
                 servings: recipe.servings,
                 totalCalories: recipe.total_calories, // Map back to camelCase

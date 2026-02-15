@@ -35,6 +35,8 @@ export interface Recipe {
   cookTime?: string;
   totalTime?: string;
   rating: number;
+  ratingCount?: number;
+  reviewCount?: number;
   difficulty: 'Easy' | 'Medium' | 'Hard';
   servings: number;
   ingredients: Ingredient[];

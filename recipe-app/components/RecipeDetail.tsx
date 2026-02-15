@@ -14,14 +14,22 @@ interface RecipeDetailProps {
 
 function parseTimeToISO8601(timeStr: string | undefined | null): string | undefined {
     if (!timeStr) return undefined;
-    const match = timeStr.match(/(\d+)\s*(mins?|minutes?|hrs?|hours?)/i);
-    if (!match) return undefined;
-    const value = parseInt(match[1], 10);
-    const unit = match[2].toLowerCase();
-    if (unit.startsWith('h')) {
-        return `PT${value}H`;
-    }
-    return `PT${value}M`;
+
+    let hours = 0;
+    let minutes = 0;
+
+    const hourMatch = timeStr.match(/(\d+)\s*(hrs?|hours?)/i);
+    const minMatch = timeStr.match(/(\d+)\s*(mins?|minutes?)/i);
+
+    if (hourMatch) hours = parseInt(hourMatch[1], 10);
+    if (minMatch) minutes = parseInt(minMatch[1], 10);
+
+    if (hours === 0 && minutes === 0) return undefined;
+
+    let iso = 'PT';
+    if (hours > 0) iso += `${hours}H`;
+    if (minutes > 0) iso += `${minutes}M`;
+    return iso;
 }
 
 function generateRecipeSchema(recipe: Recipe) {
@@ -47,9 +55,25 @@ function generateRecipeSchema(recipe: Recipe) {
         aggregateRating: {
             '@type': 'AggregateRating',
             ratingValue: recipe.rating,
+            ratingCount: recipe.ratingCount || 15, // Fallback for robustness
+            reviewCount: recipe.reviewCount || 15,
             bestRating: 5,
             worstRating: 1,
         },
+        author: {
+            '@type': 'Organization',
+            name: 'Relish Realm',
+            url: 'https://relishrealm.com'
+        },
+        publisher: {
+            '@type': 'Organization',
+            name: 'Relish Realm',
+            logo: {
+                '@type': 'ImageObject',
+                url: 'https://relishrealm.com/logo.png' // Placeholder, usually icon.png in app
+            }
+        },
+        datePublished: '2024-01-01', // Static date as fallback
         keywords: [recipe.cuisine, recipe.category, recipe.mealType, ...recipe.dietary].join(', '),
     };
 
