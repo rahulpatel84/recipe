@@ -29,7 +29,7 @@ h2,
 h3,
 h4,
 .font-serif {
-  font-family: var(--font-sans);
+  font-family: var(--font-serif);
 }
 
 .recipe-shadow {

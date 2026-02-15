@@ -1,0 +1,16 @@
+{
+    "name": "Relish Realm",
+    "short_name": "RelishRealm",
+    "description": "Exquisite World Recipes",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#4a5d4e",
+    "icons": [
+        {
+            "src": "/icon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
