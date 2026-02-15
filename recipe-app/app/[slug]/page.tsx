@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import RecipeDetail from '@/components/RecipeDetail';
 import GroupPage from '@/components/GroupPage';
 import ItemPage from '@/components/ItemPage';
+import AllRecipes from '@/components/AllRecipes';
 import { Metadata } from 'next';
 
 interface Props {
@@ -12,6 +13,16 @@ interface Props {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { slug } = await params;
+
+    if (slug === 'all-recipes') {
+        return {
+            title: "All Recipes Index",
+            description: "A complete list of all kitchen-tested recipes at Relish Realm. Discover every dish, from Italian classics to vegan delights.",
+            alternates: {
+                canonical: "/all-recipes",
+            },
+        };
+    }
 
     // 1. Group Page (e.g., /recipes-by-cuisines)
     const groupMatch = getGroupByType(slug);
@@ -125,11 +136,21 @@ export async function generateStaticParams() {
         slug: meta.path,
     }));
 
-    return [...recipeParams, ...itemParams, ...groupParams];
+    return [
+        { slug: 'all-recipes' },
+        ...recipeParams,
+        ...itemParams,
+        ...groupParams
+    ];
 }
 
 export default async function UniversalRoutePage({ params }: Props) {
     const { slug } = await params;
+
+    // 0. Check if it's the All Recipes index page
+    if (slug === 'all-recipes') {
+        return <AllRecipes recipes={recipes} />;
+    }
 
     // 1. Check if it's a Group Page (e.g., /recipes-by-continents)
     const groupMatch = getGroupByType(slug);

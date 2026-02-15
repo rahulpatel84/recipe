@@ -1,16 +1,11 @@
-import { recipes } from '@/lib/data';
+import { Recipe } from '@/lib/data';
 import Link from 'next/link';
-import { Metadata } from 'next';
 
-export const metadata: Metadata = {
-    title: "All Recipes Index",
-    description: "A complete list of all kitchen-tested recipes at Relish Realm. Discover every dish, from Italian classics to vegan delights.",
-    alternates: {
-        canonical: "/all-recipes",
-    },
-};
+interface AllRecipesProps {
+    recipes: Recipe[];
+}
 
-export default function AllRecipesPage() {
+export default function AllRecipes({ recipes }: AllRecipesProps) {
     // Group recipes by cuisine for better organization
     const recipesByCuisine = recipes.reduce((acc, recipe) => {
         const cuisine = recipe.cuisine || 'Other';
@@ -19,7 +14,7 @@ export default function AllRecipesPage() {
         }
         acc[cuisine].push(recipe);
         return acc;
-    }, {} as Record<string, typeof recipes>);
+    }, {} as Record<string, Recipe[]>);
 
     const cuisines = Object.keys(recipesByCuisine).sort();
 
