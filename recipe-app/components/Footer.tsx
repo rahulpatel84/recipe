@@ -55,6 +55,7 @@ export default function Footer() {
                             <Link href="/about" className="text-sm font-bold uppercase tracking-widest text-dark-olive/40 hover:text-terracotta transition-colors">About Us</Link>
                             <Link href="/contact" className="text-sm font-bold uppercase tracking-widest text-dark-olive/40 hover:text-terracotta transition-colors">Contact</Link>
                             <Link href="/privacy" className="text-sm font-bold uppercase tracking-widest text-dark-olive/40 hover:text-terracotta transition-colors">Privacy Policy</Link>
+                            <Link href="/all-recipes" className="text-sm font-bold uppercase tracking-widest text-terracotta hover:text-dark-olive transition-colors underline decoration-terracotta/30 underline-offset-4">All Recipes</Link>
                         </div>
                         <p className="text-[12px] uppercase tracking-[0.3em] font-bold text-dark-olive/20 font-sans">
                             &copy; {new Date().getFullYear()} Relish Realm. Developed for the curious palate.

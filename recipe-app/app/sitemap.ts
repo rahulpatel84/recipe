@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/about',
         '/category',
         '/recipes',
+        '/all-recipes',
     ].map((route) => ({
         url: `${BASE_URL}${route}`,
         lastModified: new Date(),
