@@ -11,18 +11,9 @@ interface Props {
     params: Promise<{ slug: string }>;
 }
 
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { slug } = await params;
-
-    if (slug === 'all-recipes') {
-        return {
-            title: "All Recipes Index",
-            description: "A complete list of all kitchen-tested recipes at Relish Realm. Discover every dish, from Italian classics to vegan delights.",
-            alternates: {
-                canonical: "/all-recipes",
-            },
-        };
-    }
 
     // 1. Group Page (e.g., /recipes-by-cuisines)
     const groupMatch = getGroupByType(slug);
@@ -137,7 +128,6 @@ export async function generateStaticParams() {
     }));
 
     return [
-        { slug: 'all-recipes' },
         ...recipeParams,
         ...itemParams,
         ...groupParams
@@ -146,11 +136,6 @@ export async function generateStaticParams() {
 
 export default async function UniversalRoutePage({ params }: Props) {
     const { slug } = await params;
-
-    // 0. Check if it's the All Recipes index page
-    if (slug === 'all-recipes') {
-        return <AllRecipes recipes={recipes} />;
-    }
 
     // 1. Check if it's a Group Page (e.g., /recipes-by-continents)
     const groupMatch = getGroupByType(slug);
