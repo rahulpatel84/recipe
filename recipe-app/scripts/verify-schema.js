@@ -42,27 +42,6 @@ function generateRecipeSchema(recipe) {
             '@type': 'NutritionInformation',
             calories: `${recipe.totalCalories} calories`,
         },
-        aggregateRating: {
-            '@type': 'AggregateRating',
-            ratingValue: recipe.rating,
-            ratingCount: recipe.ratingCount || 15,
-            reviewCount: recipe.reviewCount || 15,
-            bestRating: 5,
-            worstRating: 1,
-        },
-        author: {
-            '@type': 'Organization',
-            name: 'Relish Realm',
-            url: 'https://relishrealm.com'
-        },
-        publisher: {
-            '@type': 'Organization',
-            name: 'Relish Realm',
-            logo: {
-                '@type': 'ImageObject',
-                url: 'https://relishrealm.com/logo.png'
-            }
-        },
         datePublished: '2024-01-01',
         keywords: [recipe.cuisine, recipe.category, recipe.mealType, ...recipe.dietary].join(', '),
     };
@@ -90,9 +69,6 @@ console.log(JSON.stringify(schema, null, 2));
 
 // Validation checks
 const missingFields = [];
-if (!schema.author) missingFields.push("author");
-if (!schema.aggregateRating.reviewCount) missingFields.push("reviewCount");
-if (!schema.aggregateRating.ratingCount) missingFields.push("ratingCount");
 if (!schema.datePublished) missingFields.push("datePublished");
 
 if (missingFields.length === 0) {
