@@ -51,11 +51,11 @@ export default function Footer() {
                 </div>
                 <div className="mt-24 border-t border-sand/20 pt-12">
                     <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-                        <div className="flex items-center gap-8">
+                        <div className="flex flex-wrap items-center gap-6 md:gap-8">
+                            <Link href="/recipe-directory" className="text-sm font-bold uppercase tracking-widest text-terracotta hover:text-dark-olive transition-colors underline decoration-terracotta/30 underline-offset-4">Recipe Directory</Link>
+                            <Link href="/all-recipes" className="text-sm font-bold uppercase tracking-widest text-dark-olive/40 hover:text-terracotta transition-colors">All Recipes</Link>
                             <Link href="/about" className="text-sm font-bold uppercase tracking-widest text-dark-olive/40 hover:text-terracotta transition-colors">About Us</Link>
-                            <Link href="/contact" className="text-sm font-bold uppercase tracking-widest text-dark-olive/40 hover:text-terracotta transition-colors">Contact</Link>
-                            <Link href="/privacy" className="text-sm font-bold uppercase tracking-widest text-dark-olive/40 hover:text-terracotta transition-colors">Privacy Policy</Link>
-                            <Link href="/all-recipes" className="text-sm font-bold uppercase tracking-widest text-terracotta hover:text-dark-olive transition-colors underline decoration-terracotta/30 underline-offset-4">All Recipes</Link>
+                            <a href="/sitemap.xml" className="text-sm font-bold uppercase tracking-widest text-dark-olive/40 hover:text-terracotta transition-colors">Sitemap</a>
                         </div>
                         <p className="text-[12px] uppercase tracking-[0.3em] font-bold text-dark-olive/20 font-sans">
                             &copy; {new Date().getFullYear()} Relish Realm. Developed for the curious palate.

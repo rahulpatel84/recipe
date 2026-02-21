@@ -1,0 +1,122 @@
+# Relish Realm - Recipe Website
+# https://relishrealm.com
+# Last Updated: 2026-02-21
+
+## About This Site
+Relish Realm is a curated recipe website featuring kitchen-tested recipes from around the world. We focus on minimalist cooking with detailed nutritional information, step-by-step instructions, and comprehensive ingredient lists.
+
+## Site Structure
+
+### Main Pages
+- Homepage: https://relishrealm.com/
+- Recipe Directory: https://relishrealm.com/recipe-directory
+- All Recipes: https://relishrealm.com/all-recipes
+- Recipe Library: https://relishrealm.com/recipes
+- Categories: https://relishrealm.com/category
+- About: https://relishrealm.com/about
+
+### Recipe Pages (20 Total)
+- Classic Carbonara Recipe: https://relishrealm.com/spaghetti-carbonara-recipe
+- Garden Avocado Toast Recipe: https://relishrealm.com/avocado-toast-recipe
+- Chicken Tikka Masala Recipe: https://relishrealm.com/chicken-tikka-masala-recipe
+- Energy Smoothie Bowl Recipe: https://relishrealm.com/green-smoothie-bowl-recipe
+- Street Style Beef Tacos Recipe: https://relishrealm.com/beef-tacos-recipe
+- Hearty Miso Ramen Recipe: https://relishrealm.com/miso-ramen-recipe
+- Mediterranean Quinoa Salad Recipe: https://relishrealm.com/quinoa-salad-recipe
+- Spiced Lentil Soup Recipe: https://relishrealm.com/lentil-soup-recipe
+- Fluffy Blueberry Pancakes Recipe: https://relishrealm.com/blueberry-pancakes-recipe
+- Lemon Herb Salmon Recipe: https://relishrealm.com/lemon-herb-salmon-recipe
+- Thai Green Curry Recipe: https://relishrealm.com/thai-green-curry-recipe
+- Classic Margherita Recipe: https://relishrealm.com/margherita-pizza-recipe
+- Beef & Lamb Gyro Recipe: https://relishrealm.com/greek-gyro-recipe
+- Miso Eggplant Recipe: https://relishrealm.com/miso-glazed-eggplant-recipe
+- Paneer Paratha Recipe: https://relishrealm.com/paneer-paratha-recipe
+- Gobi Paratha Recipe: https://relishrealm.com/gobi-paratha-recipe
+- Garlic Cheese Sandwich: https://relishrealm.com/garlic-cheese-sandwich-recipe
+- Vegan Chickpea Shawarma Wrap: https://relishrealm.com/chickpea-shawarma-wrap-recipe
+- Creamy Vegan Mushroom Stroganoff: https://relishrealm.com/creamy-mushroom-stroganoff-recipe
+- Vegan Lentil Bolognese: https://relishrealm.com/hearty-lentil-bolognese-recipe
+
+### Category Pages by Cuisine
+- Italian Recipes: https://relishrealm.com/italian-recipes
+- Mexican Recipes: https://relishrealm.com/mexican-recipes
+- Indian Recipes: https://relishrealm.com/indian-recipes
+- Japanese Recipes: https://relishrealm.com/japanese-recipes
+- French Recipes: https://relishrealm.com/french-recipes
+- Greek Recipes: https://relishrealm.com/greek-recipes
+- Thai Recipes: https://relishrealm.com/thai-recipes
+
+### Category Pages by Continent
+- Asia Recipes: https://relishrealm.com/asia-recipes
+- Europe Recipes: https://relishrealm.com/europe-recipes
+- America Recipes: https://relishrealm.com/america-recipes
+- Africa Recipes: https://relishrealm.com/africa-recipes
+- Oceania Recipes: https://relishrealm.com/oceania-recipes
+
+### Category Pages by Dietary Preference
+- Vegan Recipes: https://relishrealm.com/vegan-recipes
+- Vegetarian Recipes: https://relishrealm.com/vegetarian-recipes
+- Gluten Free Recipes: https://relishrealm.com/gluten-free-recipes
+- Keto Recipes: https://relishrealm.com/keto-recipes
+- Paleo Recipes: https://relishrealm.com/paleo-recipes
+- Dairy Free Recipes: https://relishrealm.com/dairy-free-recipes
+
+### Category Pages by Meal Type
+- Breakfast Recipes: https://relishrealm.com/breakfast-recipes
+- Lunch Recipes: https://relishrealm.com/lunch-recipes
+- Dinner Recipes: https://relishrealm.com/dinner-recipes
+- Brunch Recipes: https://relishrealm.com/brunch-recipes
+- Snacks Recipes: https://relishrealm.com/snacks-recipes
+- Dessert Recipes: https://relishrealm.com/dessert-recipes
+
+### Category Pages by Audience
+- Kids Recipes: https://relishrealm.com/kids-recipes
+- Pregnancy Recipes: https://relishrealm.com/pregnancy-recipes
+- Elderly Recipes: https://relishrealm.com/elderly-recipes
+- Athletes Recipes: https://relishrealm.com/athletes-recipes
+- Couples Recipes: https://relishrealm.com/couples-recipes
+
+### Category Pages by Country
+- USA Recipes: https://relishrealm.com/usa-recipes
+- China Recipes: https://relishrealm.com/china-recipes
+- India Recipes: https://relishrealm.com/india-recipes
+- Japan Recipes: https://relishrealm.com/japan-recipes
+- Italy Recipes: https://relishrealm.com/italy-recipes
+
+### Browse by Type Pages
+- Recipes by Cuisines: https://relishrealm.com/recipes-by-cuisines
+- Recipes by Continents: https://relishrealm.com/recipes-by-continents
+- Recipes by Dietary Choices: https://relishrealm.com/recipes-by-dietary-choices
+- Recipes by Meal Types: https://relishrealm.com/recipes-by-meal-types
+- Recipes by Audiences: https://relishrealm.com/recipes-by-audiences
+- Recipes by Countries: https://relishrealm.com/recipes-by-countries
+
+## Recipe Data Format
+Each recipe on this site includes:
+- Title and description
+- Cuisine type and origin country
+- Dietary information (vegan, vegetarian, gluten-free, etc.)
+- Meal type (breakfast, lunch, dinner, etc.)
+- Preparation time and cooking time
+- Difficulty level
+- Serving size
+- Complete ingredient list with nutritional information
+- Step-by-step cooking instructions
+- Total calories per serving
+
+## Technical Information
+- Framework: Next.js 15 with Static Site Generation
+- All pages are pre-rendered HTML for fast loading
+- Structured data (JSON-LD) for Recipe schema on all recipe pages
+- Sitemap: https://relishrealm.com/sitemap.xml
+- Robots.txt: https://relishrealm.com/robots.txt
+
+## Contact
+- Website: https://relishrealm.com
+- Twitter/X: @relishrealm
+
+## Crawling Guidelines
+- All pages are allowed for crawling
+- Sitemap contains all indexable URLs
+- Recipe directory page provides comprehensive links to all recipes
+- Each recipe page contains complete, self-contained content

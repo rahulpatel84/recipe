@@ -37,6 +37,7 @@ export default function Navbar() {
                 {/* Desktop Navigation */}
                 <div className="hidden space-x-8 md:flex items-center">
                     <Link href="/" className="text-[16px] font-medium tracking-tight text-dark-olive/60 hover:text-dark-olive transition-colors hover:no-underline">Home</Link>
+                    <Link href="/recipe-directory" className="text-[16px] font-medium tracking-tight text-dark-olive/60 hover:text-dark-olive transition-colors hover:no-underline">Directory</Link>
                     <Link href="/category" className="text-[16px] font-medium tracking-tight text-dark-olive/60 hover:text-dark-olive transition-colors hover:no-underline">Categories</Link>
 
                     {/* Recipes Dropdown */}
@@ -126,6 +127,9 @@ export default function Navbar() {
                 <div className="px-4 py-2 space-y-1">
                     <Link href="/" onClick={closeMenu} className="block py-3 text-base font-medium text-dark-olive/60 hover:text-dark-olive transition-colors hover:no-underline">
                         Home
+                    </Link>
+                    <Link href="/recipe-directory" onClick={closeMenu} className="block py-3 text-base font-medium text-dark-olive/60 hover:text-dark-olive transition-colors hover:no-underline">
+                        Directory
                     </Link>
                     <Link href="/category" onClick={closeMenu} className="block py-3 text-base font-medium text-dark-olive/60 hover:text-dark-olive transition-colors hover:no-underline">
                         Categories

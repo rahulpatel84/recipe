@@ -10,6 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // 1. Static Pages
     const statics = [
         '',
+        '/recipe-directory',
         '/about',
         '/category',
         '/recipes',
