@@ -4,6 +4,7 @@ import { Recipe } from '@/lib/data';
 import Image from 'next/image';
 import Link from 'next/link';
 import RelatedRecipeCard from './RelatedRecipeCard';
+import RecipeStory from './RecipeStory';
 import { useFavorites } from '@/lib/useFavorites';
 import { useState } from 'react';
 
@@ -224,31 +225,6 @@ export default function RecipeDetail({ recipe, relatedRecipes }: RecipeDetailPro
                             </section>
                         )}
 
-                        {/* The Story Section - Editorial Layout */}
-                        {recipe.story && (
-                            <section className="mt-16 border-t border-border-soft pt-12">
-                                <div className="flex flex-col gap-6">
-                                    <div>
-                                        <h2 className="text-xl font-sans font-bold text-dark-olive uppercase tracking-wider">
-                                            The <span className="text-terracotta">Story.</span>
-                                        </h2>
-                                        <p className="mt-2 text-[10px] font-bold uppercase tracking-wider text-dark-olive/30 leading-relaxed">
-                                            Tradition and craftsmanship.
-                                        </p>
-                                    </div>
-                                    <div className="prose prose-stone prose-sm max-w-none">
-                                        {recipe.story.split('\n\n').map((paragraph, pIdx) => (
-                                            <p
-                                                key={pIdx}
-                                                className="text-base text-dark-olive/60 font-sans leading-relaxed mb-6 last:mb-0"
-                                            >
-                                                {paragraph}
-                                            </p>
-                                        ))}
-                                    </div>
-                                </div>
-                            </section>
-                        )}
                     </div>
 
                     {/* Sidebar Column - STICKY */}
@@ -400,6 +376,9 @@ export default function RecipeDetail({ recipe, relatedRecipes }: RecipeDetailPro
                 </div>
             </div>
 
+
+            {/* Recipe Heritage Story Section */}
+            <RecipeStory recipe={recipe} />
 
             {/* Related Recipes Section */}
             {
