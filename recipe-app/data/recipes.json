@@ -2402,5 +2402,899 @@
       "Tastes even better the next day — perfect for meal prep.",
       "Freeze extras in portions for quick future meals."
     ]
+  },
+  {
+    "id": "buddha-bowl-001",
+    "slug": "rainbow-buddha-bowl-recipe",
+    "title": "Rainbow Buddha Bowl",
+    "summary": "A nourishing bowl of grains, roasted vegetables, and creamy tahini dressing — vibrant, satisfying, and completely plant-based.",
+    "description": "This colorful Buddha bowl brings together fluffy quinoa, crispy roasted chickpeas, rainbow vegetables, and a luscious tahini dressing. Every bite delivers different textures and flavors, making healthy eating genuinely exciting.",
+    "image": "/Rainbow-Buddha-Bowl.png",
+    "category": "Bowls",
+    "cuisine": "Global",
+    "continent": "Global",
+    "dietary": [
+      "Vegan",
+      "Gluten Free"
+    ],
+    "mealType": "Lunch/Dinner",
+    "audience": [
+      "Healthy",
+      "Meal Prep",
+      "Fitness"
+    ],
+    "country": "Global",
+    "prepTime": "20 mins",
+    "cookTime": "30 mins",
+    "totalTime": "50 mins",
+    "rating": 4.8,
+    "ratingCount": 0,
+    "reviewCount": 0,
+    "difficulty": "Easy",
+    "servings": 2,
+    "totalCalories": 580,
+    "ingredients": [
+      {
+        "name": "Quinoa",
+        "amount": "1 cup dry",
+        "calories": 220,
+        "protein": "8g",
+        "carbs": "39g",
+        "fat": "4g",
+        "fiber": "5g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Chickpeas",
+        "amount": "1 can (400g), drained",
+        "calories": 240,
+        "protein": "13g",
+        "carbs": "40g",
+        "fat": "4g",
+        "fiber": "12g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Sweet potato",
+        "amount": "1 medium, cubed",
+        "calories": 110,
+        "protein": "2g",
+        "carbs": "26g",
+        "fat": "0g",
+        "fiber": "4g",
+        "sugar": "5g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Red cabbage",
+        "amount": "1 cup, shredded",
+        "calories": 20,
+        "protein": "1g",
+        "carbs": "5g",
+        "fat": "0g",
+        "fiber": "2g",
+        "sugar": "3g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Avocado",
+        "amount": "1 medium",
+        "calories": 160,
+        "protein": "2g",
+        "carbs": "9g",
+        "fat": "15g",
+        "fiber": "7g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Tahini",
+        "amount": "3 tbsp",
+        "calories": 270,
+        "protein": "8g",
+        "carbs": "10g",
+        "fat": "24g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Lemon juice",
+        "amount": "2 tbsp",
+        "calories": 5,
+        "protein": "0g",
+        "carbs": "2g",
+        "fat": "0g",
+        "fiber": "0g",
+        "sugar": "1g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Olive oil",
+        "amount": "2 tbsp",
+        "calories": 240,
+        "protein": "0g",
+        "carbs": "0g",
+        "fat": "28g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      }
+    ],
+    "instructions": [
+      {
+        "step": 1,
+        "title": "Cook the Quinoa",
+        "text": "Rinse your quinoa under cold water to remove any bitter coating. Combine with 2 cups of water in a pot, bring to a boil, then reduce heat to low, cover, and simmer for 15 minutes. Remove from heat and let it steam with the lid on for another 5 minutes. Fluff with a fork and season with a pinch of salt."
+      },
+      {
+        "step": 2,
+        "title": "Roast the Vegetables and Chickpeas",
+        "text": "Preheat your oven to 400 degrees Fahrenheit. Toss the cubed sweet potato with olive oil, salt, and a pinch of cumin on one half of a baking sheet. On the other half, spread the drained chickpeas tossed with olive oil, smoked paprika, and garlic powder. Roast for 25 to 30 minutes until the sweet potato is tender and the chickpeas are crispy, shaking halfway through."
+      },
+      {
+        "step": 3,
+        "title": "Make the Tahini Dressing",
+        "text": "In a small bowl, whisk together the tahini, lemon juice, a minced garlic clove, and cold water until smooth and pourable. Start with 3 tablespoons of water and add more to reach your desired consistency. Season with salt and a pinch of cumin. The dressing should coat the back of a spoon but still drizzle easily."
+      },
+      {
+        "step": 4,
+        "title": "Assemble Your Bowl",
+        "text": "Divide the fluffy quinoa between two bowls. Arrange the roasted sweet potato, crispy chickpeas, shredded red cabbage, and sliced avocado in sections around the quinoa. Drizzle generously with the tahini dressing. Finish with sesame seeds, fresh herbs like cilantro or parsley, and a squeeze of extra lemon if desired. Serve immediately while the roasted elements are still warm."
+      }
+    ],
+    "heritage": {
+      "origin": "Buddha bowls emerged from the health food movement of the 2010s, inspired by the rounded shape resembling Buddha's belly and the Buddhist principle of balance. The concept draws from Korean bibimbap and Japanese donburi traditions of composed rice bowls.",
+      "facts": [
+        "The name 'Buddha bowl' likely comes from the rounded, abundant appearance resembling a happy Buddha's belly.",
+        "Quinoa is a complete protein containing all nine essential amino acids, making it ideal for plant based meals.",
+        "The key to a great Buddha bowl is variety: aim for at least five different colored vegetables for maximum nutrition.",
+        "Roasting chickpeas at high heat creates a crispy exterior while keeping the inside creamy and tender."
+      ],
+      "tradition": "Arrange ingredients in distinct sections rather than mixing, allowing you to taste each component individually or combine them in different ratios. The visual presentation is as important as the flavors."
+    },
+    "extra": [
+      "Swap quinoa for brown rice, farro, or cauliflower rice for variety.",
+      "Add pickled red onion or kimchi for extra tang and probiotics."
+    ]
+  },
+  {
+    "id": "pad-thai-001",
+    "slug": "vegan-pad-thai-recipe",
+    "title": "Vegan Pad Thai",
+    "summary": "Classic Thai street food made plant-based with rice noodles, tofu, and a tangy tamarind sauce — sweet, sour, and utterly addictive.",
+    "description": "This authentic style pad thai features chewy rice noodles, crispy tofu, and a perfect balance of tamarind, palm sugar, and lime. Topped with crushed peanuts and fresh bean sprouts, it delivers all the flavors of Bangkok street stalls without any animal products.",
+    "image": "/Vegan-Pad-Thai.png",
+    "category": "Noodles",
+    "cuisine": "Thai",
+    "continent": "Asia",
+    "dietary": [
+      "Vegan",
+      "Gluten Free Optional"
+    ],
+    "mealType": "Dinner",
+    "audience": [
+      "Couples",
+      "Quick Meals",
+      "Families"
+    ],
+    "country": "Thailand",
+    "prepTime": "20 mins",
+    "cookTime": "15 mins",
+    "totalTime": "35 mins",
+    "rating": 4.9,
+    "ratingCount": 0,
+    "reviewCount": 0,
+    "difficulty": "Medium",
+    "servings": 2,
+    "totalCalories": 620,
+    "ingredients": [
+      {
+        "name": "Rice noodles (pad thai noodles)",
+        "amount": "200g",
+        "calories": 380,
+        "protein": "3g",
+        "carbs": "86g",
+        "fat": "1g",
+        "fiber": "2g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Extra firm tofu",
+        "amount": "200g, pressed and cubed",
+        "calories": 180,
+        "protein": "20g",
+        "carbs": "4g",
+        "fat": "10g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Tamarind paste",
+        "amount": "3 tbsp",
+        "calories": 45,
+        "protein": "0g",
+        "carbs": "12g",
+        "fat": "0g",
+        "fiber": "0g",
+        "sugar": "10g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Palm sugar or brown sugar",
+        "amount": "2 tbsp",
+        "calories": 90,
+        "protein": "0g",
+        "carbs": "24g",
+        "fat": "0g",
+        "fiber": "0g",
+        "sugar": "24g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Soy sauce",
+        "amount": "2 tbsp",
+        "calories": 20,
+        "protein": "2g",
+        "carbs": "2g",
+        "fat": "0g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "1200mg"
+      },
+      {
+        "name": "Bean sprouts",
+        "amount": "1 cup",
+        "calories": 25,
+        "protein": "3g",
+        "carbs": "5g",
+        "fat": "0g",
+        "fiber": "2g",
+        "sugar": "3g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Crushed roasted peanuts",
+        "amount": "1/4 cup",
+        "calories": 160,
+        "protein": "7g",
+        "carbs": "5g",
+        "fat": "14g",
+        "fiber": "2g",
+        "sugar": "1g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Green onions",
+        "amount": "3 stalks",
+        "calories": 10,
+        "protein": "1g",
+        "carbs": "2g",
+        "fat": "0g",
+        "fiber": "1g",
+        "sugar": "1g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Garlic",
+        "amount": "4 cloves",
+        "calories": 15,
+        "protein": "1g",
+        "carbs": "3g",
+        "fat": "0g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Vegetable oil",
+        "amount": "3 tbsp",
+        "calories": 360,
+        "protein": "0g",
+        "carbs": "0g",
+        "fat": "42g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Lime",
+        "amount": "2 wedges per serving",
+        "calories": 5,
+        "protein": "0g",
+        "carbs": "2g",
+        "fat": "0g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      }
+    ],
+    "instructions": [
+      {
+        "step": 1,
+        "title": "Soak the Noodles",
+        "text": "Place the rice noodles in a large bowl and cover with room temperature water. Let them soak for 30 minutes to 1 hour until pliable but not fully soft. They should still have a slight firmness since they will continue cooking in the wok. Drain thoroughly and set aside."
+      },
+      {
+        "step": 2,
+        "title": "Make the Pad Thai Sauce",
+        "text": "In a small bowl, whisk together the tamarind paste, palm sugar, soy sauce, and 2 tablespoons of water until the sugar dissolves completely. Taste and adjust the balance. It should be equally sweet and sour with a savory backbone. Set aside."
+      },
+      {
+        "step": 3,
+        "title": "Fry the Tofu",
+        "text": "Heat half the oil in a wok or large skillet over high heat. Add the pressed and cubed tofu in a single layer. Let it cook undisturbed for 2 minutes until golden on the bottom, then flip and cook another 2 minutes. Remove the crispy tofu to a plate and set aside."
+      },
+      {
+        "step": 4,
+        "title": "Stir Fry Everything Together",
+        "text": "Add the remaining oil to the wok over high heat. Toss in the garlic and stir for 30 seconds until fragrant. Add the drained noodles and pour the sauce over them. Toss vigorously, using tongs to coat everything evenly. Add splashes of water if the noodles stick. Cook for 2 to 3 minutes until the noodles are tender. Return the tofu, add most of the bean sprouts and green onions, and toss to combine."
+      },
+      {
+        "step": 5,
+        "title": "Serve Immediately",
+        "text": "Divide between plates and top with remaining fresh bean sprouts, crushed peanuts, sliced green onions, and a generous wedge of lime. The lime juice squeezed over just before eating is essential. Add dried chili flakes for extra heat if desired. Serve immediately while piping hot."
+      }
+    ],
+    "heritage": {
+      "origin": "Pad thai was created in the 1930s during a national campaign to promote Thai identity and reduce rice consumption. Prime Minister Plaek Phibunsongkhram promoted rice noodles as a patriotic alternative, and pad thai became the national dish of Thailand.",
+      "facts": [
+        "The dish was originally created as a government initiative to reduce rice consumption and promote national unity in Thailand.",
+        "Traditional pad thai gets its tangy flavor from tamarind paste, not ketchup or tomato sauce as some Western versions use.",
+        "Pressing tofu removes excess water and allows it to develop a crispy exterior when fried at high heat.",
+        "The wok must be extremely hot for proper pad thai. The high heat creates 'wok hei', the smoky breath of the wok."
+      ],
+      "tradition": "Authentic pad thai is always served with fresh lime wedges, bean sprouts, and crushed peanuts on the side. The diner customizes each bite by squeezing lime and adding fresh elements as they eat."
+    },
+    "extra": [
+      "Use tamari instead of soy sauce for a gluten free version.",
+      "Add pressed, crumbled dried tofu for a more authentic protein option."
+    ]
+  },
+  {
+    "id": "black-bean-tacos-001",
+    "slug": "spiced-black-bean-tacos-recipe",
+    "title": "Spiced Black Bean Tacos",
+    "summary": "Hearty, smoky black beans with fresh toppings in warm corn tortillas — satisfying Mexican-inspired tacos that happen to be completely vegan.",
+    "description": "These flavor-packed tacos feature cumin-spiced black beans, creamy avocado, tangy lime crema, and crunchy pickled onions. Quick enough for weeknight dinners yet impressive enough for entertaining, they prove vegan tacos can be just as satisfying as any meat version.",
+    "image": "/Spiced-Black-Bean-Tacos.png",
+    "category": "Tacos",
+    "cuisine": "Mexican",
+    "continent": "America",
+    "dietary": [
+      "Vegan",
+      "Gluten Free"
+    ],
+    "mealType": "Dinner",
+    "audience": [
+      "Families",
+      "Quick Meals",
+      "Entertaining"
+    ],
+    "country": "Mexico",
+    "prepTime": "15 mins",
+    "cookTime": "15 mins",
+    "totalTime": "30 mins",
+    "rating": 4.8,
+    "ratingCount": 0,
+    "reviewCount": 0,
+    "difficulty": "Easy",
+    "servings": 4,
+    "totalCalories": 420,
+    "ingredients": [
+      {
+        "name": "Black beans",
+        "amount": "2 cans (400g each), drained",
+        "calories": 440,
+        "protein": "28g",
+        "carbs": "80g",
+        "fat": "2g",
+        "fiber": "28g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Corn tortillas",
+        "amount": "8 small",
+        "calories": 420,
+        "protein": "10g",
+        "carbs": "88g",
+        "fat": "5g",
+        "fiber": "10g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Avocado",
+        "amount": "2 medium",
+        "calories": 320,
+        "protein": "4g",
+        "carbs": "18g",
+        "fat": "30g",
+        "fiber": "14g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Red onion",
+        "amount": "1 medium",
+        "calories": 40,
+        "protein": "1g",
+        "carbs": "10g",
+        "fat": "0g",
+        "fiber": "2g",
+        "sugar": "4g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Lime",
+        "amount": "3",
+        "calories": 20,
+        "protein": "1g",
+        "carbs": "7g",
+        "fat": "0g",
+        "fiber": "2g",
+        "sugar": "2g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Cumin",
+        "amount": "1 tbsp",
+        "calories": 20,
+        "protein": "1g",
+        "carbs": "3g",
+        "fat": "1g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Smoked paprika",
+        "amount": "1 tsp",
+        "calories": 5,
+        "protein": "0g",
+        "carbs": "1g",
+        "fat": "0g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Garlic",
+        "amount": "3 cloves",
+        "calories": 10,
+        "protein": "0g",
+        "carbs": "2g",
+        "fat": "0g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Fresh cilantro",
+        "amount": "1/2 cup chopped",
+        "calories": 5,
+        "protein": "0g",
+        "carbs": "1g",
+        "fat": "0g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Cashew cream or vegan sour cream",
+        "amount": "1/2 cup",
+        "calories": 200,
+        "protein": "5g",
+        "carbs": "10g",
+        "fat": "16g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      }
+    ],
+    "instructions": [
+      {
+        "step": 1,
+        "title": "Quick Pickle the Onions",
+        "text": "Thinly slice the red onion and place in a small bowl. Add the juice of one lime, a pinch of salt, and a pinch of sugar. Toss and let sit while you prepare everything else. These quick pickled onions add crucial brightness and crunch to the tacos."
+      },
+      {
+        "step": 2,
+        "title": "Cook the Spiced Black Beans",
+        "text": "Heat a tablespoon of oil in a skillet over medium heat. Add minced garlic and cook for 30 seconds until fragrant. Add the drained black beans, cumin, smoked paprika, a pinch of cayenne, salt, and the juice of half a lime. Mash about half the beans with a fork while stirring, leaving some whole for texture. Cook for 8 to 10 minutes until thick and flavorful. Add splashes of water if too dry."
+      },
+      {
+        "step": 3,
+        "title": "Make the Lime Crema",
+        "text": "Mix the cashew cream or vegan sour cream with the juice of half a lime and a pinch of salt. Thin with a splash of water if needed for drizzling consistency. This creamy, tangy sauce ties all the flavors together."
+      },
+      {
+        "step": 4,
+        "title": "Warm the Tortillas",
+        "text": "Heat a dry skillet or griddle over medium high heat. Warm each tortilla for about 30 seconds per side until soft and pliable with a few charred spots. Stack them in a clean kitchen towel to keep warm. Double up the tortillas if they are thin."
+      },
+      {
+        "step": 5,
+        "title": "Assemble and Serve",
+        "text": "Spoon the warm black beans onto each tortilla. Top with sliced avocado, the drained pickled red onions, a drizzle of lime crema, and fresh cilantro. Serve with extra lime wedges on the side. For extra heat, add sliced fresh jalapenos or your favorite hot sauce."
+      }
+    ],
+    "heritage": {
+      "origin": "Black beans have been cultivated in Mexico and Central America for over 7,000 years, predating the arrival of Europeans. Tacos themselves date back to 18th century Mexican silver mines, and the combination of beans and corn tortillas represents one of the most nutritionally complete plant based meals in food history.",
+      "facts": [
+        "The combination of beans and corn creates a complete protein, providing all essential amino acids the body needs.",
+        "Black beans contain anthocyanins, the same antioxidants found in blueberries, which give them their dark color.",
+        "Authentic Mexican street tacos always use soft corn tortillas, never hard shells, which are an American invention.",
+        "Quick pickling onions for just 10 to 15 minutes mellows their sharp bite while adding bright acidity."
+      ],
+      "tradition": "Stack two small tortillas together for structural integrity, as traditional taqueros do. Top with simple, fresh ingredients and squeeze lime generously over everything just before eating."
+    },
+    "extra": [
+      "Add crumbled vegan chorizo for extra protein and spice.",
+      "Make it a bowl by serving over cilantro lime rice instead of tortillas."
+    ]
+  },
+  {
+    "id": "coconut-curry-001",
+    "slug": "thai-coconut-vegetable-curry-recipe",
+    "title": "Thai Coconut Vegetable Curry",
+    "summary": "A rich, aromatic curry with vegetables simmered in creamy coconut milk and fragrant Thai spices — warming, comforting, and deeply satisfying.",
+    "description": "This gorgeous golden curry features tender vegetables swimming in a luscious coconut sauce infused with lemongrass, galangal, and Thai basil. It comes together in under 30 minutes and delivers restaurant-quality flavors that will make your kitchen smell incredible.",
+    "image": "/Thai-Coconut-Vegetable-Curry.png",
+    "category": "Curry",
+    "cuisine": "Thai",
+    "continent": "Asia",
+    "dietary": [
+      "Vegan",
+      "Gluten Free"
+    ],
+    "mealType": "Dinner",
+    "audience": [
+      "Families",
+      "Healthy",
+      "Entertaining"
+    ],
+    "country": "Thailand",
+    "prepTime": "15 mins",
+    "cookTime": "20 mins",
+    "totalTime": "35 mins",
+    "rating": 4.9,
+    "ratingCount": 0,
+    "reviewCount": 0,
+    "difficulty": "Easy",
+    "servings": 4,
+    "totalCalories": 480,
+    "ingredients": [
+      {
+        "name": "Coconut milk",
+        "amount": "2 cans (400ml each)",
+        "calories": 800,
+        "protein": "8g",
+        "carbs": "16g",
+        "fat": "80g",
+        "fiber": "0g",
+        "sugar": "8g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Yellow curry paste",
+        "amount": "3 tbsp",
+        "calories": 45,
+        "protein": "1g",
+        "carbs": "6g",
+        "fat": "2g",
+        "fiber": "0g",
+        "sugar": "2g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Extra firm tofu",
+        "amount": "300g, cubed",
+        "calories": 270,
+        "protein": "30g",
+        "carbs": "6g",
+        "fat": "15g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Broccoli florets",
+        "amount": "2 cups",
+        "calories": 60,
+        "protein": "5g",
+        "carbs": "12g",
+        "fat": "1g",
+        "fiber": "4g",
+        "sugar": "3g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Bell peppers",
+        "amount": "2, sliced",
+        "calories": 60,
+        "protein": "2g",
+        "carbs": "14g",
+        "fat": "0g",
+        "fiber": "4g",
+        "sugar": "8g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Bamboo shoots",
+        "amount": "1 can (220g), drained",
+        "calories": 25,
+        "protein": "2g",
+        "carbs": "4g",
+        "fat": "0g",
+        "fiber": "2g",
+        "sugar": "2g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Thai basil",
+        "amount": "1 cup leaves",
+        "calories": 5,
+        "protein": "0g",
+        "carbs": "1g",
+        "fat": "0g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Vegetable oil",
+        "amount": "2 tbsp",
+        "calories": 240,
+        "protein": "0g",
+        "carbs": "0g",
+        "fat": "28g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Soy sauce",
+        "amount": "2 tbsp",
+        "calories": 20,
+        "protein": "2g",
+        "carbs": "2g",
+        "fat": "0g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "1200mg"
+      },
+      {
+        "name": "Brown sugar",
+        "amount": "1 tbsp",
+        "calories": 45,
+        "protein": "0g",
+        "carbs": "12g",
+        "fat": "0g",
+        "fiber": "0g",
+        "sugar": "12g",
+        "sodium": "0mg"
+      }
+    ],
+    "instructions": [
+      {
+        "step": 1,
+        "title": "Bloom the Curry Paste",
+        "text": "Open one can of coconut milk and scoop the thick cream from the top into a wok or large pan over medium heat. Add the curry paste and fry for 2 to 3 minutes, stirring constantly, until fragrant and the oil starts to separate. This step, called cracking the coconut milk, intensifies the curry paste flavor dramatically."
+      },
+      {
+        "step": 2,
+        "title": "Add the Tofu and Sear",
+        "text": "Add the cubed tofu to the fragrant curry paste and toss to coat. Let it cook for 3 to 4 minutes, stirring occasionally, until the tofu starts to pick up some color and absorb the curry flavors."
+      },
+      {
+        "step": 3,
+        "title": "Build the Curry",
+        "text": "Pour in the rest of the coconut milk from both cans. Add the soy sauce and brown sugar, stirring to combine. Bring to a gentle simmer. Add the broccoli, bell peppers, and bamboo shoots. Let everything simmer for 8 to 10 minutes until the vegetables are tender but still have some bite."
+      },
+      {
+        "step": 4,
+        "title": "Finish and Serve",
+        "text": "Taste and adjust the seasoning. You want a balance of salty, sweet, and spicy. Remove from heat and stir in the fresh Thai basil leaves just before serving. The residual heat will wilt them perfectly. Serve over steaming jasmine rice with extra Thai basil and sliced red chilies on top if you like heat."
+      }
+    ],
+    "heritage": {
+      "origin": "Thai curries evolved from Indian curry traditions that arrived via traders and Buddhist monks centuries ago. Thai cooks adapted these recipes with local ingredients like coconut milk, lemongrass, galangal, and kaffir lime, creating a distinctly Thai cuisine that differs significantly from Indian curries.",
+      "facts": [
+        "Cracking coconut milk, frying curry paste in the thick cream, is essential for developing deep flavor. Never skip this step.",
+        "Yellow curry paste is milder than red or green, getting its color from turmeric rather than chilies.",
+        "Thai basil has an anise-like flavor quite different from Italian basil. It can handle heat without turning black.",
+        "Canned coconut milk works perfectly for curry. Look for brands without stabilizers for the best separation of cream and water."
+      ],
+      "tradition": "Add Thai basil at the very end, off the heat, to preserve its bright anise flavor and prevent the leaves from turning dark. Serve over jasmine rice, which is traditional in Thailand."
+    },
+    "extra": [
+      "Add a splash of lime juice at the end for extra brightness.",
+      "Include Thai eggplant or baby corn for more authentic vegetables."
+    ]
+  },
+  {
+    "id": "falafel-plate-001",
+    "slug": "mediterranean-falafel-plate-recipe",
+    "title": "Mediterranean Falafel Plate",
+    "summary": "Crispy, herb-packed falafel with creamy hummus, fresh salads, and warm pita — a complete Middle Eastern feast that is naturally vegan.",
+    "description": "These golden falafel are crispy on the outside, fluffy and green with herbs on the inside. Served with silky hummus, bright tabbouleh, pickled vegetables, and warm pita bread, this plate delivers the full mezze experience at home.",
+    "image": "/Mediterranean-Falafel-Plate.png",
+    "category": "Middle Eastern",
+    "cuisine": "Middle Eastern",
+    "continent": "Asia",
+    "dietary": [
+      "Vegan",
+      "High Protein"
+    ],
+    "mealType": "Lunch/Dinner",
+    "audience": [
+      "Entertaining",
+      "Healthy",
+      "Meal Prep"
+    ],
+    "country": "Global",
+    "prepTime": "30 mins",
+    "cookTime": "20 mins",
+    "totalTime": "50 mins",
+    "rating": 4.9,
+    "ratingCount": 0,
+    "reviewCount": 0,
+    "difficulty": "Medium",
+    "servings": 4,
+    "totalCalories": 650,
+    "ingredients": [
+      {
+        "name": "Dried chickpeas",
+        "amount": "2 cups (soaked overnight)",
+        "calories": 560,
+        "protein": "30g",
+        "carbs": "90g",
+        "fat": "10g",
+        "fiber": "20g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Fresh parsley",
+        "amount": "1 cup packed",
+        "calories": 20,
+        "protein": "2g",
+        "carbs": "3g",
+        "fat": "0g",
+        "fiber": "2g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Fresh cilantro",
+        "amount": "1/2 cup packed",
+        "calories": 5,
+        "protein": "0g",
+        "carbs": "1g",
+        "fat": "0g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Garlic",
+        "amount": "5 cloves",
+        "calories": 20,
+        "protein": "1g",
+        "carbs": "5g",
+        "fat": "0g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Cumin",
+        "amount": "2 tsp",
+        "calories": 15,
+        "protein": "1g",
+        "carbs": "2g",
+        "fat": "1g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Coriander",
+        "amount": "1 tsp",
+        "calories": 5,
+        "protein": "0g",
+        "carbs": "1g",
+        "fat": "0g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Baking powder",
+        "amount": "1 tsp",
+        "calories": 5,
+        "protein": "0g",
+        "carbs": "1g",
+        "fat": "0g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Hummus",
+        "amount": "1 cup prepared",
+        "calories": 400,
+        "protein": "12g",
+        "carbs": "36g",
+        "fat": "24g",
+        "fiber": "8g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Pita bread",
+        "amount": "4 rounds",
+        "calories": 680,
+        "protein": "24g",
+        "carbs": "136g",
+        "fat": "4g",
+        "fiber": "8g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      },
+      {
+        "name": "Vegetable oil for frying",
+        "amount": "2 cups",
+        "calories": 480,
+        "protein": "0g",
+        "carbs": "0g",
+        "fat": "56g",
+        "fiber": "0g",
+        "sugar": "0g",
+        "sodium": "0mg"
+      }
+    ],
+    "instructions": [
+      {
+        "step": 1,
+        "title": "Process the Falafel Mixture",
+        "text": "Drain the soaked chickpeas thoroughly. Never use canned chickpeas for falafel as they are too soft and will fall apart when fried. Add the soaked chickpeas to a food processor along with the parsley, cilantro, garlic, cumin, coriander, salt, pepper, and a pinch of cayenne. Pulse until you have a coarse mixture that holds together when pressed but is not a smooth paste. This takes about 20 to 30 pulses."
+      },
+      {
+        "step": 2,
+        "title": "Shape the Falafel",
+        "text": "Transfer the mixture to a bowl and refrigerate for at least 30 minutes or up to overnight. When ready to fry, stir in the baking powder. Using wet hands or a falafel scoop, form the mixture into small patties about 1.5 inches wide and slightly flattened. The baking powder helps them puff up and become fluffy inside."
+      },
+      {
+        "step": 3,
+        "title": "Fry Until Golden",
+        "text": "Heat about 2 inches of oil in a deep pan to 350 degrees Fahrenheit. Test with a small piece of mixture first. It should sizzle and float immediately. Fry the falafel in batches, being careful not to crowd the pan, for 3 to 4 minutes per batch until deeply golden brown all over. Remove with a slotted spoon and drain on paper towels."
+      },
+      {
+        "step": 4,
+        "title": "Assemble the Plate",
+        "text": "Spread a generous swoosh of hummus on each plate. Arrange the hot falafel on top. Add your favorite accompaniments: fresh cucumber and tomato salad, pickled turnips or vegetables, olives, and warm pita bread. Drizzle tahini sauce over everything. Finish with a sprinkle of sumac and fresh herbs."
+      }
+    ],
+    "heritage": {
+      "origin": "Falafel's origins are disputed between Egypt, where it may have been invented by Coptic Christians as a meat substitute during Lent, and the Levant where it has been a street food staple for centuries. The Egyptian version uses fava beans while the Levantine version uses chickpeas.",
+      "facts": [
+        "Never use canned chickpeas for falafel. They are pre-cooked and too soft. Only dried chickpeas soaked overnight produce the right texture.",
+        "The bright green color inside properly made falafel comes from generous amounts of fresh parsley and cilantro.",
+        "Baking powder added just before frying creates tiny air pockets that make falafel fluffy inside rather than dense.",
+        "Falafel should rest in the refrigerator before frying. This allows the mixture to firm up and bind together better."
+      ],
+      "tradition": "In the Middle East, falafel is eaten as a quick street food wrapped in pita with vegetables and tahini, or as part of a larger mezze spread with multiple small dishes. Always serve immediately while crispy."
+    },
+    "extra": [
+      "Bake at 375°F for 20 minutes, flipping halfway, for a lighter version.",
+      "The mixture keeps refrigerated for 3 days or frozen for 1 month."
+    ]
   }
 ]
