@@ -7,9 +7,9 @@ interface RecipeStoryProps {
 }
 
 export default function RecipeStory({ recipe }: RecipeStoryProps) {
-    if (!recipe.story) return null;
+    if (!recipe.heritage) return null;
 
-    const paragraphs = recipe.story.split('\n\n').filter(p => p.trim());
+    const { origin, facts, tradition } = recipe.heritage;
 
     return (
         <section className="mt-20 border-t border-border-soft pt-16">
@@ -25,21 +25,47 @@ export default function RecipeStory({ recipe }: RecipeStoryProps) {
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
                 {/* Main Story Content */}
-                <div className="lg:col-span-9">
-                    <div className="space-y-6">
-                        {paragraphs.map((paragraph, idx) => (
-                            <p
-                                key={idx}
-                                className="text-lg text-dark-olive/70 font-sans leading-relaxed"
-                            >
-                                {idx === 0 && (
-                                    <span className="float-left text-5xl font-serif font-bold text-terracotta mr-3 mt-1 leading-none">
-                                        {paragraph.charAt(0)}
+                <div className="lg:col-span-9 space-y-8">
+                    {/* Origin Section */}
+                    <div>
+                        <h3 className="text-sm font-bold uppercase tracking-widest text-terracotta mb-3">
+                            Origin Story
+                        </h3>
+                        <p className="text-lg text-dark-olive/70 font-sans leading-relaxed">
+                            <span className="float-left text-5xl font-serif font-bold text-terracotta mr-3 mt-1 leading-none">
+                                {origin.charAt(0)}
+                            </span>
+                            {origin.slice(1)}
+                        </p>
+                    </div>
+
+                    {/* Facts Section */}
+                    <div className="bg-sand/5 border border-sand/20 rounded-xl p-6">
+                        <h3 className="text-sm font-bold uppercase tracking-widest text-dark-olive mb-4">
+                            Did You Know?
+                        </h3>
+                        <ul className="space-y-3">
+                            {facts.map((fact, idx) => (
+                                <li key={idx} className="flex items-start gap-3">
+                                    <span className="flex-shrink-0 w-6 h-6 rounded-full bg-terracotta/10 text-terracotta text-xs font-bold flex items-center justify-center mt-0.5">
+                                        {idx + 1}
                                     </span>
-                                )}
-                                {idx === 0 ? paragraph.slice(1) : paragraph}
-                            </p>
-                        ))}
+                                    <span className="text-dark-olive/70 font-sans leading-relaxed">
+                                        {fact}
+                                    </span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+
+                    {/* Tradition Section */}
+                    <div className="border-l-4 border-sage pl-6">
+                        <h3 className="text-sm font-bold uppercase tracking-widest text-sage mb-3">
+                            Serving Tradition
+                        </h3>
+                        <p className="text-dark-olive/70 font-sans leading-relaxed italic">
+                            {tradition}
+                        </p>
                     </div>
                 </div>
 

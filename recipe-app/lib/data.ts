@@ -17,6 +17,12 @@ export interface Ingredient {
   potassium?: string;
 }
 
+export interface RecipeHeritage {
+  origin: string;
+  facts: string[];
+  tradition: string;
+}
+
 export interface Recipe {
   id: string;
   slug: string;
@@ -43,6 +49,7 @@ export interface Recipe {
   totalCalories: number;
   instructions: { step: number; title: string; text: string; detailed?: string }[];
   story?: string;
+  heritage?: RecipeHeritage;
   extra?: string[];
 }
 
