@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
     return (
-        <main className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 bg-white min-h-screen">
+        <main className="mx-auto max-w-[1180px] px-4 py-16 sm:px-6 bg-white min-h-screen">
             {/* Story Header */}
             <header className="mb-20 text-center max-w-4xl mx-auto">
                 <span className="text-xs font-bold uppercase tracking-[0.2em] text-terracotta mb-6 block">Our Kitchen Story</span>

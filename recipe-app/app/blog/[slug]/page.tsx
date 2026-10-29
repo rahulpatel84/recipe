@@ -96,7 +96,7 @@ export default async function BlogPostPage({ params }: Props) {
           </div>
 
           <div className="absolute bottom-0 left-0 right-0">
-            <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 pb-10 sm:pb-16">
+            <div className="max-w-[1180px] mx-auto px-4 sm:px-6 pb-10 sm:pb-16">
               <div className="max-w-4xl">
                 {/* Breadcrumbs */}
                 <nav className="flex items-center gap-2 text-sm text-white/70 mb-4">
@@ -157,7 +157,7 @@ export default async function BlogPostPage({ params }: Props) {
         </header>
 
         {/* Content Section */}
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+        <div className="max-w-[1180px] mx-auto px-4 sm:px-6 py-12 sm:py-16">
           <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
             {/* Main Content */}
             <div className="lg:col-span-2">

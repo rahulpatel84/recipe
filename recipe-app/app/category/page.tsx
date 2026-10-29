@@ -30,7 +30,7 @@ export default function CategoryPage() {
     }));
 
     return (
-        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-[1180px] px-4 py-16 sm:px-6">
             <div className="text-center mb-16">
                 <h1 className="text-4xl font-sans font-bold text-dark-olive tracking-tight">Browse Taxonomy</h1>
                 <p className="mt-4 text-sm text-dark-olive/40 font-sans uppercase tracking-wider">Structured categorization of all culinary data</p>

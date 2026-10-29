@@ -57,7 +57,7 @@ export default async function BlogCategoryPage({ params }: Props) {
     <div className="min-h-screen bg-cream">
       {/* Header Section */}
       <section className="bg-white border-b border-line">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+        <div className="max-w-[1180px] mx-auto px-4 sm:px-6 py-8 sm:py-12">
           {/* Breadcrumbs */}
           <nav className="flex items-center gap-2 text-sm text-muted mb-6">
             <Link href="/" className="hover:text-ink transition-colors">Home</Link>
@@ -78,7 +78,7 @@ export default async function BlogCategoryPage({ params }: Props) {
 
       {/* Categories Bar */}
       <section className="bg-cream/50">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1180px] mx-auto px-4 sm:px-6">
           <div className="flex items-center justify-center gap-2 py-3 overflow-x-auto scrollbar-hide">
             <Link
               href="/blog"
@@ -104,7 +104,7 @@ export default async function BlogCategoryPage({ params }: Props) {
       </section>
 
       {/* Content */}
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+      <div className="max-w-[1180px] mx-auto px-4 sm:px-6 py-12 sm:py-16">
         <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
           {/* Posts Grid */}
           <div className="lg:col-span-2">

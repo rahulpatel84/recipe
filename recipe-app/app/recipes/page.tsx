@@ -53,7 +53,7 @@ export default function RecipesPage() {
     ];
 
     return (
-        <main className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 bg-white min-h-screen">
+        <main className="mx-auto max-w-[1180px] px-4 py-16 sm:px-6 bg-white min-h-screen">
             <header className="mb-24 flex flex-col md:flex-row md:items-end justify-between gap-8 border-b border-border-soft pb-12">
                 <div className="max-w-2xl">
                     <h1 className="text-4xl md:text-5xl font-sans font-bold text-dark-olive leading-tight tracking-tight">
