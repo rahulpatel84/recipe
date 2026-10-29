@@ -1,11 +1,12 @@
 'use client';
 
-import { Recipe } from '@/lib/data';
+import { hasRating, KitchenNotes, Recipe } from '@/lib/data';
 import Image from 'next/image';
 import Link from 'next/link';
 import RelatedRecipeCard from './RelatedRecipeCard';
 import RecipeStory from './RecipeStory';
 import Pip from '@/components/Pip';
+import { getPostBySlug } from '@/lib/blog';
 import { useFavorites } from '@/lib/useFavorites';
 import { useEffect, useState } from 'react';
 
@@ -87,20 +88,33 @@ export default function RecipeDetail({ recipe, relatedRecipes }: RecipeDetailPro
                     <h1 className="mb-4 mt-2.5 font-serif text-[clamp(2.4rem,5vw,3.8rem)] leading-[1.04]">{recipe.title}</h1>
 
                     <div className="mb-4 flex flex-wrap items-center gap-2.5 text-[0.92rem] text-muted">
-                        <span className="tracking-[2px] text-mustard">{'★'.repeat(Math.round(recipe.rating))}</span>
-                        <b className="font-semibold text-ink">{recipe.rating}</b>
-                        {recipe.ratingCount ? <span>· {recipe.ratingCount} ratings</span> : null}
-                        <span>· {recipe.difficulty}</span>
+                        {hasRating(recipe) ? (
+                            <>
+                                <span className="tracking-[2px] text-mustard">{'★'.repeat(Math.round(recipe.rating))}</span>
+                                <b className="font-semibold text-ink">{recipe.rating}</b>
+                                <span>from {recipe.ratingCount} ratings</span>
+                                <span>· {recipe.difficulty}</span>
+                            </>
+                        ) : (
+                            <>
+                                <span>{recipe.difficulty}</span>
+                                <span>· serves {recipe.servings}</span>
+                                <span>· {recipe.mealType}</span>
+                            </>
+                        )}
                     </div>
 
                     <p className="max-w-[520px] text-[1.1rem] text-ink/75">{recipe.summary || recipe.description}</p>
 
-                    <div className="my-6 flex items-center gap-3 text-[0.9rem]">
-                        <span className="grid h-10 w-10 place-items-center rounded-full bg-mustard font-semibold">RR</span>
-                        <div>
-                            <b className="font-semibold">Relish Realm test kitchen</b><br />
-                            <span className="text-muted">Tested 3× · {recipe.servings} servings</span>
-                        </div>
+                    {recipe.intro && (
+                        <p className="mt-4 max-w-[520px] border-l-[3px] border-mustard pl-4 text-[1.02rem] text-ink/80">
+                            {recipe.intro}
+                        </p>
+                    )}
+
+                    <div className="my-6 text-[0.9rem] text-muted">
+                        {recipe.dietary.includes('Vegan') ? 'Fully plant based' : 'Contains animal products'}
+                        {recipe.country ? ` · ${recipe.country}` : ''}
                     </div>
 
                     <div className="flex flex-wrap gap-2.5">
@@ -117,9 +131,11 @@ export default function RecipeDetail({ recipe, relatedRecipes }: RecipeDetailPro
                     <div className="relative aspect-[5/4] overflow-hidden rounded-[28px] bg-mustard-soft">
                         <Image src={recipe.image} alt={recipe.title} fill priority sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
                     </div>
-                    <div className="absolute right-5 top-5 grid h-24 w-24 rotate-[10deg] place-items-center rounded-full border-2 border-dashed border-white bg-tomato text-center font-hand text-[1.2rem] leading-none text-white outline outline-[6px] outline-tomato">
-                        kitchen<br />tested!
-                    </div>
+                    {recipe.dietary.includes('Vegan') && (
+                        <div className="absolute right-5 top-5 grid h-24 w-24 rotate-[10deg] place-items-center rounded-full border-2 border-dashed border-white bg-pickle text-center font-hand text-[1.2rem] leading-none text-white outline outline-[6px] outline-pickle">
+                            plants<br />only
+                        </div>
+                    )}
                 </div>
             </div>
 
@@ -220,14 +236,23 @@ export default function RecipeDetail({ recipe, relatedRecipes }: RecipeDetailPro
                             })}
                         </div>
 
-                        {/* Pip's tip */}
-                        <div className="my-7 flex items-center gap-5 rounded-[22px] bg-pickle-soft px-6 py-5">
+                        {/* How you know it worked */}
+                        <div className="my-7 flex items-start gap-5 rounded-[22px] bg-pickle-soft px-6 py-5">
                             <Pip className="w-[62px] shrink-0" />
                             <div>
-                                <span className="hand text-[1.3rem]">Pip&rsquo;s tip</span>
-                                <p className="text-[0.95rem]">Read the method through once before you start, and get everything measured out — it turns a rushed dinner into a calm one.</p>
+                                <span className="hand text-[1.3rem]">how you know it worked</span>
+                                <p className="text-[0.95rem]">
+                                    {recipe.notes
+                                        ? recipe.notes.looksRight
+                                        : 'Read the method through once before you start and get everything measured out. It turns a rushed dinner into a calm one.'}
+                                </p>
                             </div>
                         </div>
+
+                        {recipe.notes && <KitchenNotesSection notes={recipe.notes} />}
+                        {recipe.relatedReading && recipe.relatedReading.length > 0 && (
+                            <ReadingSection slugs={recipe.relatedReading} />
+                        )}
 
 
                         {/* Extra Section - Conditional */}
@@ -430,5 +455,73 @@ export default function RecipeDetail({ recipe, relatedRecipes }: RecipeDetailPro
                 )
             }
         </div>
+    );
+}
+
+/** The part of a recipe you only get from having cooked it. */
+function KitchenNotesSection({ notes }: { notes: KitchenNotes }) {
+    return (
+        <section className="mt-12 border-t border-line pt-10">
+            <span className="hand">from cooking it more than once</span>
+            <h2 className="mb-6 font-serif text-[1.7rem]">Cook&rsquo;s notes</h2>
+
+            <h3 className="mb-3 font-sans text-[0.75rem] font-semibold uppercase tracking-[0.14em] text-muted">If it goes wrong</h3>
+            <div className="mb-8">
+                {notes.goesWrong.map(item => (
+                    <details key={item.problem} className="dashed-row py-3 last:border-0">
+                        <summary className="cursor-pointer list-none font-semibold text-ink marker:hidden">
+                            <span className="mr-2 text-tomato">?</span>{item.problem}
+                        </summary>
+                        <p className="mt-2 pl-5 text-ink/75">{item.fix}</p>
+                    </details>
+                ))}
+            </div>
+
+            <div className="grid gap-6 sm:grid-cols-2">
+                <div className="rounded-[22px] bg-cream p-6">
+                    <h3 className="mb-3 font-sans text-[0.75rem] font-semibold uppercase tracking-[0.14em] text-muted">Swaps that work</h3>
+                    <ul>
+                        {notes.swaps.map(swap => (
+                            <li key={swap.from} className="dashed-row py-2.5 text-[0.95rem] last:border-0">
+                                <b className="font-semibold">{swap.from}</b>
+                                <span className="block text-ink/75">{swap.to}</span>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+
+                <div className="rounded-[22px] bg-mustard-soft p-6">
+                    <h3 className="mb-3 font-sans text-[0.75rem] font-semibold uppercase tracking-[0.14em] text-muted">Leftovers and getting ahead</h3>
+                    <p className="text-[0.95rem] text-ink/80">{notes.leftovers}</p>
+                    {notes.makeAhead && <p className="mt-3 text-[0.95rem] text-ink/80">{notes.makeAhead}</p>}
+                </div>
+            </div>
+        </section>
+    );
+}
+
+/** Links through to the journal pieces that give the dish its context. */
+function ReadingSection({ slugs }: { slugs: string[] }) {
+    const posts = slugs.map(slug => getPostBySlug(slug)).filter(Boolean);
+    if (posts.length === 0) return null;
+
+    return (
+        <section className="mt-12 border-t border-line pt-10">
+            <span className="hand">where this dish comes from</span>
+            <h2 className="mb-5 font-serif text-[1.7rem]">Keep reading</h2>
+            <div className="grid gap-4 sm:grid-cols-2">
+                {posts.map(post => (
+                    <Link
+                        key={post!.slug}
+                        href={`/blog/${post!.slug}`}
+                        className="flex flex-col gap-2 rounded-card border border-line p-5 transition hover:border-ink hover:shadow-[4px_4px_0_var(--color-ink)] hover:no-underline"
+                    >
+                        <span className="eyebrow">{post!.category.replace(/-/g, ' ')}</span>
+                        <h3 className="font-serif text-[1.15rem] leading-snug">{post!.title}</h3>
+                        <p className="text-[0.9rem] text-muted">{post!.readTime}</p>
+                    </Link>
+                ))}
+            </div>
+        </section>
     );
 }

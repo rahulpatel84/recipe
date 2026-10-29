@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { Recipe } from '@/lib/data';
+import { hasRating, Recipe } from '@/lib/data';
 import { useFavorites } from '@/lib/useFavorites';
 
 interface RecipeCardProps {
@@ -46,9 +46,10 @@ export default function RecipeCard({ recipe, ratio = 'portrait' }: RecipeCardPro
                 <h3 className="mb-1 mt-3.5 font-serif text-[1.2rem] leading-[1.25] text-ink transition group-hover:text-tomato">{recipe.title}</h3>
             </Link>
             <div className="flex flex-wrap gap-x-3 text-[0.83rem] text-muted">
-                <span><b className="font-semibold text-ink">★ {recipe.rating}</b>{recipe.ratingCount ? ` (${recipe.ratingCount})` : ''}</span>
+                {hasRating(recipe) && <span><b className="font-semibold text-ink">★ {recipe.rating}</b> ({recipe.ratingCount})</span>}
                 <span>{recipe.totalTime || recipe.prepTime}</span>
                 <span>{recipe.difficulty}</span>
+                {recipe.notes && <span className="text-pickle">Cook&rsquo;s notes</span>}
             </div>
         </article>
     );

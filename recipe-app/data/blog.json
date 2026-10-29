@@ -13,7 +13,14 @@
     "readTime": "12 min read",
     "featured": true,
     "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&h=600&fit=crop",
-    "tags": ["statistics", "research", "home-cooking", "trends", "2026", "cooking-habits"],
+    "tags": [
+      "statistics",
+      "research",
+      "home-cooking",
+      "trends",
+      "2026",
+      "cooking-habits"
+    ],
     "content": [
       {
         "type": "paragraph",
@@ -65,10 +72,26 @@
         "subtitle": "Millennials lead in cooking frequency, while Gen Z cooks fewer days per week",
         "valueLabel": "days/week",
         "chartData": [
-          { "name": "Gen Z", "value": 5.9, "color": "#8b5cf6" },
-          { "name": "Millennials", "value": 6.7, "color": "#3b82f6" },
-          { "name": "Gen X", "value": 6.2, "color": "#10b981" },
-          { "name": "Boomers", "value": 6.4, "color": "#f59e0b" }
+          {
+            "name": "Gen Z",
+            "value": 5.9,
+            "color": "#8b5cf6"
+          },
+          {
+            "name": "Millennials",
+            "value": 6.7,
+            "color": "#3b82f6"
+          },
+          {
+            "name": "Gen X",
+            "value": 6.2,
+            "color": "#10b981"
+          },
+          {
+            "name": "Boomers",
+            "value": 6.4,
+            "color": "#f59e0b"
+          }
         ]
       },
       {
@@ -136,10 +159,26 @@
         "valueLabel": "",
         "showPercentage": true,
         "chartData": [
-          { "name": "Restaurant Delivery", "value": 100, "color": "#ef4444" },
-          { "name": "Restaurant Dining", "value": 75, "color": "#f59e0b" },
-          { "name": "Meal Kits", "value": 50, "color": "#3b82f6" },
-          { "name": "Home Cooking", "value": 0, "color": "#10b981" }
+          {
+            "name": "Restaurant Delivery",
+            "value": 100,
+            "color": "#ef4444"
+          },
+          {
+            "name": "Restaurant Dining",
+            "value": 75,
+            "color": "#f59e0b"
+          },
+          {
+            "name": "Meal Kits",
+            "value": 50,
+            "color": "#3b82f6"
+          },
+          {
+            "name": "Home Cooking",
+            "value": 0,
+            "color": "#10b981"
+          }
         ]
       },
       {
@@ -227,10 +266,26 @@
         "title": "U.S. Meal Kit Market Share",
         "subtitle": "HelloFresh dominates the American meal kit industry",
         "chartData": [
-          { "name": "HelloFresh", "value": 76, "color": "#10b981" },
-          { "name": "Home Chef", "value": 12, "color": "#3b82f6" },
-          { "name": "Blue Apron", "value": 6, "color": "#8b5cf6" },
-          { "name": "Others", "value": 6, "color": "#94a3b8" }
+          {
+            "name": "HelloFresh",
+            "value": 76,
+            "color": "#10b981"
+          },
+          {
+            "name": "Home Chef",
+            "value": 12,
+            "color": "#3b82f6"
+          },
+          {
+            "name": "Blue Apron",
+            "value": 6,
+            "color": "#8b5cf6"
+          },
+          {
+            "name": "Others",
+            "value": 6,
+            "color": "#94a3b8"
+          }
         ]
       },
       {
@@ -262,13 +317,34 @@
         "subtitle": "The pandemic spike has normalized, but remains above pre-2018 levels",
         "valueLabel": "meals/week",
         "chartData": [
-          { "name": "2018", "value": 8.6 },
-          { "name": "2019", "value": 8.4 },
-          { "name": "2020", "value": 9.4 },
-          { "name": "2021", "value": 9.0 },
-          { "name": "2022", "value": 8.4 },
-          { "name": "2023", "value": 8.3 },
-          { "name": "2024", "value": 8.2 }
+          {
+            "name": "2018",
+            "value": 8.6
+          },
+          {
+            "name": "2019",
+            "value": 8.4
+          },
+          {
+            "name": "2020",
+            "value": 9.4
+          },
+          {
+            "name": "2021",
+            "value": 9
+          },
+          {
+            "name": "2022",
+            "value": 8.4
+          },
+          {
+            "name": "2023",
+            "value": 8.3
+          },
+          {
+            "name": "2024",
+            "value": 8.2
+          }
         ]
       },
       {
@@ -329,7 +405,16 @@
         "text": "This article synthesizes data from multiple sources including: HelloFresh State of Home Cooking 2025-2026 Report (Wakefield Research, 5,000 U.S. adults), Flashfood Survey (December 2024, 2,089 adults), Instacart Cooking Survey (September 2025, 1,011 U.S. adults), NFRA Eat at Home Report, Bureau of Labor Statistics American Time Use Survey, USDA Food Price Data, Consumer Price Index, FMI research on Gen Z cooking habits, and various industry market reports from Grand View Research, Straits Research, and IBISWorld."
       }
     ],
-    "relatedPosts": ["plant-based-nutrition-research", "fermentation-science"]
+    "relatedPosts": [
+      "plant-based-nutrition-research",
+      "fermentation-science"
+    ],
+    "cookNext": "The statistics say people want fast and cheap. These are both.",
+    "relatedRecipes": [
+      "spiced-black-bean-tacos-recipe",
+      "lentil-soup-recipe",
+      "green-smoothie-bowl-recipe"
+    ]
   },
   {
     "id": "history-of-tomato",
@@ -345,7 +430,13 @@
     "readTime": "8 min read",
     "featured": true,
     "image": "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=1200&h=600&fit=crop",
-    "tags": ["tomato", "history", "italy", "americas", "nightshade"],
+    "tags": [
+      "tomato",
+      "history",
+      "italy",
+      "americas",
+      "nightshade"
+    ],
     "content": [
       {
         "type": "paragraph",
@@ -452,7 +543,15 @@
         "text": "The next time you bite into a ripe tomato, still warm from the sun, I want you to think about its journey. From the high mountains of Peru, across the ocean to a fearful Europe, through centuries of suspicion, and finally to your plate. That's quite a trip for a little red fruit. And aren't we lucky that someone, somewhere, was brave enough to take that first bite?"
       }
     ],
-    "relatedPosts": ["history-of-potato", "evolution-of-italian-cuisine"]
+    "relatedPosts": [
+      "history-of-potato",
+      "evolution-of-italian-cuisine"
+    ],
+    "cookNext": "Put the tomato to work in the sauce that made its reputation.",
+    "relatedRecipes": [
+      "hearty-lentil-bolognese-recipe",
+      "quinoa-salad-recipe"
+    ]
   },
   {
     "id": "history-of-potato",
@@ -468,7 +567,13 @@
     "readTime": "10 min read",
     "featured": true,
     "image": "https://images.unsplash.com/photo-1590165482129-1b8b27698780?w=1200&h=600&fit=crop",
-    "tags": ["potato", "history", "ireland", "peru", "agriculture"],
+    "tags": [
+      "potato",
+      "history",
+      "ireland",
+      "peru",
+      "agriculture"
+    ],
     "content": [
       {
         "type": "paragraph",
@@ -575,7 +680,14 @@
         "text": "The humble potato. It looks so ordinary sitting there on your counter. But it carries eight thousand years of human history inside it. That's the thing about ingredients - they're never just ingredients. They're stories waiting to be told."
       }
     ],
-    "relatedPosts": ["history-of-tomato", "spice-trade-history"]
+    "relatedPosts": [
+      "history-of-tomato",
+      "spice-trade-history"
+    ],
+    "cookNext": "Root vegetables, roasted hard until the edges catch.",
+    "relatedRecipes": [
+      "rainbow-buddha-bowl-recipe"
+    ]
   },
   {
     "id": "evolution-of-italian-cuisine",
@@ -591,7 +703,13 @@
     "readTime": "12 min read",
     "featured": false,
     "image": "https://images.unsplash.com/photo-1498579150354-977475b7ea0b?w=1200&h=600&fit=crop",
-    "tags": ["italy", "pasta", "pizza", "mediterranean", "history"],
+    "tags": [
+      "italy",
+      "pasta",
+      "pizza",
+      "mediterranean",
+      "history"
+    ],
     "content": [
       {
         "type": "paragraph",
@@ -706,7 +824,15 @@
         "text": "When I make a batch of fresh pasta in my kitchen, rolling the dough through my hand-cranked machine, I feel connected to a long tradition. But I also know that tradition is more flexible than we sometimes think. Italian cuisine conquered the world by being itself while allowing itself to change. That's a lesson for any cook."
       }
     ],
-    "relatedPosts": ["history-of-tomato", "spice-trade-history"]
+    "relatedPosts": [
+      "history-of-tomato",
+      "spice-trade-history"
+    ],
+    "cookNext": "Italy without tomatoes lasted two hundred years. Here is what the kitchen looks like now.",
+    "relatedRecipes": [
+      "hearty-lentil-bolognese-recipe",
+      "creamy-mushroom-stroganoff-recipe"
+    ]
   },
   {
     "id": "spice-trade-history",
@@ -722,7 +848,13 @@
     "readTime": "11 min read",
     "featured": true,
     "image": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=1200&h=600&fit=crop",
-    "tags": ["spices", "trade", "exploration", "colonialism", "history"],
+    "tags": [
+      "spices",
+      "trade",
+      "exploration",
+      "colonialism",
+      "history"
+    ],
     "content": [
       {
         "type": "paragraph",
@@ -838,7 +970,16 @@
         "text": "In my kitchen, I treat spices with respect. I buy them whole and grind them fresh. I store them away from heat and light. I use them generously but thoughtfully. These little seeds and barks and dried flowers once drove men to sail across oceans and risk everything. They deserve a little reverence."
       }
     ],
-    "relatedPosts": ["history-of-chili-pepper", "history-of-curry"]
+    "relatedPosts": [
+      "history-of-chili-pepper",
+      "history-of-curry"
+    ],
+    "cookNext": "Cumin, coriander and cinnamon, in the dishes they ended up in.",
+    "relatedRecipes": [
+      "chickpea-shawarma-wrap-recipe",
+      "mediterranean-falafel-plate-recipe",
+      "lentil-soup-recipe"
+    ]
   },
   {
     "id": "plant-based-nutrition-research",
@@ -854,7 +995,13 @@
     "readTime": "9 min read",
     "featured": false,
     "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=1200&h=600&fit=crop",
-    "tags": ["vegan", "nutrition", "research", "health", "plant-based"],
+    "tags": [
+      "vegan",
+      "nutrition",
+      "research",
+      "health",
+      "plant-based"
+    ],
     "content": [
       {
         "type": "paragraph",
@@ -889,10 +1036,26 @@
         "subtitle": "Based on Harvard study following 200,000+ people over 20 years",
         "valueLabel": "% reduction",
         "chartData": [
-          { "name": "Heart Disease", "value": 32, "color": "#ef4444" },
-          { "name": "Type 2 Diabetes", "value": 23, "color": "#f59e0b" },
-          { "name": "Certain Cancers", "value": 18, "color": "#8b5cf6" },
-          { "name": "Stroke Risk", "value": 16, "color": "#3b82f6" }
+          {
+            "name": "Heart Disease",
+            "value": 32,
+            "color": "#ef4444"
+          },
+          {
+            "name": "Type 2 Diabetes",
+            "value": 23,
+            "color": "#f59e0b"
+          },
+          {
+            "name": "Certain Cancers",
+            "value": 18,
+            "color": "#8b5cf6"
+          },
+          {
+            "name": "Stroke Risk",
+            "value": 16,
+            "color": "#3b82f6"
+          }
         ]
       },
       {
@@ -972,10 +1135,26 @@
         "subtitle": "Average kg CO2 emissions per person per year from food",
         "valueLabel": "kg CO2/year",
         "chartData": [
-          { "name": "High Meat", "value": 2500, "color": "#ef4444" },
-          { "name": "Average", "value": 1800, "color": "#f59e0b" },
-          { "name": "Vegetarian", "value": 1200, "color": "#10b981" },
-          { "name": "Vegan", "value": 700, "color": "#22c55e" }
+          {
+            "name": "High Meat",
+            "value": 2500,
+            "color": "#ef4444"
+          },
+          {
+            "name": "Average",
+            "value": 1800,
+            "color": "#f59e0b"
+          },
+          {
+            "name": "Vegetarian",
+            "value": 1200,
+            "color": "#10b981"
+          },
+          {
+            "name": "Vegan",
+            "value": 700,
+            "color": "#22c55e"
+          }
         ]
       },
       {
@@ -996,7 +1175,16 @@
         "text": "The research supports this moderate approach. You don't have to be perfect. You don't have to give up everything you love. Just shift the balance, bit by bit, toward more plants. Your body - and your gut bacteria - will thank you."
       }
     ],
-    "relatedPosts": ["fermentation-science", "history-of-curry"]
+    "relatedPosts": [
+      "fermentation-science",
+      "history-of-curry"
+    ],
+    "cookNext": "Protein without the meat, on a plate rather than in a chart.",
+    "relatedRecipes": [
+      "mediterranean-falafel-plate-recipe",
+      "hearty-lentil-bolognese-recipe",
+      "rainbow-buddha-bowl-recipe"
+    ]
   },
   {
     "id": "history-of-curry",
@@ -1012,7 +1200,13 @@
     "readTime": "10 min read",
     "featured": false,
     "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=1200&h=600&fit=crop",
-    "tags": ["curry", "india", "spices", "global", "history"],
+    "tags": [
+      "curry",
+      "india",
+      "spices",
+      "global",
+      "history"
+    ],
     "content": [
       {
         "type": "paragraph",
@@ -1106,7 +1300,15 @@
         "text": "When I serve curry to friends, I'm serving four thousand years of culinary history. I'm serving trade routes and colonial legacies and immigrant creativity. I'm serving the human desire to make food more interesting, more flavorful, more alive. All of that, in a bowl of spiced sauce over rice."
       }
     ],
-    "relatedPosts": ["spice-trade-history", "plant-based-nutrition-research"]
+    "relatedPosts": [
+      "spice-trade-history",
+      "plant-based-nutrition-research"
+    ],
+    "cookNext": "One curry from the road it travelled.",
+    "relatedRecipes": [
+      "thai-coconut-vegetable-curry-recipe",
+      "lentil-soup-recipe"
+    ]
   },
   {
     "id": "fermentation-science",
@@ -1122,7 +1324,13 @@
     "readTime": "8 min read",
     "featured": false,
     "image": "https://images.unsplash.com/photo-1590779033100-9f60a05a013d?w=1200&h=600&fit=crop",
-    "tags": ["fermentation", "science", "probiotics", "gut-health", "preservation"],
+    "tags": [
+      "fermentation",
+      "science",
+      "probiotics",
+      "gut-health",
+      "preservation"
+    ],
     "content": [
       {
         "type": "paragraph",
@@ -1216,7 +1424,14 @@
         "text": "For ten thousand years, humans have been harnessing the power of microorganisms to make food better. We're still doing it today, with a bit more understanding of why it works. Every jar of kimchi, every loaf of sourdough, every glass of wine connects us to that ancient tradition. The bacteria are doing what they've always done. We're just along for the delicious ride."
       }
     ],
-    "relatedPosts": ["plant-based-nutrition-research", "history-of-curry"]
+    "relatedPosts": [
+      "plant-based-nutrition-research",
+      "history-of-curry"
+    ],
+    "cookNext": "Miso, doing in twenty five minutes what it spent a year preparing for.",
+    "relatedRecipes": [
+      "miso-glazed-eggplant-recipe"
+    ]
   },
   {
     "id": "history-of-chili-pepper",
@@ -1232,7 +1447,13 @@
     "readTime": "9 min read",
     "featured": false,
     "image": "https://images.unsplash.com/photo-1583119022894-919a68a3d0e3?w=1200&h=600&fit=crop",
-    "tags": ["chili", "spicy", "mexico", "sichuan", "history"],
+    "tags": [
+      "chili",
+      "spicy",
+      "mexico",
+      "sichuan",
+      "history"
+    ],
     "content": [
       {
         "type": "paragraph",
@@ -1330,6 +1551,15 @@
         "text": "Six thousand years after ancient Mexicans first cultivated chili peppers, we're still discovering new ways to use them. The habanero that destroyed me at seventeen is now one of my favorite ingredients - in moderation. That's the thing about chilies. They start as pain, but they end up as pleasure. You just have to respect them along the way."
       }
     ],
-    "relatedPosts": ["spice-trade-history", "history-of-tomato"]
+    "relatedPosts": [
+      "spice-trade-history",
+      "history-of-tomato"
+    ],
+    "cookNext": "Where the heat landed once it left the Americas.",
+    "relatedRecipes": [
+      "spiced-black-bean-tacos-recipe",
+      "vegan-pad-thai-recipe",
+      "thai-coconut-vegetable-curry-recipe"
+    ]
   }
 ]

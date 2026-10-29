@@ -17,7 +17,8 @@ export default function Footer() {
                         <span className="font-serif text-[1.35rem] font-bold text-ink">Relish Realm</span>
                     </Link>
                     <p className="mt-3 max-w-[300px] text-[0.93rem] leading-6 text-muted">
-                        Modern recipes, timeless flavours. Tested in real kitchens, written for real people.
+                        Plant based cooking from around the world. Every recipe here is written out in full,
+                        including the parts that go wrong.
                     </p>
                 </div>
 

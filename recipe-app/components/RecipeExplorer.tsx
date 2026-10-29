@@ -9,7 +9,7 @@ interface RecipeExplorerProps {
     recipes: Recipe[];
 }
 
-type SortOption = 'recommended' | 'rating' | 'quickest' | 'name';
+type SortOption = 'recommended' | 'quickest' | 'name';
 const PAGE_SIZE = 24;
 const TIME_FILTERS = [15, 30, 60];
 
@@ -63,10 +63,10 @@ export default function RecipeExplorer({ recipes }: RecipeExplorerProps) {
         });
 
         return [...matches].sort((a, b) => {
-            if (sortBy === 'rating') return b.rating - a.rating;
             if (sortBy === 'quickest') return timeInMinutes(a.totalTime || a.prepTime) - timeInMinutes(b.totalTime || b.prepTime);
             if (sortBy === 'name') return a.title.localeCompare(b.title);
-            return (b.ratingCount || 0) - (a.ratingCount || 0);
+            // Recipes with written cook's notes first, then the rest.
+            return Number(Boolean(b.notes)) - Number(Boolean(a.notes));
         });
     }, [recipes, query, mealType, cuisineFilters, dietFilters, maxTime, sortBy]);
 
@@ -88,9 +88,9 @@ export default function RecipeExplorer({ recipes }: RecipeExplorerProps) {
         <main className="mx-auto max-w-[1180px] px-4 pb-24 sm:px-6">
             <header className="flex flex-wrap items-end justify-between gap-6 pb-8 pt-14">
                 <div>
-                    <span className="hand">everything we’ve ever tested</span>
+                    <span className="hand">everything that is ready to cook</span>
                     <h1 className="font-serif text-[clamp(2.4rem,5vw,3.6rem)] leading-[1.05]">All recipes</h1>
-                    <p className="mt-2 text-muted">{recipes.length} kitchen-tested recipes. Filter until you find tonight’s dinner.</p>
+                    <p className="mt-2 text-muted">{recipes.length} recipes, written out in full. Filter until you find tonight’s dinner.</p>
                 </div>
                 <div className="hard-shadow flex min-w-[320px] flex-1 items-center gap-2.5 rounded-full border-[1.5px] border-ink px-5 py-3 sm:max-w-[380px]">
                     <svg className="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-4-4" /></svg>
@@ -178,8 +178,7 @@ export default function RecipeExplorer({ recipes }: RecipeExplorerProps) {
                                 onChange={event => { setSortBy(event.target.value as SortOption); setVisibleCount(PAGE_SIZE); }}
                                 className="rounded-full border border-line bg-white px-3.5 py-2 text-ink outline-none focus:border-ink"
                             >
-                                <option value="recommended">Most popular</option>
-                                <option value="rating">Top rated</option>
+                                <option value="recommended">Recommended</option>
                                 <option value="quickest">Quickest</option>
                                 <option value="name">A–Z</option>
                             </select>

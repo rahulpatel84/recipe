@@ -11,6 +11,8 @@ import {
   generateBlogPostSchema
 } from '@/lib/blog';
 import BlogContent from '@/components/BlogContent';
+import RecipeCard from '@/components/RecipeCard';
+import { recipes } from '@/lib/data';
 import BlogSidebar from '@/components/BlogSidebar';
 import ShareButtons from '@/components/ShareButtons';
 
@@ -65,6 +67,9 @@ export default async function BlogPostPage({ params }: Props) {
 
   const category = getCategoryBySlug(post.category);
   const relatedPosts = getRelatedPosts(post, 3);
+  const cookNext = (post.relatedRecipes || [])
+    .map(slug => recipes.find(recipe => recipe.slug === slug))
+    .filter((recipe): recipe is NonNullable<typeof recipe> => Boolean(recipe));
 
   return (
     <>
@@ -163,6 +168,20 @@ export default async function BlogPostPage({ params }: Props) {
 
               {/* Article Content */}
               <BlogContent content={post.content} />
+
+              {/* Hand the reader on to the kitchen */}
+              {cookNext.length > 0 && (
+                <section className="mt-14 border-t border-line pt-10">
+                  <span className="hand">enough reading</span>
+                  <h2 className="font-serif text-[1.8rem]">Cook it next</h2>
+                  {post.cookNext && <p className="mt-2 mb-7 text-muted">{post.cookNext}</p>}
+                  <div className="grid grid-cols-2 gap-5 lg:grid-cols-3">
+                    {cookNext.map(recipe => (
+                      <RecipeCard key={recipe.id} recipe={recipe} ratio="square" />
+                    ))}
+                  </div>
+                </section>
+              )}
 
               {/* Tags */}
               <div className="mt-12 pt-8 border-t border-border-soft">

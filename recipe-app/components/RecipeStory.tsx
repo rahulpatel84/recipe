@@ -12,27 +12,20 @@ export default function RecipeStory({ recipe }: RecipeStoryProps) {
     const { origin, facts, tradition } = recipe.heritage;
 
     return (
-        <section className="mt-20 border-t border-border-soft pt-16">
-            <div className="flex items-center gap-4 mb-8">
-                <h2 className="text-xl font-sans font-bold text-dark-olive uppercase tracking-wider">
-                    The Heritage
-                </h2>
-                <div className="h-px flex-grow bg-border-soft"></div>
-                <span className="text-xs font-bold uppercase tracking-wider text-dark-olive/30">
-                    Origin & Tradition
-                </span>
-            </div>
+        <section className="mt-16 border-t border-line pt-12">
+            <span className="hand">before it reached your kitchen</span>
+            <h2 className="mb-8 font-serif text-[1.8rem]">Where it comes from</h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
                 {/* Main Story Content */}
                 <div className="lg:col-span-9 space-y-8">
                     {/* Origin Section */}
                     <div>
-                        <h3 className="text-sm font-bold uppercase tracking-widest text-terracotta mb-3">
-                            Origin Story
+                        <h3 className="mb-3 font-sans text-[0.75rem] font-semibold uppercase tracking-[0.14em] text-muted">
+                            Origin
                         </h3>
                         <p className="text-lg text-dark-olive/70 font-sans leading-relaxed">
-                            <span className="float-left text-5xl font-serif font-bold text-terracotta mr-3 mt-1 leading-none">
+                            <span className="float-left mr-3 mt-1 font-serif text-5xl font-semibold leading-none text-tomato">
                                 {origin.charAt(0)}
                             </span>
                             {origin.slice(1)}
@@ -40,9 +33,9 @@ export default function RecipeStory({ recipe }: RecipeStoryProps) {
                     </div>
 
                     {/* Facts Section */}
-                    <div className="bg-sand/5 border border-sand/20 rounded-xl p-6">
-                        <h3 className="text-sm font-bold uppercase tracking-widest text-dark-olive mb-4">
-                            Did You Know?
+                    <div className="rounded-[22px] bg-cream p-6">
+                        <h3 className="mb-4 font-sans text-[0.75rem] font-semibold uppercase tracking-[0.14em] text-muted">
+                            Worth knowing
                         </h3>
                         <ul className="space-y-3">
                             {facts.map((fact, idx) => (
@@ -59,9 +52,9 @@ export default function RecipeStory({ recipe }: RecipeStoryProps) {
                     </div>
 
                     {/* Tradition Section */}
-                    <div className="border-l-4 border-sage pl-6">
-                        <h3 className="text-sm font-bold uppercase tracking-widest text-sage mb-3">
-                            Serving Tradition
+                    <div className="border-l-4 border-pickle pl-6">
+                        <h3 className="mb-3 font-sans text-[0.75rem] font-semibold uppercase tracking-[0.14em] text-muted">
+                            How it is served
                         </h3>
                         <p className="text-dark-olive/70 font-sans leading-relaxed italic">
                             {tradition}
@@ -71,9 +64,9 @@ export default function RecipeStory({ recipe }: RecipeStoryProps) {
 
                 {/* Sidebar with Quick Facts */}
                 <aside className="lg:col-span-3">
-                    <div className="rounded-2xl bg-sand/10 border border-sand/20 p-6 lg:sticky lg:top-28">
-                        <h3 className="text-xs font-bold uppercase tracking-widest text-terracotta mb-4">
-                            Quick Facts
+                    <div className="rounded-[22px] border border-line bg-cream p-6 lg:sticky lg:top-28">
+                        <h3 className="mb-4 font-sans text-[0.75rem] font-semibold uppercase tracking-[0.14em] text-muted">
+                            At a glance
                         </h3>
                         <dl className="space-y-4 text-sm font-sans">
                             <div>
@@ -94,7 +87,7 @@ export default function RecipeStory({ recipe }: RecipeStoryProps) {
                             </div>
                         </dl>
 
-                        {/* Cultural Keywords for SEO */}
+                        {/* At a glance */}
                         <div className="mt-6 pt-4 border-t border-sand/20">
                             <div className="flex flex-wrap gap-2">
                                 {[recipe.cuisine, recipe.category, recipe.mealType, ...recipe.dietary.slice(0, 2)].filter(Boolean).map((tag, idx) => (

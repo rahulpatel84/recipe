@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { Recipe } from '@/lib/data';
+import { hasRating, Recipe } from '@/lib/data';
 
 interface RelatedRecipeCardProps {
     recipe: Recipe;
@@ -30,7 +30,7 @@ export default function RelatedRecipeCard({ recipe }: RelatedRecipeCardProps) {
                 </h4>
                 <div className="flex items-center gap-2 mt-1">
                     <span className="text-xs text-muted">{recipe.prepTime}</span>
-                    <span className="text-xs font-semibold text-ink">★ {recipe.rating}</span>
+                    {hasRating(recipe) && <span className="text-xs font-semibold text-ink">★ {recipe.rating}</span>}
                 </div>
             </div>
         </Link>

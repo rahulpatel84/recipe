@@ -4,25 +4,26 @@ import Link from 'next/link';
 import Pip from '@/components/Pip';
 import RecipeCard from '@/components/RecipeCard';
 import SearchBar from '@/components/SearchBar';
-import { recipes } from '@/lib/data';
+import { plantBasedRecipes, recipes } from '@/lib/data';
+import { getAllPosts } from '@/lib/blog';
 
 export const metadata: Metadata = {
-  title: 'Relish Realm | Good food, made easy to love',
-  description: 'Reliable, kitchen-tested recipes for everyday cooks. Search by ingredient, cuisine, diet, or meal type.',
+  title: 'Relish Realm | Plant based cooking, written by someone who cooked it',
+  description: 'Plant based recipes from around the world, with the part most sites leave out: what it looks like when it works, what goes wrong, and how to fix it.',
   alternates: { canonical: '/' },
 };
 
 const quickChips = [
-  { label: 'Under 30 min', href: '/all-recipes?q=quick' },
-  { label: 'One-pot', href: '/all-recipes?q=one-pot' },
-  { label: 'Vegetarian', href: '/vegetarian-recipes' },
-  { label: 'Weeknight pasta', href: '/all-recipes?q=pasta' },
-  { label: 'Meal prep', href: '/all-recipes?q=bowl' },
+  { label: 'Lentils', href: '/all-recipes?q=lentil' },
+  { label: 'Chickpeas', href: '/all-recipes?q=chickpea' },
+  { label: 'Tofu', href: '/all-recipes?q=tofu' },
+  { label: 'Noodles', href: '/all-recipes?q=noodle' },
+  { label: 'Good for lunchboxes', href: '/all-recipes?q=bowl' },
 ];
 
 const tiles = [
   { title: 'Cuisine', detail: 'Italian, Indian, Mexican…', href: '/recipes-by-cuisines', bg: 'bg-blush' },
-  { title: 'Dietary', detail: 'Vegan, gluten-free…', href: '/recipes-by-dietary-choices', bg: 'bg-pickle-soft' },
+  { title: 'Dietary', detail: 'Vegan, gluten free, high protein', href: '/recipes-by-dietary-choices', bg: 'bg-pickle-soft' },
   { title: 'Meal type', detail: 'Breakfast to late snacks', href: '/recipes-by-meal-types', bg: 'bg-mustard-soft' },
   { title: 'Continent', detail: 'Asia, Europe, Americas…', href: '/recipes-by-continents', bg: 'bg-sky' },
   { title: 'For everyone', detail: 'Kids, athletes, families', href: '/recipes-by-audiences', bg: 'bg-cream' },
@@ -30,41 +31,43 @@ const tiles = [
 ];
 
 const strip = [
-  { dot: 'bg-tomato', text: 'Every recipe tested in a home kitchen' },
-  { dot: 'bg-pickle', text: 'Nutrition on every page' },
-  { dot: 'bg-mustard', text: 'Clear, precise measurements' },
-  { dot: 'bg-ink', text: 'No life story — jump straight to cooking' },
+  { dot: 'bg-pickle', text: 'Plant based, all the way through' },
+  { dot: 'bg-tomato', text: 'Every flagship recipe says what goes wrong' },
+  { dot: 'bg-mustard', text: 'Nutrition worked out per serving' },
+  { dot: 'bg-ink', text: 'No life story, no sign up, no pop ups' },
 ];
 
 const collections = [
-  { title: 'Weeknight in 20', copy: 'Recipes for when you’re tired but still want something good.', href: '/all-recipes?q=quick', colors: ['bg-tomato', 'bg-mustard', 'bg-pickle'] },
-  { title: 'Plants, mostly', copy: 'Vegetarian & vegan dishes nobody will call “a side”.', href: '/vegan-recipes', colors: ['bg-pickle', 'bg-[#A8C686]', 'bg-mustard'] },
-  { title: 'Sunday slow-cooks', copy: 'Low-and-slow recipes that make the whole house smell amazing.', href: '/all-recipes?q=slow', colors: ['bg-mustard', 'bg-tomato', 'bg-ink'] },
+  { title: 'Cooks in half an hour', copy: 'For the evenings when you are tired and still want something good.', href: '/all-recipes?q=quick', colors: ['bg-tomato', 'bg-mustard', 'bg-pickle'] },
+  { title: 'Protein without the meat', copy: 'Lentils, chickpeas and tofu doing the heavy lifting.', href: '/all-recipes?q=lentil', colors: ['bg-pickle', 'bg-[#A8C686]', 'bg-mustard'] },
+  { title: 'Better the next day', copy: 'The ones you make on Sunday and are glad of on Tuesday.', href: '/all-recipes?q=stew', colors: ['bg-mustard', 'bg-tomato', 'bg-ink'] },
 ];
 
 export default function Home() {
-  const featured = recipes.find(recipe => recipe.slug === 'chicken-tikka-masala-recipe') || recipes[0];
-  const popular = [...recipes].sort((a, b) => b.rating - a.rating).slice(0, 4);
-  const ofTheWeek = recipes.find(recipe => /lentil|soup|dal|curry/i.test(recipe.title)) || recipes[1];
+  const flagships = plantBasedRecipes.filter(recipe => recipe.flagship);
+  const featured = flagships.find(recipe => recipe.slug === 'hearty-lentil-bolognese-recipe') || flagships[0];
+  const popular = flagships.filter(recipe => recipe.slug !== featured.slug).slice(0, 4);
+  const ofTheWeek = flagships.find(recipe => recipe.slug === 'mediterranean-falafel-plate-recipe') || flagships[1];
+  const posts = getAllPosts().slice(0, 3);
 
   return (
     <div>
       {/* Hero */}
       <header className="mx-auto grid max-w-[1180px] items-center gap-12 px-4 pb-12 pt-14 sm:px-6 lg:grid-cols-[1.15fr_.85fr] lg:pt-[72px]">
         <div>
-          <span className="eyebrow">Kitchen-tested · Globally inspired</span>
+          <span className="eyebrow">Plant based · Cooked, then written</span>
           <h1 className="mb-5 mt-3.5 font-serif text-[clamp(2.6rem,6vw,4.6rem)] leading-[1.02] tracking-[-0.02em]">
-            Good food,<br />made{' '}
+            Plants, cooked{' '}
             <span className="relative inline-block">
-              <em className="italic text-tomato">easy</em>
+              <em className="italic text-tomato">properly</em>
               <svg viewBox="0 0 200 14" preserveAspectRatio="none" className="absolute -bottom-2.5 left-0 h-3.5 w-full" aria-hidden="true">
                 <path d="M2 9q25-8 50 0t50 0 50 0 46-2" fill="none" stroke="#F4B740" strokeWidth="5" strokeLinecap="round" />
               </svg>
-            </span>{' '}
-            to love.
+            </span>
           </h1>
           <p className="max-w-[520px] text-[1.15rem] text-muted">
-            {recipes.length}+ tested recipes from kitchens around the world — written clearly, measured precisely, and ready when you are.
+            {plantBasedRecipes.length} plant based recipes from around the world. Each flagship one tells you what it
+            looks like when it works, what usually goes wrong, and what to do about it.
           </p>
 
           <div className="mt-8 max-w-[560px]">
@@ -86,12 +89,12 @@ export default function Home() {
             </div>
           </Link>
           <div className="sticker absolute left-5 top-6 -rotate-[4deg]">
-            <b className="block font-serif text-[1.05rem]">★ {featured.rating}</b>
+            <b className="block font-serif text-[1.05rem]">Cook&rsquo;s notes</b>
             {featured.title}
           </div>
           <div className="sticker absolute bottom-7 right-4 rotate-[3deg]">
             <b className="block font-serif text-[1.05rem]">{featured.totalTime || featured.prepTime}</b>
-            Tonight’s pick
+            Start to finish
           </div>
           <Pip className="absolute -bottom-1.5 left-5 w-24" />
         </div>
@@ -132,8 +135,8 @@ export default function Home() {
       <section className="mx-auto max-w-[1180px] px-4 pt-20 sm:px-6">
         <div className="mb-7 flex items-end justify-between gap-5">
           <div>
-            <span className="hand">people can’t stop making these</span>
-            <h2 className="font-serif text-[clamp(1.8rem,3.4vw,2.6rem)] leading-[1.1]">Most-loved this week</h2>
+            <span className="hand">written out in full</span>
+            <h2 className="font-serif text-[clamp(1.8rem,3.4vw,2.6rem)] leading-[1.1]">Start with these</h2>
           </div>
           <Link href="/all-recipes" className="hidden whitespace-nowrap border-b-[1.5px] border-ink pb-0.5 font-semibold hover:border-tomato hover:text-tomato hover:no-underline sm:block">See all →</Link>
         </div>
@@ -186,14 +189,41 @@ export default function Home() {
           ))}
         </div>
 
+        {/* From the journal */}
+        <div className="mt-20 border-t border-line pt-10">
+          <div className="mb-7 flex items-end justify-between gap-5">
+            <div>
+              <span className="hand">why we eat what we eat</span>
+              <h2 className="font-serif text-[clamp(1.8rem,3.4vw,2.6rem)] leading-[1.1]">From the journal</h2>
+            </div>
+            <Link href="/blog" className="hidden whitespace-nowrap border-b-[1.5px] border-ink pb-0.5 font-semibold hover:border-tomato hover:text-tomato hover:no-underline sm:block">All writing →</Link>
+          </div>
+          <div className="grid gap-6 lg:grid-cols-3">
+            {posts.map(post => (
+              <Link key={post.slug} href={`/blog/${post.slug}`} className="group flex flex-col gap-2 hover:no-underline">
+                <div className="relative mb-1 aspect-[16/10] overflow-hidden rounded-card bg-cream">
+                  <Image src={post.image} alt={post.title} fill sizes="(max-width: 1024px) 100vw, 33vw" className="object-cover transition duration-500 group-hover:scale-[1.03]" />
+                </div>
+                <span className="eyebrow">{post.category.replace(/-/g, ' ')}</span>
+                <h3 className="font-serif text-[1.2rem] leading-snug group-hover:text-tomato">{post.title}</h3>
+                <p className="text-[0.9rem] text-muted">{post.readTime}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+
         {/* Pip's note */}
         <div className="mt-20 flex flex-col items-start gap-7 rounded-[28px] bg-blush p-7 sm:flex-row sm:items-center sm:p-11">
           <Pip className="w-[110px] shrink-0" />
           <div className="flex-1">
-            <span className="hand">psst — Pip here</span>
-            <h3 className="font-serif text-[1.7rem] leading-[1.2]">Browse the whole collection, three dinner ideas at a time.</h3>
+            <span className="hand">psst, Pip here</span>
+            <h3 className="font-serif text-[1.7rem] leading-[1.2]">We would rather have thirty recipes worth cooking than three hundred that are not.</h3>
+            <p className="mt-2 text-muted">
+              Everything published here has a full ingredient list, a real method, and notes from actually making it.
+              When a recipe is not ready, it stays off the site.
+            </p>
             <div className="mt-4 flex flex-wrap gap-2.5">
-              <Link href="/all-recipes" className="btn btn-ink hover:no-underline">Explore all recipes</Link>
+              <Link href="/all-recipes" className="btn btn-ink hover:no-underline">Browse every recipe</Link>
               <Link href="/blog" className="btn hover:no-underline">Read the journal</Link>
             </div>
           </div>

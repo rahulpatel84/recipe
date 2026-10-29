@@ -146,7 +146,10 @@
       "tradition": "In Roman trattorias, Carbonara arrives at the table immediately after being tossed, while the sauce is still glossy and coating. It is always served with an extra generous crack of black pepper on top, and true Romans never ask for additional cheese because the ratio is already perfect."
     },
     "extra": [],
-    "appliance": ["Stovetop"]
+    "appliance": [
+      "Stovetop"
+    ],
+    "status": "published"
   },
   {
     "id": "2",
@@ -273,7 +276,8 @@
       ],
       "tradition": "The best avocado toast is assembled just before serving so the toast stays warm and crispy. Top with flaky sea salt like Maldon, a crack of pepper, and let the runny egg yolk become your sauce when you cut into it."
     },
-    "extra": []
+    "extra": [],
+    "status": "published"
   },
   {
     "id": "3",
@@ -398,18 +402,19 @@
       ],
       "tradition": "This dish is always served with steaming basmati rice and warm naan bread for scooping up the sauce. The chicken should be charred before adding to the gravy, providing essential smoky flavor and textural contrast against the creamy sauce."
     },
-    "extra": []
+    "extra": [],
+    "status": "published"
   },
   {
     "id": "4",
     "slug": "green-smoothie-bowl-recipe",
     "title": "Energy Smoothie Bowl Recipe",
-    "summary": "Nutritious bowl with spinach, berries, and chia seeds.",
+    "summary": "A thick, scoopable blend of frozen banana, berries and spinach, built to hold a spoon rather than pour.",
     "description": "Nutritious bowl packed with spinach, berries, and chia seeds.",
     "image": "/Energy-Smoothie-Bowl.png",
     "category": "Vegan",
-    "cuisine": "Modern",
-    "continent": "Global",
+    "cuisine": "Global",
+    "continent": "South America",
     "dietary": [
       "Vegan",
       "Gluten Free"
@@ -419,7 +424,7 @@
       "Healthy",
       "Kids"
     ],
-    "country": "Global",
+    "country": "Brazil",
     "prepTime": "15 mins",
     "cookTime": null,
     "totalTime": null,
@@ -523,7 +528,44 @@
       "tradition": "Build your bowl with intention, arranging toppings artfully before eating. The ritual is as important as the nutrition, creating something almost too beautiful to eat before you dig in with your spoon."
     },
     "extra": [],
-    "appliance": ["Blender"]
+    "appliance": [
+      "Blender"
+    ],
+    "status": "published",
+    "intro": "The difference between a smoothie bowl and a smoothie in a bowl is liquid, and almost nothing else. Use frozen fruit, barely any milk, and keep the blender in short bursts. The spinach disappears completely, which is the only reason it works on anyone who claims not to like it.",
+    "notes": {
+      "looksRight": "Thick enough that a spoon stands up in it for a moment before it slowly leans over.",
+      "goesWrong": [
+        {
+          "problem": "It came out a drink, not a bowl",
+          "fix": "Too much milk. Start with half of what the recipe says and add a tablespoon at a time. Frozen banana is what makes it scoopable, so it has to be frozen."
+        },
+        {
+          "problem": "The blender is stuck and whining",
+          "fix": "Stop, scrape the sides down, add a small splash. The end of a spatula helps shift it if your blender is not powerful."
+        },
+        {
+          "problem": "It tastes like grass",
+          "fix": "Spinach vanishes but kale does not. Use spinach, and add a date or more banana for sweetness."
+        }
+      ],
+      "swaps": [
+        {
+          "from": "Almond milk",
+          "to": "Oat milk, coconut milk, or orange juice for something sharper"
+        },
+        {
+          "from": "Frozen berries",
+          "to": "Frozen mango and pineapple for a tropical version"
+        }
+      ],
+      "leftovers": "Eat it now. It separates and melts within minutes of hitting the bowl. If you want to prep, freeze the fruit and spinach together in bags and blend in the morning."
+    },
+    "relatedReading": [
+      "plant-based-nutrition-what-science-says",
+      "home-cooking-statistics-2026"
+    ],
+    "flagship": true
   },
   {
     "id": "5",
@@ -648,7 +690,8 @@
       ],
       "tradition": "Street tacos are meant to be eaten standing, with the simple toppings of raw white onion, fresh cilantro, a squeeze of lime, and your choice of salsa verde or roja. Nothing more is needed."
     },
-    "extra": []
+    "extra": [],
+    "status": "published"
   },
   {
     "id": "6",
@@ -773,13 +816,14 @@
       ],
       "tradition": "In Japan, ramen is meant to be eaten quickly while still piping hot, slurping the noodles to cool them and aerate the broth. The bowl arrives assembled with artful precision, and you should start eating immediately."
     },
-    "extra": []
+    "extra": [],
+    "status": "published"
   },
   {
     "id": "7",
     "slug": "quinoa-salad-recipe",
     "title": "Mediterranean Quinoa Salad Recipe",
-    "summary": "Refreshing salad with cucumbers, tomatoes, and kalamata olives.",
+    "summary": "A Greek inspired quinoa salad with cucumber, tomato and olives, dressed while the grains are still warm so they drink it up.",
     "description": "Refreshing salad with cucumbers, tomatoes, and kalamata olives.",
     "image": "/Mediterranean-Quinoa-Salad.png",
     "category": "Lunch",
@@ -853,7 +897,7 @@
         "potassium": "350mg"
       },
       {
-        "name": "Feta Cheese",
+        "name": "Vegan feta, or toasted walnuts",
         "amount": "50g",
         "calories": 130,
         "protein": "7g",
@@ -901,13 +945,48 @@
       ],
       "tradition": "Mediterranean eating philosophy means letting quality ingredients speak for themselves without heavy sauces. Dress simply with excellent olive oil and lemon juice, add fresh herbs, and enjoy at room temperature for best flavor."
     },
-    "extra": []
+    "extra": [],
+    "status": "published",
+    "intro": "A salad that survives a lunchbox. The quinoa has to be rinsed and properly drained or the whole thing goes soggy by noon, and the dressing wants to go on while the grains are still a little warm so they soak it up instead of sitting in it.",
+    "notes": {
+      "looksRight": "Fluffy and separate, each grain showing its little curled tail. Wet clumps mean too much cooking water or not enough draining.",
+      "goesWrong": [
+        {
+          "problem": "The quinoa tastes bitter, almost soapy",
+          "fix": "You skipped the rinse. Quinoa carries a natural coating called saponin. Rinse it in a fine sieve until the water runs clear and the bitterness goes with it."
+        },
+        {
+          "problem": "It went watery in the fridge",
+          "fix": "Cucumber and tomato leak. Salt them in a colander for ten minutes and drain before they join the bowl."
+        },
+        {
+          "problem": "It tastes flat",
+          "fix": "More lemon, more salt, and twenty minutes sitting before you serve it."
+        }
+      ],
+      "swaps": [
+        {
+          "from": "Vegan feta",
+          "to": "Toasted walnuts for crunch, or leave it out and add more olives"
+        },
+        {
+          "from": "Quinoa",
+          "to": "Bulgur, or chickpeas for a version with no grain at all"
+        }
+      ],
+      "leftovers": "Three days, and it is still good on day two, which is rather the point. Keep herbs and nuts separate until you serve it.",
+      "makeAhead": "Cook the quinoa and make the dressing the night before, then combine in the morning."
+    },
+    "relatedReading": [
+      "plant-based-nutrition-what-science-says"
+    ],
+    "flagship": true
   },
   {
     "id": "8",
     "slug": "lentil-soup-recipe",
     "title": "Spiced Lentil Soup Recipe",
-    "summary": "Warm and comforting soup filled with protein-rich lentils.",
+    "summary": "Turkish red lentil soup, blended smooth, seasoned hard and finished with lemon. Thirty five minutes from cupboard to bowl.",
     "description": "Warm and comforting soup filled with protein-rich lentils.",
     "image": "/Spiced-Lentil-Soup.png",
     "category": "Soups",
@@ -1029,7 +1108,42 @@
       ],
       "tradition": "Many Turkish families finish the soup with a drizzle of butter infused with pul biber red pepper flakes, which melts into orange pools on the surface. Always serve with crusty bread for dipping."
     },
-    "extra": []
+    "extra": [],
+    "status": "published",
+    "intro": "This is the soup sold in every Turkish lokanta, mercimek çorbası, and it is probably the cheapest good dinner there is. Red lentils need no soaking and they break down into silk on their own in half an hour. What it does need is more salt than you expect and lemon at the end.",
+    "notes": {
+      "looksRight": "Smooth, the colour of apricots, thick enough to coat a spoon. If a ladleful sits in a dome on the surface it is too thick, so add water.",
+      "goesWrong": [
+        {
+          "problem": "It tastes bland",
+          "fix": "Three things, in this order: more salt than feels right, lemon juice off the heat, and cumin bloomed in oil rather than stirred in cold."
+        },
+        {
+          "problem": "It turned gluey overnight",
+          "fix": "Lentils keep drinking. Thin it with hot stock when you reheat, and taste for salt again, because that gets diluted too."
+        },
+        {
+          "problem": "There is a faint burnt taste",
+          "fix": "The lentils caught on the base. Stir the bottom of the pot every few minutes once it starts to thicken."
+        }
+      ],
+      "swaps": [
+        {
+          "from": "Red lentils",
+          "to": "Yellow split lentils, though they need longer to break down"
+        },
+        {
+          "from": "Blending it smooth",
+          "to": "Leave it chunky, which is closer to how it is often served at home"
+        }
+      ],
+      "leftovers": "Five days, and it freezes without complaint. Always season again after reheating."
+    },
+    "relatedReading": [
+      "the-spice-trade-that-shaped-history",
+      "plant-based-nutrition-what-science-says"
+    ],
+    "flagship": true
   },
   {
     "id": "9",
@@ -1161,7 +1275,8 @@
       ],
       "tradition": "Fold blueberries gently into the batter at the very end, or drop them onto the raw side of each pancake just before flipping. Serve immediately with butter melting into golden pools and genuine maple syrup."
     },
-    "extra": []
+    "extra": [],
+    "status": "published"
   },
   {
     "id": "10",
@@ -1184,9 +1299,7 @@
     "prepTime": "20 mins",
     "cookTime": null,
     "totalTime": null,
-    "rating": 4.7,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Medium",
     "servings": 2,
     "totalCalories": 400,
@@ -1288,7 +1401,8 @@
       ],
       "tradition": "Compound butter, mixed with lemon zest and fresh herbs, melts slowly over the warm fillet to create a silky, restaurant quality sauce. Add a squeeze of fresh lemon only at the table, just before eating."
     },
-    "extra": []
+    "extra": [],
+    "status": "published"
   },
   {
     "id": "11",
@@ -1311,9 +1425,7 @@
     "prepTime": "35 mins",
     "cookTime": null,
     "totalTime": null,
-    "rating": 4.9,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Hard",
     "servings": 3,
     "totalCalories": 520,
@@ -1416,7 +1528,10 @@
       "tradition": "Always serve over perfectly steamed jasmine rice that absorbs the fragrant sauce. The rice provides a neutral contrast to the intense spice and creamy coconut, balancing each bite."
     },
     "extra": [],
-    "appliance": ["Stovetop"]
+    "appliance": [
+      "Stovetop"
+    ],
+    "status": "published"
   },
   {
     "id": "12",
@@ -1439,9 +1554,7 @@
     "prepTime": "25 mins",
     "cookTime": null,
     "totalTime": null,
-    "rating": 4.9,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Medium",
     "servings": 2,
     "totalCalories": 800,
@@ -1544,7 +1657,10 @@
       "tradition": "The pizza must be stretched by hand, never rolled, to preserve the gas bubbles that create the charred, puffy cornicione edge. Add basil leaves after baking to keep them bright green and aromatic."
     },
     "extra": [],
-    "appliance": ["Oven"]
+    "appliance": [
+      "Oven"
+    ],
+    "status": "published"
   },
   {
     "id": "13",
@@ -1565,9 +1681,7 @@
     "prepTime": "30 mins",
     "cookTime": null,
     "totalTime": null,
-    "rating": 4.5,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Medium",
     "servings": 2,
     "totalCalories": 600,
@@ -1669,13 +1783,14 @@
       ],
       "tradition": "A proper gyro follows a specific order: warmed pita, hot meat, sliced tomatoes, raw onion, and a generous drizzle of cool tzatziki. Meant to be eaten standing or walking through busy Greek streets."
     },
-    "extra": []
+    "extra": [],
+    "status": "published"
   },
   {
     "id": "14",
     "slug": "miso-glazed-eggplant-recipe",
     "title": "Miso Eggplant Recipe",
-    "summary": "A delicious Japanese side dish featuring eggplant glazed with sweet and salty miso.",
+    "summary": "Eggplant cooked until it collapses, then glazed with miso and mirin and blistered under a hot grill. Known in Japan as nasu dengaku.",
     "description": "A delicious Japanese side dish featuring eggplant glazed with sweet and salty miso.",
     "image": "/Miso-Eggplant.png",
     "category": "Japanese",
@@ -1685,7 +1800,7 @@
       "Vegan",
       "Gluten Free"
     ],
-    "mealType": "Lunch",
+    "mealType": "Dinner",
     "audience": [
       "Health Conscious"
     ],
@@ -1693,9 +1808,7 @@
     "prepTime": "25 mins",
     "cookTime": null,
     "totalTime": null,
-    "rating": 4.6,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 2,
     "totalCalories": 180,
@@ -1797,14 +1910,48 @@
       ],
       "tradition": "Cook the eggplant until the flesh becomes impossibly creamy, then broil until the miso glaze bubbles and develops golden brown caramelized patches. Finish with toasted sesame seeds and optional shichimi togarashi."
     },
-    "extra": []
+    "extra": [],
+    "status": "published",
+    "intro": "Eggplant and miso were made for each other. One is spongy and mild, the other salty and deeply fermented, and under a hot grill the sugars in the glaze catch and blister. Japanese cooks call this nasu dengaku. It takes about twenty five minutes and tastes like it took longer.",
+    "notes": {
+      "looksRight": "The flesh should be completely collapsed and custardy, soft enough to scoop out with a spoon, with dark bubbling patches across the glaze.",
+      "goesWrong": [
+        {
+          "problem": "The eggplant is rubbery in the middle",
+          "fix": "Undercooked. It needs to go further than feels reasonable. Cook it until the flesh gives absolutely no resistance before the glaze goes anywhere near it."
+        },
+        {
+          "problem": "The glaze burned before the eggplant was done",
+          "fix": "The glaze goes on at the end, not the start. Miso and mirin carry enough sugar to scorch in two minutes under a grill."
+        },
+        {
+          "problem": "It tastes too salty",
+          "fix": "Miso brands vary enormously. Loosen the glaze with another spoon of mirin or a little water, and always taste it before it goes on the eggplant."
+        }
+      ],
+      "swaps": [
+        {
+          "from": "Mirin",
+          "to": "A tablespoon of rice vinegar with a teaspoon of sugar"
+        },
+        {
+          "from": "White miso",
+          "to": "Red miso, but use about a third less because it is far stronger"
+        }
+      ],
+      "leftovers": "Good cold the next day straight from the fridge, chopped into a bowl of rice."
+    },
+    "relatedReading": [
+      "the-science-of-fermentation"
+    ],
+    "flagship": true
   },
   {
     "id": "paneer-paratha-001",
     "slug": "paneer-paratha-recipe",
     "title": "Paneer Paratha Recipe",
     "summary": "A flavorful Indian stuffed flatbread filled with spiced paneer cheese.",
-    "description": "Soft whole‑wheat flatbreads stuffed with a warm, spiced paneer filling — perfect for breakfast, lunch, or dinner. Crispy on the outside and tender inside, these parathas bring comfort and spice together.",
+    "description": "Soft whole‑wheat flatbreads stuffed with a warm, spiced paneer filling, perfect for breakfast, lunch, or dinner. Crispy on the outside and tender inside, these parathas bring comfort and spice together.",
     "image": "/Paneer-Paratha.jpeg",
     "category": "Indian",
     "cuisine": "North Indian",
@@ -1821,9 +1968,7 @@
     "prepTime": "35 mins",
     "cookTime": null,
     "totalTime": null,
-    "rating": 5,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Medium",
     "servings": 2,
     "totalCalories": 820,
@@ -1973,14 +2118,15 @@
       ],
       "tradition": "Serve hot from the griddle with cool yogurt, tangy pickle, and a pat of butter melting on top. The contrast of temperatures and flavors is essential to the experience."
     },
-    "extra": []
+    "extra": [],
+    "status": "published"
   },
   {
     "id": "gobi-paratha-001",
     "slug": "gobi-paratha-recipe",
     "title": "Gobi Paratha Recipe",
     "summary": "Classic North Indian stuffed flatbread with spiced grated cauliflower filling.",
-    "description": "Soft whole-wheat parathas generously stuffed with a flavorful, mildly spiced grated cauliflower (gobi) mixture — crispy golden outside with a tender, aromatic filling inside.",
+    "description": "Soft whole-wheat parathas generously stuffed with a flavorful, mildly spiced grated cauliflower (gobi) mixture, crispy golden outside with a tender, aromatic filling inside.",
     "image": "/gobi-paratha.jpeg",
     "category": "Indian",
     "cuisine": "North Indian",
@@ -1997,9 +2143,7 @@
     "prepTime": "40 mins",
     "cookTime": null,
     "totalTime": null,
-    "rating": 4.9,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Medium",
     "servings": 4,
     "totalCalories": 780,
@@ -2199,16 +2343,17 @@
     },
     "extra": [
       "Avoid adding salt to the cauliflower until you are ready to stuff; salt releases moisture and can make the paratha soggy.",
-      "Grate the cauliflower finely — large chunks can tear the dough during rolling.",
+      "Grate the cauliflower finely, large chunks can tear the dough during rolling.",
       "If the dough feels too tight, add a teaspoon of oil while kneading for extra elasticity."
-    ]
+    ],
+    "status": "published"
   },
   {
     "id": "garlic-cheese-sandwich-001",
     "slug": "garlic-cheese-sandwich-recipe",
     "title": "Garlic Cheese Sandwich",
-    "summary": "Crispy toasted bread slathered with garlic butter and stuffed with gooey melted cheese — ultimate comfort food in sandwich form.",
-    "description": "Golden, buttery bread infused with fresh garlic aroma and loaded with perfectly melted cheese. Simple, indulgent, and ready in under 15 minutes — the perfect quick snack, lunch, or midnight craving fix.",
+    "summary": "Crispy toasted bread slathered with garlic butter and stuffed with gooey melted cheese, ultimate comfort food in sandwich form.",
+    "description": "Golden, buttery bread infused with fresh garlic aroma and loaded with perfectly melted cheese. Simple, indulgent, and ready in under 15 minutes, the perfect quick snack, lunch, or midnight craving fix.",
     "image": "/garlic-cheese-sandwich.jpeg",
     "category": "Quick Bites",
     "cuisine": "Fusion / Modern",
@@ -2226,9 +2371,7 @@
     "prepTime": "5 mins",
     "cookTime": "8 mins",
     "totalTime": "13 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 2,
     "totalCalories": 680,
@@ -2366,14 +2509,15 @@
       "For extra indulgence, add a sprinkle of chili flakes or oregano to the garlic butter.",
       "Use a mix of cheeses (cheddar + mozzarella) for the perfect melt and flavor balance.",
       "Cook on medium-low heat to ensure cheese melts fully without burning the bread."
-    ]
+    ],
+    "status": "published"
   },
   {
     "id": "chickpea-shawarma-wrap-001",
     "slug": "chickpea-shawarma-wrap-recipe",
     "title": "Vegan Chickpea Shawarma Wrap",
-    "summary": "Spiced roasted chickpeas wrapped in warm pita with tahini sauce, fresh veggies and pickles — Middle Eastern street food vibes, completely plant-based.",
-    "description": "Crispy, warmly spiced chickpeas stand in beautifully for traditional meat in this satisfying wrap. Paired with creamy tahini sauce, crunchy vegetables, and tangy pickles — it's fresh, flavorful, and deeply comforting.",
+    "summary": "Chickpeas roasted hard with shawarma spices, folded into warm pita with tahini, pickles and a lot of fresh herbs.",
+    "description": "Crispy, warmly spiced chickpeas stand in beautifully for traditional meat in this satisfying wrap. Paired with creamy tahini sauce, crunchy vegetables, and tangy pickles, it's fresh, flavorful, and deeply comforting.",
     "image": "/Vegan-Chickpea-Shawarma-Wrap.png",
     "category": "Wraps",
     "cuisine": "Middle Eastern",
@@ -2382,19 +2526,17 @@
       "Vegan",
       "Gluten Free Optional"
     ],
-    "mealType": "Lunch/Dinner",
+    "mealType": "Lunch",
     "audience": [
       "Healthy",
       "Quick Meals",
       "Street Food Lovers"
     ],
-    "country": "Global",
+    "country": "Lebanon",
     "prepTime": "15 mins",
     "cookTime": "25 mins",
     "totalTime": "40 mins",
-    "rating": 4.9,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 4,
     "totalCalories": 520,
@@ -2547,17 +2689,57 @@
     "extra": [
       "For extra crunch, add quick-pickled red cabbage or turnips.",
       "Make it gluten-free with gluten-free flatbreads or lettuce wraps."
-    ]
+    ],
+    "status": "published",
+    "intro": "The trick here is not the spice blend, it is how dry you get the chickpeas before they go in the oven. Wet chickpeas steam and stay soft. Dry ones crackle. Everything after that is assembly, which makes this a good one for feeding people without standing over a stove.",
+    "notes": {
+      "looksRight": "Properly roasted chickpeas rattle when you shake the tray, and a few will have split open. Taste one. Crisp at the edge, still creamy in the middle.",
+      "goesWrong": [
+        {
+          "problem": "The chickpeas came out soft",
+          "fix": "Too much moisture, too crowded, or an oven that had not come up to temperature. Pat them properly dry, spread them over two trays, and give them another ten minutes."
+        },
+        {
+          "problem": "The tahini sauce seized into cement",
+          "fix": "That is normal and it is fixable. Keep adding cold water a spoonful at a time and whisk hard. It goes from paste to grit to cream, in that order."
+        },
+        {
+          "problem": "The wrap fell apart",
+          "fix": "Too much sauce too early, and a cold pita. Warm the bread until it is pliable, and keep the filling in a line down the middle rather than spread to the edges."
+        }
+      ],
+      "swaps": [
+        {
+          "from": "Pita",
+          "to": "Any flatbread, or large lettuce leaves for something lighter"
+        },
+        {
+          "from": "Tahini",
+          "to": "Thick cashew cream with lemon and garlic"
+        },
+        {
+          "from": "Shop bought pickles",
+          "to": "Red onion sliced thin and left in lime juice for fifteen minutes"
+        }
+      ],
+      "leftovers": "Keep the parts separate. Chickpeas go in a loose container, never sealed tight while warm or they sweat and soften. The tahini sauce keeps a week and thickens as it sits, so loosen it with water.",
+      "makeAhead": "Sauce, pickles and chopped vegetables can all be done the night before. The chickpeas want to be fresh from the oven."
+    },
+    "relatedReading": [
+      "the-spice-trade-that-shaped-history",
+      "plant-based-nutrition-what-science-says"
+    ],
+    "flagship": true
   },
   {
     "id": "mushroom-stroganoff-001",
     "slug": "creamy-mushroom-stroganoff-recipe",
     "title": "Creamy Vegan Mushroom Stroganoff",
-    "summary": "Rich, silky mushroom sauce over pasta — classic comfort food made completely dairy-free.",
-    "description": "Tender mushrooms in a luscious, tangy cashew-based cream sauce with hints of mustard and paprika — served over wide noodles for the ultimate cozy dinner.",
+    "summary": "Mushrooms browned properly, then folded into a blended cashew cream with dijon and smoked paprika, over ribbons of pasta.",
+    "description": "Tender mushrooms in a luscious, tangy cashew-based cream sauce with hints of mustard and paprika, served over wide noodles for the ultimate cozy dinner.",
     "image": "/Creamy-Vegan-Mushroom-Stroganoff.png",
     "category": "Pasta",
-    "cuisine": "Russian / Fusion",
+    "cuisine": "Eastern European",
     "continent": "Europe",
     "dietary": [
       "Vegan"
@@ -2567,13 +2749,11 @@
       "Comfort Food",
       "Date Night"
     ],
-    "country": "Global",
+    "country": "Russia",
     "prepTime": "15 mins",
     "cookTime": "20 mins",
     "totalTime": "35 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Medium",
     "servings": 4,
     "totalCalories": 580,
@@ -2747,14 +2927,52 @@
     "extra": [
       "Add a splash of white wine or soy sauce for extra umami.",
       "Use oyster or king oyster mushrooms for even meatier texture."
-    ]
+    ],
+    "status": "published",
+    "intro": "Cashews do the job cream used to do here, and they do it without the heaviness that sends you to the sofa afterwards. The part people rush is the mushrooms. They want a pan that is too hot and not too full, and they want to be left alone until they squeak and turn golden.",
+    "notes": {
+      "looksRight": "The sauce coats the back of a spoon and the mushrooms are deep brown at the edges. Grey mushrooms mean they stewed in their own water instead of browning.",
+      "goesWrong": [
+        {
+          "problem": "The sauce is grainy rather than silky",
+          "fix": "The cashews were not soaked long enough, or the blender gave up too early. Four hours in cold water, or twenty minutes in just boiled water, then blend for longer than feels necessary."
+        },
+        {
+          "problem": "The mushrooms went watery",
+          "fix": "Too many in the pan at once. Do them in two batches over high heat and resist stirring for the first two minutes."
+        },
+        {
+          "problem": "It tastes like cashew cream and little else",
+          "fix": "The dijon and smoked paprika are doing the real work. Add more of both, then a squeeze of lemon to lift the whole thing."
+        }
+      ],
+      "swaps": [
+        {
+          "from": "Cashews",
+          "to": "Sunflower seeds soaked the same way, or 200ml of oat cream straight from the carton"
+        },
+        {
+          "from": "Tagliatelle",
+          "to": "Any egg free ribbon pasta, or a pile of mashed potato"
+        },
+        {
+          "from": "Chestnut mushrooms",
+          "to": "A mix of whatever is cheap, with a few dried porcini soaked and chopped in for depth"
+        }
+      ],
+      "leftovers": "Three days in the fridge. The sauce thickens overnight, so reheat gently with a splash of plant milk, and store the pasta separately if you can be bothered."
+    },
+    "relatedReading": [
+      "plant-based-nutrition-what-science-says"
+    ],
+    "flagship": true
   },
   {
     "id": "lentil-bolognese-001",
     "slug": "hearty-lentil-bolognese-recipe",
     "title": "Vegan Lentil Bolognese",
-    "summary": "Rich, meaty lentil ragù simmered with tomatoes and herbs — perfect over pasta or polenta.",
-    "description": "Deeply savory, slow-simmered sauce packed with lentils, vegetables, red wine, and tomatoes. Tastes like it’s been cooking all day — but ready in under an hour.",
+    "summary": "A slow simmered lentil ragù with tomatoes, red wine and soffritto. Thick enough to cling to pasta, and better the next day.",
+    "description": "Deeply savory, slow-simmered sauce packed with lentils, vegetables, red wine, and tomatoes. Tastes like it’s been cooking all day, but ready in under an hour.",
     "image": "/Vegan-Lentil-Bolognese.png",
     "category": "Pasta",
     "cuisine": "Italian",
@@ -2767,13 +2985,11 @@
       "Families",
       "Meal Prep"
     ],
-    "country": "Italy / Global",
+    "country": "Italy",
     "prepTime": "15 mins",
     "cookTime": "40 mins",
     "totalTime": "55 mins",
-    "rating": 4.9,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Medium",
     "servings": 6,
     "totalCalories": 480,
@@ -2908,15 +3124,55 @@
       "tradition": "Serve over sturdy pasta like rigatoni or pappardelle that can stand up to the hearty sauce. Add fresh basil at the very end to preserve its bright flavor and provide unmistakable Italian character."
     },
     "extra": [
-      "Tastes even better the next day — perfect for meal prep.",
+      "Tastes even better the next day, perfect for meal prep.",
       "Freeze extras in portions for quick future meals."
-    ]
+    ],
+    "status": "published",
+    "intro": "A good ragù is mostly patience and salt. Lentils will never be beef and there is no point pretending otherwise, but they do give you the same slow savoury weight, the kind that clings to pasta instead of sliding off it. This is the one I make on a Sunday so there is something in the fridge on Monday.",
+    "notes": {
+      "looksRight": "Drag a spoon across the bottom of the pot. The sauce should hold that line for a second before it closes. The lentils should collapse under the back of a fork. If it still looks like soup with lentils in it, keep going with the lid off.",
+      "goesWrong": [
+        {
+          "problem": "The lentils are still chalky after 45 minutes",
+          "fix": "Your tomatoes are the culprit. Acid slows lentils down. Next time simmer them in stock until almost tender, then add the tomatoes."
+        },
+        {
+          "problem": "It tastes flat even with plenty of salt",
+          "fix": "It needs depth, not more salt. A spoonful of tomato paste fried in a dry corner of the pan for a minute, or a splash of soy sauce, will fix it faster than anything else."
+        },
+        {
+          "problem": "The bottom caught and now it tastes bitter",
+          "fix": "Nothing saves burnt. Pour the good sauce off the top into a clean pot and leave the scorched layer behind."
+        }
+      ],
+      "swaps": [
+        {
+          "from": "Red wine",
+          "to": "Another 150ml of stock with a teaspoon of balsamic stirred through it"
+        },
+        {
+          "from": "Green or brown lentils",
+          "to": "Puy lentils hold their shape even better. Avoid red lentils, which collapse into mush"
+        },
+        {
+          "from": "Pasta",
+          "to": "Soft polenta, a baked potato, or layered into lasagne"
+        }
+      ],
+      "leftovers": "Honestly better on day two. Five days covered in the fridge, and it freezes well in portions. Thaw it slowly and add a splash of water when you reheat, because it tightens in the freezer.",
+      "makeAhead": "The soffritto can be chopped and cooked a day ahead and kept in the fridge, which turns this into a twenty minute job."
+    },
+    "relatedReading": [
+      "evolution-of-italian-cuisine",
+      "the-incredible-journey-of-the-tomato"
+    ],
+    "flagship": true
   },
   {
     "id": "buddha-bowl-001",
     "slug": "rainbow-buddha-bowl-recipe",
     "title": "Rainbow Buddha Bowl",
-    "summary": "A nourishing bowl of grains, roasted vegetables, and creamy tahini dressing — vibrant, satisfying, and completely plant-based.",
+    "summary": "Roasted sweet potato and chickpeas over quinoa with raw cabbage, avocado and a lemon tahini dressing that pulls it together.",
     "description": "This colorful Buddha bowl brings together fluffy quinoa, crispy roasted chickpeas, rainbow vegetables, and a luscious tahini dressing. Every bite delivers different textures and flavors, making healthy eating genuinely exciting.",
     "image": "/Rainbow-Buddha-Bowl.png",
     "category": "Bowls",
@@ -2926,7 +3182,7 @@
       "Vegan",
       "Gluten Free"
     ],
-    "mealType": "Lunch/Dinner",
+    "mealType": "Lunch",
     "audience": [
       "Healthy",
       "Meal Prep",
@@ -2936,9 +3192,7 @@
     "prepTime": "20 mins",
     "cookTime": "30 mins",
     "totalTime": "50 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 2,
     "totalCalories": 580,
@@ -3107,13 +3361,53 @@
     "extra": [
       "Swap quinoa for brown rice, farro, or cauliflower rice for variety.",
       "Add pickled red onion or kimchi for extra tang and probiotics."
-    ]
+    ],
+    "status": "published",
+    "intro": "Bowls like this get a bad name because so many of them are just vegetables sitting in a dish with no plan. The plan is contrast and dressing. Something roasted and sweet, something raw and sharp, something creamy, and more salt than you think.",
+    "notes": {
+      "looksRight": "Sweet potato caramelised at the corners rather than pale and soft, and chickpeas with a little crunch left in them.",
+      "goesWrong": [
+        {
+          "problem": "Everything tastes healthy and boring",
+          "fix": "Underseasoned, almost always. Salt the vegetables before they roast, salt the dressing, then finish the bowl with lemon. Acid is what makes it taste like food rather than fuel."
+        },
+        {
+          "problem": "The vegetables steamed instead of roasting",
+          "fix": "Crowded tray. Give everything space, use the upper shelf of the oven, and do not cover it."
+        },
+        {
+          "problem": "The tahini dressing tastes bitter",
+          "fix": "Some jars of tahini simply are bitter. Balance it with maple syrup and more lemon, and try a different brand next time."
+        }
+      ],
+      "swaps": [
+        {
+          "from": "Quinoa",
+          "to": "Brown rice, farro, or warm couscous"
+        },
+        {
+          "from": "Sweet potato",
+          "to": "Pumpkin, carrots, or cauliflower"
+        },
+        {
+          "from": "Tahini dressing",
+          "to": "Peanut butter thinned with lime and soy"
+        }
+      ],
+      "leftovers": "This is the one worth prepping. Roast everything, keep the components in separate containers, and build it in the morning. Four days, and it makes a genuinely good packed lunch. Add the avocado on the day.",
+      "makeAhead": "Grain, roasted vegetables and dressing all keep four days. Assembly takes two minutes."
+    },
+    "relatedReading": [
+      "plant-based-nutrition-what-science-says",
+      "home-cooking-statistics-2026"
+    ],
+    "flagship": true
   },
   {
     "id": "pad-thai-001",
     "slug": "vegan-pad-thai-recipe",
     "title": "Vegan Pad Thai",
-    "summary": "Classic Thai street food made plant-based with rice noodles, tofu, and a tangy tamarind sauce — sweet, sour, and utterly addictive.",
+    "summary": "Rice noodles tossed in a tamarind sauce that is equal parts sour, sweet and salty, with crisp tofu and crushed peanuts.",
     "description": "This authentic style pad thai features chewy rice noodles, crispy tofu, and a perfect balance of tamarind, palm sugar, and lime. Topped with crushed peanuts and fresh bean sprouts, it delivers all the flavors of Bangkok street stalls without any animal products.",
     "image": "/Vegan-Pad-Thai.png",
     "category": "Noodles",
@@ -3133,9 +3427,7 @@
     "prepTime": "20 mins",
     "cookTime": "15 mins",
     "totalTime": "35 mins",
-    "rating": 4.9,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Medium",
     "servings": 2,
     "totalCalories": 620,
@@ -3357,13 +3649,56 @@
     "extra": [
       "Use tamari instead of soy sauce for a gluten free version.",
       "Add pressed, crumbled dried tofu for a more authentic protein option."
-    ]
+    ],
+    "status": "published",
+    "intro": "Pad thai lives or dies on the sauce, and the sauce is three things arguing with each other: sour tamarind, sweet palm sugar, salty soy. Get that balance right and nobody at the table wonders where the egg went. The cooking itself takes about four minutes, so everything needs to be chopped, mixed and within arm’s reach before the pan gets hot.",
+    "notes": {
+      "looksRight": "Glossy noodles that fall apart from each other, with no puddle left in the bottom of the pan. If you can see liquid, keep tossing over high heat until it clings to the noodles instead.",
+      "goesWrong": [
+        {
+          "problem": "The noodles turned to paste",
+          "fix": "They soaked too long, or soaked in hot water. Room temperature water, and pull them out while they still fight back a little. They finish cooking in the pan."
+        },
+        {
+          "problem": "Everything welded into one clump",
+          "fix": "The pan was not hot enough and was probably too full. Cook it in two batches rather than one sad pile, and get the pan properly hot first."
+        },
+        {
+          "problem": "It tastes sweet and not much else",
+          "fix": "More tamarind, and a hard squeeze of lime at the table. The lime is not a garnish, it is the last quarter of the seasoning."
+        }
+      ],
+      "swaps": [
+        {
+          "from": "Tamarind paste",
+          "to": "Two tablespoons of lime juice with a teaspoon of soy. Not the same thing, but close enough on a weeknight"
+        },
+        {
+          "from": "Palm sugar",
+          "to": "Brown sugar, or maple syrup"
+        },
+        {
+          "from": "Tofu",
+          "to": "Tempeh, or thin strips of king oyster mushroom"
+        },
+        {
+          "from": "Peanuts",
+          "to": "Toasted cashews, or sunflower seeds if nuts are out"
+        }
+      ],
+      "leftovers": "Pad thai does not keep. The noodles go soft and sticky by morning and no amount of reheating brings them back. Eat it standing at the stove if you have to."
+    },
+    "relatedReading": [
+      "the-fiery-history-of-chili-peppers",
+      "the-spice-trade-that-shaped-history"
+    ],
+    "flagship": true
   },
   {
     "id": "black-bean-tacos-001",
     "slug": "spiced-black-bean-tacos-recipe",
     "title": "Spiced Black Bean Tacos",
-    "summary": "Hearty, smoky black beans with fresh toppings in warm corn tortillas — satisfying Mexican-inspired tacos that happen to be completely vegan.",
+    "summary": "Smoky black beans in warm corn tortillas with quick pickled onions, lime crema and plenty of coriander.",
     "description": "These flavor-packed tacos feature cumin-spiced black beans, creamy avocado, tangy lime crema, and crunchy pickled onions. Quick enough for weeknight dinners yet impressive enough for entertaining, they prove vegan tacos can be just as satisfying as any meat version.",
     "image": "/Spiced-Black-Bean-Tacos.png",
     "category": "Tacos",
@@ -3383,9 +3718,7 @@
     "prepTime": "15 mins",
     "cookTime": "15 mins",
     "totalTime": "30 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 4,
     "totalCalories": 420,
@@ -3591,13 +3924,51 @@
     "extra": [
       "Add crumbled vegan chorizo for extra protein and spice.",
       "Make it a bowl by serving over cilantro lime rice instead of tortillas."
-    ]
+    ],
+    "status": "published",
+    "intro": "Weeknight tacos, the kind that take fifteen minutes and still taste like you made an effort. The pickled onions are not optional. They are the sharp thing that stops the beans feeling heavy, and they take the same fifteen minutes to make.",
+    "notes": {
+      "looksRight": "Thick beans, a little mashed at the edges, that hold their shape on a spoon rather than running off it.",
+      "goesWrong": [
+        {
+          "problem": "The beans taste bland",
+          "fix": "Bloom the cumin and paprika in hot oil for thirty seconds before the beans go in. Dry spices stirred into wet beans never really wake up."
+        },
+        {
+          "problem": "The tortillas cracked when I folded them",
+          "fix": "Cold tortillas crack. Warm them one at a time in a dry pan until they soften and smell toasty, then keep them wrapped in a tea towel."
+        },
+        {
+          "problem": "It goes watery in the tortilla",
+          "fix": "Mash a quarter of the beans against the side of the pan to thicken the rest, and drain your salsa before it goes on."
+        }
+      ],
+      "swaps": [
+        {
+          "from": "Black beans",
+          "to": "Pinto or kidney beans"
+        },
+        {
+          "from": "Cashew crema",
+          "to": "Avocado mashed with lime and salt"
+        },
+        {
+          "from": "Corn tortillas",
+          "to": "Small flour tortillas, or lettuce cups"
+        }
+      ],
+      "leftovers": "The beans keep four days and get better. Pickled onions last a fortnight in the fridge and you will find yourself putting them on everything."
+    },
+    "relatedReading": [
+      "the-fiery-history-of-chili-peppers"
+    ],
+    "flagship": true
   },
   {
     "id": "coconut-curry-001",
     "slug": "thai-coconut-vegetable-curry-recipe",
     "title": "Thai Coconut Vegetable Curry",
-    "summary": "A rich, aromatic curry with vegetables simmered in creamy coconut milk and fragrant Thai spices — warming, comforting, and deeply satisfying.",
+    "summary": "Curry paste fried until fragrant, then coconut milk, tofu and vegetables, finished with Thai basil and lime.",
     "description": "This gorgeous golden curry features tender vegetables swimming in a luscious coconut sauce infused with lemongrass, galangal, and Thai basil. It comes together in under 30 minutes and delivers restaurant-quality flavors that will make your kitchen smell incredible.",
     "image": "/Thai-Coconut-Vegetable-Curry.png",
     "category": "Curry",
@@ -3617,9 +3988,7 @@
     "prepTime": "15 mins",
     "cookTime": "20 mins",
     "totalTime": "35 mins",
-    "rating": 4.9,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 4,
     "totalCalories": 480,
@@ -3820,13 +4189,52 @@
     "extra": [
       "Add a splash of lime juice at the end for extra brightness.",
       "Include Thai eggplant or baby corn for more authentic vegetables."
-    ]
+    ],
+    "status": "published",
+    "intro": "The step nobody should skip is frying the curry paste in oil until it darkens and the whole kitchen smells of it. Thirty seconds of that does more for the finished curry than anything else you will do. Coconut milk goes in after, never before.",
+    "notes": {
+      "looksRight": "A thin slick of orange oil floating on the surface. That is the paste releasing its fat and colour, and it means you got the first step right.",
+      "goesWrong": [
+        {
+          "problem": "It tastes thin and coconutty, like sweet soup",
+          "fix": "The paste was not fried and the curry was not seasoned. Soy for salt, a little sugar for balance, lime off the heat at the end."
+        },
+        {
+          "problem": "The vegetables are mushy",
+          "fix": "Everything went in at once. Hard vegetables first, softer ones in the last few minutes, basil after the heat is off."
+        },
+        {
+          "problem": "The coconut milk split into grains",
+          "fix": "It boiled too hard. Once the milk is in, keep it at a lazy simmer and nothing more."
+        }
+      ],
+      "swaps": [
+        {
+          "from": "Yellow curry paste",
+          "to": "Red or green paste. Read the label, because many brands include shrimp paste"
+        },
+        {
+          "from": "Tofu",
+          "to": "Chickpeas, or king oyster mushrooms torn into strips"
+        },
+        {
+          "from": "Thai basil",
+          "to": "Regular basil with a little mint. Not the same, but it works"
+        }
+      ],
+      "leftovers": "Four days in the fridge and the flavour deepens. Freeze it without the basil and stir fresh leaves in when you reheat."
+    },
+    "relatedReading": [
+      "the-global-journey-of-curry",
+      "the-fiery-history-of-chili-peppers"
+    ],
+    "flagship": true
   },
   {
     "id": "falafel-plate-001",
     "slug": "mediterranean-falafel-plate-recipe",
     "title": "Mediterranean Falafel Plate",
-    "summary": "Crispy, herb-packed falafel with creamy hummus, fresh salads, and warm pita — a complete Middle Eastern feast that is naturally vegan.",
+    "summary": "Falafel made the only way that really works, from soaked dried chickpeas, with hummus, salad and warm pita.",
     "description": "These golden falafel are crispy on the outside, fluffy and green with herbs on the inside. Served with silky hummus, bright tabbouleh, pickled vegetables, and warm pita bread, this plate delivers the full mezze experience at home.",
     "image": "/Mediterranean-Falafel-Plate.png",
     "category": "Middle Eastern",
@@ -3836,19 +4244,17 @@
       "Vegan",
       "High Protein"
     ],
-    "mealType": "Lunch/Dinner",
+    "mealType": "Dinner",
     "audience": [
       "Entertaining",
       "Healthy",
       "Meal Prep"
     ],
-    "country": "Global",
+    "country": "Lebanon",
     "prepTime": "30 mins",
     "cookTime": "20 mins",
     "totalTime": "50 mins",
-    "rating": 4.9,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Medium",
     "servings": 4,
     "totalCalories": 650,
@@ -4049,7 +4455,42 @@
     "extra": [
       "Bake at 375°F for 20 minutes, flipping halfway, for a lighter version.",
       "The mixture keeps refrigerated for 3 days or frozen for 1 month."
-    ]
+    ],
+    "status": "published",
+    "intro": "Falafel made from dried chickpeas is a different food from falafel made with tinned ones. Tinned chickpeas carry too much water and they will fall apart in the oil, every single time. Soak dried ones overnight and do not cook them. That is the whole secret, and it is the reason this recipe starts the day before.",
+    "notes": {
+      "looksRight": "Deep golden brown and hollow sounding when you tap one. Break it open and the inside should be bright green from all the herbs.",
+      "goesWrong": [
+        {
+          "problem": "They dissolved in the oil",
+          "fix": "Tinned or cooked chickpeas, or a mixture that was too wet. Use soaked dried chickpeas, and if it still feels loose, chill it for half an hour and work in a spoonful of flour."
+        },
+        {
+          "problem": "Dark outside, raw inside",
+          "fix": "The oil was too hot. Hold it around 170C and give them three or four minutes, which is long enough for the middle to cook."
+        },
+        {
+          "problem": "They came out dense and heavy",
+          "fix": "Overprocessed into paste. Pulse until it looks like coarse couscous and stop while there is still texture."
+        }
+      ],
+      "swaps": [
+        {
+          "from": "Deep frying",
+          "to": "Brush with oil and bake at 200C for about twenty five minutes, turning once. Drier, but still very good"
+        },
+        {
+          "from": "Hummus",
+          "to": "Cashew yoghurt with lemon and a little garlic"
+        }
+      ],
+      "leftovers": "Fried falafel is at its best within the hour. Reheat in a hot oven, never a microwave, which turns them to sponge. The uncooked mixture keeps two days in the fridge and fries straight from cold.",
+      "makeAhead": "Chickpeas soak overnight. The mixture can be blitzed a day before you fry."
+    },
+    "relatedReading": [
+      "the-spice-trade-that-shaped-history"
+    ],
+    "flagship": true
   },
   {
     "id": "vegan-burrito-bowl-001",
@@ -4072,9 +4513,7 @@
     "prepTime": "15 mins",
     "cookTime": "25 mins",
     "totalTime": "40 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 4,
     "totalCalories": 520,
@@ -4163,7 +4602,9 @@
     "extra": [
       "Source: https://www.loveandlemons.com/burrito-bowl-recipe/",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-chili-001",
@@ -4186,9 +4627,7 @@
     "prepTime": "15 mins",
     "cookTime": "25 mins",
     "totalTime": "40 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 4,
     "totalCalories": 430,
@@ -4277,7 +4716,9 @@
     "extra": [
       "Source: https://www.noracooks.com/vegan-chili/",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-jambalaya-001",
@@ -4300,9 +4741,7 @@
     "prepTime": "15 mins",
     "cookTime": "25 mins",
     "totalTime": "40 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Medium",
     "servings": 4,
     "totalCalories": 470,
@@ -4391,7 +4830,9 @@
     "extra": [
       "Source: https://simple-veganista.com/vegan-jambalaya/",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-banana-bread-001",
@@ -4414,9 +4855,7 @@
     "prepTime": "15 mins",
     "cookTime": "25 mins",
     "totalTime": "40 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 4,
     "totalCalories": 310,
@@ -4506,7 +4945,11 @@
       "Source: https://www.noracooks.com/vegan-banana-bread/",
       "Includes nutritional context and step-by-step method from source inspiration."
     ],
-    "appliance": ["Oven"]
+    "appliance": [
+      "Oven"
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-shepherds-pie-001",
@@ -4529,9 +4972,7 @@
     "prepTime": "15 mins",
     "cookTime": "25 mins",
     "totalTime": "40 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Medium",
     "servings": 4,
     "totalCalories": 560,
@@ -4621,7 +5062,12 @@
       "Source: https://minimalistbaker.com/1-hour-vegan-shepherds-pie/",
       "Includes nutritional context and step-by-step method from source inspiration."
     ],
-    "appliance": ["Oven", "Stovetop"]
+    "appliance": [
+      "Oven",
+      "Stovetop"
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-lasagna-001",
@@ -4644,9 +5090,7 @@
     "prepTime": "15 mins",
     "cookTime": "25 mins",
     "totalTime": "40 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Hard",
     "servings": 4,
     "totalCalories": 540,
@@ -4736,7 +5180,11 @@
       "Source: https://www.noracooks.com/vegan-lasagna/",
       "Includes nutritional context and step-by-step method from source inspiration."
     ],
-    "appliance": ["Oven"]
+    "appliance": [
+      "Oven"
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-alfredo-001",
@@ -4759,9 +5207,7 @@
     "prepTime": "15 mins",
     "cookTime": "25 mins",
     "totalTime": "40 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Medium",
     "servings": 4,
     "totalCalories": 590,
@@ -4851,7 +5297,12 @@
       "Source: https://minimalistbaker.com/30-minute-vegan-alfredo-vegan-gf/",
       "Includes nutritional context and step-by-step method from source inspiration."
     ],
-    "appliance": ["Stovetop", "Blender"]
+    "appliance": [
+      "Stovetop",
+      "Blender"
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-gnocchi-001",
@@ -4874,9 +5325,7 @@
     "prepTime": "15 mins",
     "cookTime": "25 mins",
     "totalTime": "40 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 4,
     "totalCalories": 500,
@@ -4965,7 +5414,9 @@
     "extra": [
       "Source: https://www.loveandlemons.com/gnocchi-recipe/",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-moussaka-001",
@@ -4988,9 +5439,7 @@
     "prepTime": "15 mins",
     "cookTime": "25 mins",
     "totalTime": "40 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Hard",
     "servings": 4,
     "totalCalories": 530,
@@ -5079,7 +5528,9 @@
     "extra": [
       "Source: https://www.lazycatkitchen.com/vegan-moussaka/",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-ratatouille-001",
@@ -5102,9 +5553,7 @@
     "prepTime": "15 mins",
     "cookTime": "25 mins",
     "totalTime": "40 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 4,
     "totalCalories": 260,
@@ -5193,7 +5642,9 @@
     "extra": [
       "Source: https://www.loveandlemons.com/ratatouille-recipe/",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-palak-tofu-001",
@@ -5216,9 +5667,7 @@
     "prepTime": "15 mins",
     "cookTime": "25 mins",
     "totalTime": "40 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Medium",
     "servings": 4,
     "totalCalories": 410,
@@ -5307,7 +5756,9 @@
     "extra": [
       "Source: https://www.veganricha.com/palak-tofu/",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-chana-masala-001",
@@ -5330,9 +5781,7 @@
     "prepTime": "15 mins",
     "cookTime": "25 mins",
     "totalTime": "40 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 4,
     "totalCalories": 390,
@@ -5421,7 +5870,9 @@
     "extra": [
       "Source: https://www.veganricha.com/chana-masala-recipe/",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-khichdi-001",
@@ -5444,9 +5895,7 @@
     "prepTime": "15 mins",
     "cookTime": "25 mins",
     "totalTime": "40 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 4,
     "totalCalories": 360,
@@ -5535,7 +5984,9 @@
     "extra": [
       "Source: https://www.indianhealthyrecipes.com/moong-dal-khichdi-recipe/",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-soba-001",
@@ -5558,9 +6009,7 @@
     "prepTime": "15 mins",
     "cookTime": "25 mins",
     "totalTime": "40 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 4,
     "totalCalories": 440,
@@ -5649,7 +6098,9 @@
     "extra": [
       "Source: https://www.loveandlemons.com/soba-noodles-recipe/",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-kimchi-fried-rice-001",
@@ -5672,9 +6123,7 @@
     "prepTime": "15 mins",
     "cookTime": "25 mins",
     "totalTime": "40 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 4,
     "totalCalories": 480,
@@ -5763,7 +6212,9 @@
     "extra": [
       "Source: https://www.noracooks.com/kimchi-fried-rice/",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-mapo-tofu-001",
@@ -5786,9 +6237,7 @@
     "prepTime": "15 mins",
     "cookTime": "25 mins",
     "totalTime": "40 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Medium",
     "servings": 4,
     "totalCalories": 420,
@@ -5877,7 +6326,9 @@
     "extra": [
       "Source: https://thewoksoflife.com/vegan-mapo-tofu/",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-red-lentil-dal-001",
@@ -5900,9 +6351,7 @@
     "prepTime": "15 mins",
     "cookTime": "25 mins",
     "totalTime": "40 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 4,
     "totalCalories": 370,
@@ -5991,7 +6440,9 @@
     "extra": [
       "Source: https://minimalistbaker.com/1-pot-everyday-lentil-soup/",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-peanut-noodles-001",
@@ -6014,9 +6465,7 @@
     "prepTime": "15 mins",
     "cookTime": "25 mins",
     "totalTime": "40 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 4,
     "totalCalories": 510,
@@ -6105,7 +6554,9 @@
     "extra": [
       "Source: https://www.noracooks.com/vegan-peanut-noodles/",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-cauliflower-tacos-001",
@@ -6128,9 +6579,7 @@
     "prepTime": "15 mins",
     "cookTime": "25 mins",
     "totalTime": "40 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Medium",
     "servings": 4,
     "totalCalories": 450,
@@ -6219,7 +6668,9 @@
     "extra": [
       "Source: https://www.loveandlemons.com/cauliflower-tacos/",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-chocolate-mousse-001",
@@ -6242,9 +6693,7 @@
     "prepTime": "15 mins",
     "cookTime": "25 mins",
     "totalTime": "40 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 4,
     "totalCalories": 290,
@@ -6333,7 +6782,9 @@
     "extra": [
       "Source: https://minimalistbaker.com/vegan-chocolate-mousse/",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-smoky-lentil-stew-001",
@@ -6356,9 +6807,7 @@
     "prepTime": "10 mins",
     "cookTime": "25 mins",
     "totalTime": "40 mins",
-    "rating": 4.9,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Medium",
     "servings": 4,
     "totalCalories": 420,
@@ -6447,7 +6896,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-tofu-scramble-bowl-001",
@@ -6470,9 +6921,7 @@
     "prepTime": "15 mins",
     "cookTime": "25 mins",
     "totalTime": "35 mins",
-    "rating": 4.6,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Hard",
     "servings": 6,
     "totalCalories": 520,
@@ -6561,7 +7010,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-chickpea-spinach-curry-001",
@@ -6584,9 +7035,7 @@
     "prepTime": "15 mins",
     "cookTime": "35 mins",
     "totalTime": "45 mins",
-    "rating": 4.7,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Medium",
     "servings": 2,
     "totalCalories": 360,
@@ -6675,7 +7124,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-mushroom-barley-soup-001",
@@ -6698,9 +7149,7 @@
     "prepTime": "20 mins",
     "cookTime": "35 mins",
     "totalTime": "55 mins",
-    "rating": 5,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 2,
     "totalCalories": 450,
@@ -6789,7 +7238,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-roasted-veggie-quinoa-bowl-001",
@@ -6812,9 +7263,7 @@
     "prepTime": "15 mins",
     "cookTime": "20 mins",
     "totalTime": "55 mins",
-    "rating": 5,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 2,
     "totalCalories": 480,
@@ -6903,7 +7352,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-peanut-tofu-stir-fry-001",
@@ -6926,9 +7377,7 @@
     "prepTime": "10 mins",
     "cookTime": "20 mins",
     "totalTime": "40 mins",
-    "rating": 4.7,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 4,
     "totalCalories": 420,
@@ -7017,7 +7466,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-sweet-potato-black-bean-chili-001",
@@ -7040,9 +7491,7 @@
     "prepTime": "10 mins",
     "cookTime": "30 mins",
     "totalTime": "40 mins",
-    "rating": 4.7,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Hard",
     "servings": 4,
     "totalCalories": 450,
@@ -7131,7 +7580,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-sesame-broccoli-noodles-001",
@@ -7154,9 +7605,7 @@
     "prepTime": "10 mins",
     "cookTime": "35 mins",
     "totalTime": "40 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Medium",
     "servings": 4,
     "totalCalories": 320,
@@ -7245,7 +7694,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-tomato-basil-white-bean-pasta-001",
@@ -7268,9 +7719,7 @@
     "prepTime": "10 mins",
     "cookTime": "35 mins",
     "totalTime": "50 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Hard",
     "servings": 4,
     "totalCalories": 360,
@@ -7359,7 +7808,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-coconut-red-lentil-curry-001",
@@ -7382,9 +7833,7 @@
     "prepTime": "20 mins",
     "cookTime": "25 mins",
     "totalTime": "35 mins",
-    "rating": 4.6,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Hard",
     "servings": 5,
     "totalCalories": 450,
@@ -7473,7 +7922,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-mediterranean-couscous-salad-001",
@@ -7496,9 +7947,7 @@
     "prepTime": "20 mins",
     "cookTime": "25 mins",
     "totalTime": "55 mins",
-    "rating": 4.9,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Medium",
     "servings": 5,
     "totalCalories": 450,
@@ -7587,7 +8036,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-herbed-falafel-wrap-001",
@@ -7610,9 +8061,7 @@
     "prepTime": "20 mins",
     "cookTime": "25 mins",
     "totalTime": "35 mins",
-    "rating": 4.6,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Medium",
     "servings": 6,
     "totalCalories": 520,
@@ -7701,7 +8150,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-spiced-cauliflower-rice-bowl-001",
@@ -7724,9 +8175,7 @@
     "prepTime": "15 mins",
     "cookTime": "30 mins",
     "totalTime": "35 mins",
-    "rating": 4.9,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Hard",
     "servings": 3,
     "totalCalories": 480,
@@ -7815,7 +8264,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-creamy-cashew-alfredo-001",
@@ -7838,9 +8289,7 @@
     "prepTime": "10 mins",
     "cookTime": "30 mins",
     "totalTime": "40 mins",
-    "rating": 4.6,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Medium",
     "servings": 6,
     "totalCalories": 560,
@@ -7929,7 +8378,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-garlic-ginger-tofu-001",
@@ -7952,9 +8403,7 @@
     "prepTime": "20 mins",
     "cookTime": "25 mins",
     "totalTime": "50 mins",
-    "rating": 4.9,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Hard",
     "servings": 6,
     "totalCalories": 560,
@@ -8043,7 +8492,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-lemon-herb-chickpea-salad-001",
@@ -8066,9 +8517,7 @@
     "prepTime": "10 mins",
     "cookTime": "35 mins",
     "totalTime": "50 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Medium",
     "servings": 5,
     "totalCalories": 320,
@@ -8157,7 +8606,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-vegan-stuffed-peppers-001",
@@ -8180,9 +8631,7 @@
     "prepTime": "15 mins",
     "cookTime": "30 mins",
     "totalTime": "40 mins",
-    "rating": 4.9,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Hard",
     "servings": 4,
     "totalCalories": 360,
@@ -8271,7 +8720,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-maple-glazed-tempeh-001",
@@ -8294,9 +8745,7 @@
     "prepTime": "20 mins",
     "cookTime": "25 mins",
     "totalTime": "45 mins",
-    "rating": 4.9,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 3,
     "totalCalories": 360,
@@ -8385,7 +8834,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-green-pea-mint-risotto-001",
@@ -8408,9 +8859,7 @@
     "prepTime": "10 mins",
     "cookTime": "30 mins",
     "totalTime": "55 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 5,
     "totalCalories": 360,
@@ -8499,7 +8948,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-roasted-pumpkin-soup-001",
@@ -8522,9 +8973,7 @@
     "prepTime": "20 mins",
     "cookTime": "25 mins",
     "totalTime": "35 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Medium",
     "servings": 4,
     "totalCalories": 480,
@@ -8613,7 +9062,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-vegan-minestrone-001",
@@ -8636,9 +9087,7 @@
     "prepTime": "20 mins",
     "cookTime": "35 mins",
     "totalTime": "40 mins",
-    "rating": 4.9,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Medium",
     "servings": 5,
     "totalCalories": 360,
@@ -8727,7 +9176,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-thai-basil-eggplant-001",
@@ -8750,9 +9201,7 @@
     "prepTime": "15 mins",
     "cookTime": "35 mins",
     "totalTime": "55 mins",
-    "rating": 4.9,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 3,
     "totalCalories": 450,
@@ -8841,7 +9290,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-tofu-tikka-masala-001",
@@ -8864,9 +9315,7 @@
     "prepTime": "15 mins",
     "cookTime": "25 mins",
     "totalTime": "40 mins",
-    "rating": 4.9,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Hard",
     "servings": 5,
     "totalCalories": 480,
@@ -8955,7 +9404,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-moroccan-chickpea-tagine-001",
@@ -8978,9 +9429,7 @@
     "prepTime": "10 mins",
     "cookTime": "35 mins",
     "totalTime": "45 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 6,
     "totalCalories": 420,
@@ -9069,7 +9518,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-smoky-bean-enchiladas-001",
@@ -9092,9 +9543,7 @@
     "prepTime": "20 mins",
     "cookTime": "30 mins",
     "totalTime": "45 mins",
-    "rating": 4.9,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Medium",
     "servings": 3,
     "totalCalories": 420,
@@ -9183,7 +9632,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-baked-zucchini-fritters-001",
@@ -9206,9 +9657,7 @@
     "prepTime": "15 mins",
     "cookTime": "20 mins",
     "totalTime": "40 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Hard",
     "servings": 6,
     "totalCalories": 450,
@@ -9297,7 +9746,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-avocado-edamame-toast-001",
@@ -9320,9 +9771,7 @@
     "prepTime": "20 mins",
     "cookTime": "30 mins",
     "totalTime": "40 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 2,
     "totalCalories": 420,
@@ -9411,7 +9860,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-lentil-shepherd-pie-001",
@@ -9434,9 +9885,7 @@
     "prepTime": "20 mins",
     "cookTime": "35 mins",
     "totalTime": "55 mins",
-    "rating": 4.9,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Medium",
     "servings": 5,
     "totalCalories": 390,
@@ -9525,7 +9974,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-vegan-paella-001",
@@ -9548,9 +9999,7 @@
     "prepTime": "20 mins",
     "cookTime": "30 mins",
     "totalTime": "50 mins",
-    "rating": 4.9,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 3,
     "totalCalories": 420,
@@ -9639,7 +10088,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-soba-miso-soup-001",
@@ -9662,9 +10113,7 @@
     "prepTime": "15 mins",
     "cookTime": "30 mins",
     "totalTime": "45 mins",
-    "rating": 4.9,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Hard",
     "servings": 6,
     "totalCalories": 450,
@@ -9753,7 +10202,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-tofu-katsu-bowl-001",
@@ -9776,9 +10227,7 @@
     "prepTime": "10 mins",
     "cookTime": "25 mins",
     "totalTime": "40 mins",
-    "rating": 4.9,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Hard",
     "servings": 4,
     "totalCalories": 560,
@@ -9867,7 +10316,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-peanut-satay-noodle-salad-001",
@@ -9890,9 +10341,7 @@
     "prepTime": "20 mins",
     "cookTime": "25 mins",
     "totalTime": "40 mins",
-    "rating": 5,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Hard",
     "servings": 6,
     "totalCalories": 390,
@@ -9981,7 +10430,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-crispy-gnocchi-primavera-001",
@@ -10004,9 +10455,7 @@
     "prepTime": "10 mins",
     "cookTime": "25 mins",
     "totalTime": "50 mins",
-    "rating": 4.7,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 2,
     "totalCalories": 480,
@@ -10095,7 +10544,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-kale-white-bean-skillet-001",
@@ -10118,9 +10569,7 @@
     "prepTime": "10 mins",
     "cookTime": "30 mins",
     "totalTime": "55 mins",
-    "rating": 5,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 2,
     "totalCalories": 360,
@@ -10209,7 +10658,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-spinach-mushroom-lasagna-001",
@@ -10232,9 +10683,7 @@
     "prepTime": "20 mins",
     "cookTime": "35 mins",
     "totalTime": "40 mins",
-    "rating": 4.7,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 4,
     "totalCalories": 450,
@@ -10323,7 +10772,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-vegan-bibimbap-bowl-001",
@@ -10346,9 +10797,7 @@
     "prepTime": "15 mins",
     "cookTime": "25 mins",
     "totalTime": "35 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Hard",
     "servings": 3,
     "totalCalories": 390,
@@ -10437,7 +10886,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-tamarind-chickpea-curry-001",
@@ -10460,9 +10911,7 @@
     "prepTime": "20 mins",
     "cookTime": "35 mins",
     "totalTime": "50 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 2,
     "totalCalories": 560,
@@ -10551,7 +11000,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-roasted-beet-hummus-plate-001",
@@ -10574,9 +11025,7 @@
     "prepTime": "10 mins",
     "cookTime": "35 mins",
     "totalTime": "50 mins",
-    "rating": 4.9,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Hard",
     "servings": 4,
     "totalCalories": 390,
@@ -10665,7 +11114,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-lemon-dill-potato-salad-001",
@@ -10688,9 +11139,7 @@
     "prepTime": "20 mins",
     "cookTime": "30 mins",
     "totalTime": "50 mins",
-    "rating": 4.7,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 4,
     "totalCalories": 520,
@@ -10779,7 +11228,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-vegan-ramen-bowl-001",
@@ -10802,9 +11253,7 @@
     "prepTime": "20 mins",
     "cookTime": "20 mins",
     "totalTime": "45 mins",
-    "rating": 4.9,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Medium",
     "servings": 2,
     "totalCalories": 390,
@@ -10893,7 +11342,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-thai-peanut-curry-001",
@@ -10916,9 +11367,7 @@
     "prepTime": "15 mins",
     "cookTime": "20 mins",
     "totalTime": "35 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 6,
     "totalCalories": 560,
@@ -11007,7 +11456,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-mushroom-stroganoff-001",
@@ -11030,9 +11481,7 @@
     "prepTime": "15 mins",
     "cookTime": "25 mins",
     "totalTime": "45 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 5,
     "totalCalories": 390,
@@ -11121,7 +11570,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-cajun-bean-rice-001",
@@ -11144,9 +11595,7 @@
     "prepTime": "10 mins",
     "cookTime": "30 mins",
     "totalTime": "50 mins",
-    "rating": 4.7,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Medium",
     "servings": 4,
     "totalCalories": 450,
@@ -11235,7 +11684,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-vegan-makhani-001",
@@ -11258,9 +11709,7 @@
     "prepTime": "20 mins",
     "cookTime": "30 mins",
     "totalTime": "45 mins",
-    "rating": 4.9,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Medium",
     "servings": 6,
     "totalCalories": 450,
@@ -11349,7 +11798,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-harissa-roasted-vegetables-001",
@@ -11372,9 +11823,7 @@
     "prepTime": "20 mins",
     "cookTime": "30 mins",
     "totalTime": "40 mins",
-    "rating": 4.7,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Hard",
     "servings": 5,
     "totalCalories": 420,
@@ -11463,7 +11912,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-three-bean-salad-001",
@@ -11486,9 +11937,7 @@
     "prepTime": "10 mins",
     "cookTime": "30 mins",
     "totalTime": "45 mins",
-    "rating": 4.9,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 2,
     "totalCalories": 450,
@@ -11577,7 +12026,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-vegan-burrito-wrap-001",
@@ -11600,9 +12051,7 @@
     "prepTime": "20 mins",
     "cookTime": "20 mins",
     "totalTime": "45 mins",
-    "rating": 4.9,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 3,
     "totalCalories": 520,
@@ -11691,7 +12140,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-pesto-pasta-primavera-001",
@@ -11714,9 +12165,7 @@
     "prepTime": "20 mins",
     "cookTime": "20 mins",
     "totalTime": "45 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Hard",
     "servings": 2,
     "totalCalories": 420,
@@ -11805,7 +12254,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-roasted-tomato-soup-001",
@@ -11828,9 +12279,7 @@
     "prepTime": "20 mins",
     "cookTime": "30 mins",
     "totalTime": "55 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 6,
     "totalCalories": 480,
@@ -11919,7 +12368,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-cashew-tofu-korma-001",
@@ -11942,9 +12393,7 @@
     "prepTime": "20 mins",
     "cookTime": "20 mins",
     "totalTime": "55 mins",
-    "rating": 4.7,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Medium",
     "servings": 2,
     "totalCalories": 320,
@@ -12033,7 +12482,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-vegan-shakshuka-001",
@@ -12056,9 +12507,7 @@
     "prepTime": "10 mins",
     "cookTime": "35 mins",
     "totalTime": "45 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Hard",
     "servings": 6,
     "totalCalories": 450,
@@ -12147,7 +12596,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-spicy-udon-stir-fry-001",
@@ -12170,9 +12621,7 @@
     "prepTime": "15 mins",
     "cookTime": "35 mins",
     "totalTime": "55 mins",
-    "rating": 5,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Hard",
     "servings": 2,
     "totalCalories": 520,
@@ -12261,7 +12710,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-coconut-lime-rice-bowl-001",
@@ -12284,9 +12735,7 @@
     "prepTime": "20 mins",
     "cookTime": "30 mins",
     "totalTime": "55 mins",
-    "rating": 4.9,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Hard",
     "servings": 3,
     "totalCalories": 520,
@@ -12375,7 +12824,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-tofu-mushroom-pho-001",
@@ -12398,9 +12849,7 @@
     "prepTime": "20 mins",
     "cookTime": "25 mins",
     "totalTime": "50 mins",
-    "rating": 4.9,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 3,
     "totalCalories": 450,
@@ -12489,7 +12938,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-stuffed-sweet-potatoes-001",
@@ -12512,9 +12963,7 @@
     "prepTime": "15 mins",
     "cookTime": "35 mins",
     "totalTime": "45 mins",
-    "rating": 4.9,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Hard",
     "servings": 5,
     "totalCalories": 450,
@@ -12603,7 +13052,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-mediterranean-orzo-bowl-001",
@@ -12626,9 +13077,7 @@
     "prepTime": "15 mins",
     "cookTime": "25 mins",
     "totalTime": "55 mins",
-    "rating": 4.9,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Medium",
     "servings": 5,
     "totalCalories": 420,
@@ -12717,7 +13166,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-miso-glazed-tofu-001",
@@ -12740,9 +13191,7 @@
     "prepTime": "10 mins",
     "cookTime": "25 mins",
     "totalTime": "45 mins",
-    "rating": 5,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 3,
     "totalCalories": 450,
@@ -12831,7 +13280,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-vegan-piccata-pasta-001",
@@ -12854,9 +13305,7 @@
     "prepTime": "20 mins",
     "cookTime": "25 mins",
     "totalTime": "35 mins",
-    "rating": 4.7,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 4,
     "totalCalories": 420,
@@ -12945,7 +13394,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-korean-gochujang-noodles-001",
@@ -12968,9 +13419,7 @@
     "prepTime": "15 mins",
     "cookTime": "30 mins",
     "totalTime": "45 mins",
-    "rating": 4.7,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Hard",
     "servings": 4,
     "totalCalories": 560,
@@ -13059,7 +13508,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-herbed-lentil-patties-001",
@@ -13082,9 +13533,7 @@
     "prepTime": "10 mins",
     "cookTime": "25 mins",
     "totalTime": "55 mins",
-    "rating": 4.7,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 3,
     "totalCalories": 560,
@@ -13173,7 +13622,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-warm-farro-salad-001",
@@ -13196,9 +13647,7 @@
     "prepTime": "10 mins",
     "cookTime": "30 mins",
     "totalTime": "50 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Hard",
     "servings": 5,
     "totalCalories": 560,
@@ -13287,7 +13736,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-roasted-garlic-chickpeas-001",
@@ -13310,9 +13761,7 @@
     "prepTime": "15 mins",
     "cookTime": "35 mins",
     "totalTime": "45 mins",
-    "rating": 4.9,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Hard",
     "servings": 2,
     "totalCalories": 360,
@@ -13401,7 +13850,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-spinach-corn-chowder-001",
@@ -13424,9 +13875,7 @@
     "prepTime": "20 mins",
     "cookTime": "35 mins",
     "totalTime": "55 mins",
-    "rating": 4.9,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Hard",
     "servings": 5,
     "totalCalories": 360,
@@ -13515,7 +13964,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-vegan-sloppy-joes-001",
@@ -13538,9 +13989,7 @@
     "prepTime": "20 mins",
     "cookTime": "35 mins",
     "totalTime": "45 mins",
-    "rating": 4.9,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 4,
     "totalCalories": 420,
@@ -13629,7 +14078,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-mushroom-pepper-fajitas-001",
@@ -13652,9 +14103,7 @@
     "prepTime": "20 mins",
     "cookTime": "35 mins",
     "totalTime": "35 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Medium",
     "servings": 4,
     "totalCalories": 360,
@@ -13743,7 +14192,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-vegan-bolognese-001",
@@ -13766,9 +14217,7 @@
     "prepTime": "10 mins",
     "cookTime": "20 mins",
     "totalTime": "35 mins",
-    "rating": 4.7,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 6,
     "totalCalories": 520,
@@ -13857,7 +14306,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-creamy-tomato-gnocchi-001",
@@ -13880,9 +14331,7 @@
     "prepTime": "15 mins",
     "cookTime": "35 mins",
     "totalTime": "40 mins",
-    "rating": 4.6,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 2,
     "totalCalories": 560,
@@ -13971,7 +14420,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-tahini-noodle-bowl-001",
@@ -13994,9 +14445,7 @@
     "prepTime": "20 mins",
     "cookTime": "20 mins",
     "totalTime": "40 mins",
-    "rating": 4.9,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Medium",
     "servings": 5,
     "totalCalories": 520,
@@ -14085,7 +14534,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-crispy-tofu-caesar-wrap-001",
@@ -14108,9 +14559,7 @@
     "prepTime": "15 mins",
     "cookTime": "30 mins",
     "totalTime": "40 mins",
-    "rating": 4.7,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Hard",
     "servings": 6,
     "totalCalories": 560,
@@ -14199,7 +14648,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-herb-rice-pilaf-001",
@@ -14222,9 +14673,7 @@
     "prepTime": "20 mins",
     "cookTime": "35 mins",
     "totalTime": "45 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 5,
     "totalCalories": 360,
@@ -14313,7 +14762,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-vegan-jalfrezi-001",
@@ -14336,9 +14787,7 @@
     "prepTime": "15 mins",
     "cookTime": "20 mins",
     "totalTime": "55 mins",
-    "rating": 5,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Hard",
     "servings": 2,
     "totalCalories": 520,
@@ -14427,7 +14876,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-red-pepper-walnut-pasta-001",
@@ -14450,9 +14901,7 @@
     "prepTime": "10 mins",
     "cookTime": "20 mins",
     "totalTime": "35 mins",
-    "rating": 5,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Medium",
     "servings": 4,
     "totalCalories": 560,
@@ -14541,7 +14990,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-tofu-veggie-fried-rice-001",
@@ -14564,9 +15015,7 @@
     "prepTime": "20 mins",
     "cookTime": "25 mins",
     "totalTime": "55 mins",
-    "rating": 5,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Hard",
     "servings": 2,
     "totalCalories": 450,
@@ -14655,7 +15104,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-lentil-coconut-soup-001",
@@ -14678,9 +15129,7 @@
     "prepTime": "15 mins",
     "cookTime": "25 mins",
     "totalTime": "55 mins",
-    "rating": 4.7,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 6,
     "totalCalories": 360,
@@ -14769,7 +15218,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-roasted-cauliflower-tacos-001",
@@ -14792,9 +15243,7 @@
     "prepTime": "20 mins",
     "cookTime": "25 mins",
     "totalTime": "50 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Hard",
     "servings": 4,
     "totalCalories": 450,
@@ -14883,7 +15332,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-maple-mustard-tempeh-bowl-001",
@@ -14906,9 +15357,7 @@
     "prepTime": "20 mins",
     "cookTime": "25 mins",
     "totalTime": "40 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Hard",
     "servings": 4,
     "totalCalories": 360,
@@ -14997,7 +15446,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-vegan-pot-pie-001",
@@ -15020,9 +15471,7 @@
     "prepTime": "10 mins",
     "cookTime": "25 mins",
     "totalTime": "50 mins",
-    "rating": 4.6,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Medium",
     "servings": 4,
     "totalCalories": 480,
@@ -15111,7 +15560,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-chili-garlic-soba-001",
@@ -15134,9 +15585,7 @@
     "prepTime": "20 mins",
     "cookTime": "35 mins",
     "totalTime": "45 mins",
-    "rating": 4.8,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Hard",
     "servings": 6,
     "totalCalories": 450,
@@ -15225,7 +15674,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-spinach-tofu-kofta-001",
@@ -15248,9 +15699,7 @@
     "prepTime": "15 mins",
     "cookTime": "30 mins",
     "totalTime": "35 mins",
-    "rating": 4.6,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Easy",
     "servings": 3,
     "totalCalories": 360,
@@ -15339,7 +15788,9 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   },
   {
     "id": "vegan-chickpea-pesto-sandwich-001",
@@ -15362,9 +15813,7 @@
     "prepTime": "15 mins",
     "cookTime": "25 mins",
     "totalTime": "50 mins",
-    "rating": 4.9,
     "ratingCount": 0,
-    "reviewCount": 0,
     "difficulty": "Medium",
     "servings": 5,
     "totalCalories": 450,
@@ -15453,6 +15902,8 @@
     "extra": [
       "Source: curated vegan recipe references",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Placeholder ingredients and generic method. Needs to be written and cooked before publishing."
   }
 ]

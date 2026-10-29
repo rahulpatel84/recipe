@@ -8,7 +8,7 @@ const links = [
     { href: '/all-recipes', label: 'Recipes' },
     { href: '/recipes-by-cuisines', label: 'Cuisines' },
     { href: '/recipes-by-dietary-choices', label: 'Dietary' },
-    { href: '/recipe-directory', label: 'Collections' },
+    { href: '/vegan-recipes', label: 'Vegan' },
     { href: '/blog', label: 'Journal' },
 ];
 

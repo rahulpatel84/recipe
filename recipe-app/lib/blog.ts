@@ -45,6 +45,10 @@ export interface BlogPost {
   tags: string[];
   content: BlogContentBlock[];
   relatedPosts: string[];
+  /** One line of copy handing the reader on to the kitchen. */
+  cookNext?: string;
+  /** Recipe slugs that belong with this piece of reading. */
+  relatedRecipes?: string[];
 }
 
 export interface BlogCategory {

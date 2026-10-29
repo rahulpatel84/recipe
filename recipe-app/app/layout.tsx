@@ -29,17 +29,17 @@ const caveat = Caveat({
 const siteConfig = {
   name: "Relish Realm",
   url: "https://relishrealm.com",
-  description: "Discover minimalist cooking and exquisite flavors from around the globe. Kitchen-tested recipes, nutrition focused, and designed for your home.",
+  description: "Plant based recipes from around the world, written out in full. What the dish looks like when it works, what usually goes wrong, and how to fix it.",
 };
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} | Exquisite World Recipes`,
+    default: `${siteConfig.name} | Plant Based Recipes, Written Out In Full`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
-  keywords: ["recipes", "cooking", "food", "cuisine", "kitchen", "meals", "healthy eating", "world recipes", "home cooking"],
+  keywords: ["vegan recipes", "plant based recipes", "vegan dinner", "lentil recipes", "chickpea recipes", "tofu recipes", "vegan cooking", "world recipes", "home cooking"],
   authors: [{ name: "Relish Realm" }],
   creator: "Relish Realm",
   publisher: "Relish Realm",
@@ -59,20 +59,20 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: `${siteConfig.name} | Exquisite World Recipes`,
+    title: `${siteConfig.name} | Plant Based Recipes, Written Out In Full`,
     description: siteConfig.description,
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Relish Realm - Exquisite World Recipes",
+        alt: "Relish Realm, plant based recipes written out in full",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} | Exquisite World Recipes`,
+    title: `${siteConfig.name} | Plant Based Recipes, Written Out In Full`,
     description: siteConfig.description,
     images: ["/og-image.jpg"],
     creator: "@relishrealm",
