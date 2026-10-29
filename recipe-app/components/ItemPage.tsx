@@ -14,54 +14,42 @@ export default function ItemPage({ category }: ItemPageProps) {
         r.dietary.some(d => d.toLowerCase().includes(category.title.toLowerCase())) ||
         r.mealType.toLowerCase() === category.title.toLowerCase() ||
         r.audience.some(a => a.toLowerCase().includes(category.title.toLowerCase())) ||
-        r.country.toLowerCase() === category.title.toLowerCase()
+        r.country.toLowerCase() === category.title.toLowerCase() ||
+        r.appliance?.some(a => a.toLowerCase().includes(category.title.toLowerCase()))
     );
 
     return (
-        <div className="mx-auto max-w-[1440px] px-4 py-16 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-[1180px] px-4 py-12 sm:px-6">
             {/* Header */}
-            <div className="relative h-48 w-full overflow-hidden rounded-xl mb-12 border border-border-soft">
+            <div className="relative h-[300px] w-full overflow-hidden mb-10 rounded-[28px] border border-line">
                 <Image
                     src={category.image}
                     alt={category.title}
                     fill
                     className="object-cover"
                 />
-                <div className="absolute inset-x-0 bottom-0 h-full bg-gradient-to-t from-dark-olive/80 via-dark-olive/20 to-transparent" />
-                <div className="absolute inset-0 flex flex-col justify-center px-10">
-                    <span className="text-white/60 font-bold uppercase tracking-wider text-[10px] mb-2 block">Taxonomy: {category.type}</span>
-                    <h1 className="text-4xl font-sans font-bold text-white uppercase tracking-tight">{category.title} Recipes</h1>
-                    <p className="mt-2 text-white/80 max-w-md text-xs font-sans leading-relaxed">
-                        Filtered dataset for {category.title} culinary specifications and dietary standards.
+                <div className="absolute inset-x-0 bottom-0 h-full bg-gradient-to-t from-ink/80 via-ink/20 to-transparent" />
+                <div className="absolute inset-0 flex flex-col justify-end p-8 sm:p-10">
+                    <span className="mb-2 block text-[0.75rem] font-semibold uppercase tracking-[0.14em] text-white/70">Explore the collection</span>
+                    <h1 className="font-serif text-4xl text-white sm:text-5xl">{category.title} recipes</h1>
+                    <p className="mt-3 max-w-md text-base leading-7 text-white/75">
+                        Discover reliable {category.title.toLowerCase()} recipes for your next meal.
                     </p>
                 </div>
             </div>
 
             {/* Stats/Filters Row */}
-            <div className="flex flex-wrap gap-12 mb-12 items-center justify-center py-6 border-y border-border-soft">
-                <div className="text-center">
-                    <span className="block text-xl font-sans font-bold text-terracotta">{filteredRecipes.length}</span>
-                    <span className="text-[10px] uppercase tracking-wider text-dark-olive/30 font-bold">Entries</span>
-                </div>
-                <div className="h-6 w-px bg-border-soft hidden sm:block" />
-                <div className="text-center">
-                    <span className="block text-xl font-sans font-bold text-terracotta">4.8</span>
-                    <span className="text-[10px] uppercase tracking-wider text-dark-olive/30 font-bold">Avg. Score</span>
-                </div>
-                <div className="h-6 w-px bg-border-soft hidden sm:block" />
-                <div className="text-center">
-                    <span className="block text-xl font-sans font-bold text-terracotta">15m</span>
-                    <span className="text-[10px] uppercase tracking-wider text-dark-olive/30 font-bold">Avg. Complexity</span>
-                </div>
+            <div className="mb-8 flex items-center justify-between border-b border-line pb-5">
+                <p className="text-sm text-muted"><strong className="text-dark-olive">{filteredRecipes.length}</strong> {filteredRecipes.length === 1 ? 'recipe' : 'recipes'}</p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-2 gap-x-5 gap-y-8 lg:grid-cols-4">
                 {filteredRecipes.length > 0 ? (
                     filteredRecipes.map((recipe) => (
                         <RecipeCard key={recipe.id} recipe={recipe} />
                     ))
                 ) : (
-                    <div className="col-span-full py-20 bg-soft-gray rounded-xl text-center border border-border-soft">
+                    <div className="col-span-full rounded-card border border-line bg-cream py-20 text-center">
                         <p className="text-dark-olive/30 text-xs font-sans uppercase tracking-widest">Dataset empty for this category</p>
                     </div>
                 )}

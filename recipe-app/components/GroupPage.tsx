@@ -11,13 +11,14 @@ export default function GroupPage({ type }: GroupPageProps) {
     const groupItems = categories.filter(c => c.type === type);
 
     return (
-        <div className="mx-auto max-w-[1440px] px-4 py-16 sm:px-6 lg:px-8">
-            <div className="mb-16 text-center">
-                <h1 className="text-4xl md:text-5xl font-sans font-bold text-dark-olive uppercase tracking-tight">{meta.label}</h1>
-                <p className="mt-4 text-[10px] font-sans font-bold text-dark-olive/30 uppercase tracking-widest">Database entry grouping by {meta.plural}</p>
+        <div className="mx-auto max-w-[1180px] px-4 py-14 sm:px-6">
+            <div className="mb-14 max-w-2xl">
+                <span className="hand">browse the realm</span>
+                <h1 className="font-serif text-[clamp(2.4rem,5vw,3.6rem)] leading-[1.05]">Recipes by {meta.label.toLowerCase()}</h1>
+                <p className="mt-3 text-muted">Find a recipe that fits the way you want to cook today.</p>
             </div>
 
-            <div className="space-y-20">
+            <div className="space-y-16">
                 {groupItems.map((item) => {
                     const itemRecipes = recipes.filter(r =>
                         r.category.toLowerCase() === item.title.toLowerCase() ||
@@ -26,21 +27,22 @@ export default function GroupPage({ type }: GroupPageProps) {
                         r.dietary.some(d => d.toLowerCase().includes(item.title.toLowerCase())) ||
                         r.mealType.toLowerCase() === item.title.toLowerCase() ||
                         r.audience.some(a => a.toLowerCase().includes(item.title.toLowerCase())) ||
-                        r.country.toLowerCase() === item.title.toLowerCase()
+                        r.country.toLowerCase() === item.title.toLowerCase() ||
+                        r.appliance?.some(a => a.toLowerCase().includes(item.title.toLowerCase()))
                     ).slice(0, 5);
 
                     return (
-                        <section key={item.id} className="border-b border-border-soft pb-16 last:border-0">
+                        <section key={item.id} className="border-b border-border-soft pb-14 last:border-0">
                             <div className="flex items-center justify-between mb-8">
                                 <div>
-                                    <h2 className="text-xl font-sans font-bold text-dark-olive uppercase tracking-wider">{item.title}</h2>
-                                    <p className="text-[10px] font-sans font-bold text-dark-olive/30 uppercase tracking-tight mt-1">Status: active • {itemRecipes.length} entries</p>
+                                    <h2 className="font-serif text-[1.8rem]">{item.title}</h2>
+                                    <p className="mt-1 text-sm text-muted">{itemRecipes.length} {itemRecipes.length === 1 ? 'recipe' : 'recipes'}</p>
                                 </div>
                                 <Link
                                     href={`/${item.slug}-recipes`}
-                                    className="text-[10px] font-bold text-terracotta uppercase tracking-wider hover:underline bg-soft-gray px-4 py-2 rounded-lg border border-border-soft"
+                                    className="btn hover:no-underline"
                                 >
-                                    Browse catalog →
+                                    View all →
                                 </Link>
                             </div>
 
@@ -50,8 +52,8 @@ export default function GroupPage({ type }: GroupPageProps) {
                                         <RecipeCard key={recipe.id} recipe={recipe} />
                                     ))
                                 ) : (
-                                    <div className="col-span-full py-10 bg-soft-gray rounded-xl text-center border border-border-soft">
-                                        <p className="text-dark-olive/30 text-[10px] uppercase font-bold tracking-widest">Queue: pending for {item.title}</p>
+                                    <div className="col-span-full rounded-card border border-line bg-cream py-10 text-center">
+                                        <p className="text-sm text-muted">No {item.title.toLowerCase()} recipes yet.</p>
                                     </div>
                                 )}
                             </div>

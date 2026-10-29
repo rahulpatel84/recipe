@@ -3,6 +3,7 @@ import { MetadataRoute } from 'next';
 
 export const dynamic = 'force-static';
 import { recipes, categories, groupTypeMetadata, getGroupByType, getCategoryByItemSlug, GroupType } from '@/lib/data';
+import { blogPosts, blogCategories } from '@/lib/blog';
 
 const BASE_URL = 'https://relishrealm.com';
 
@@ -15,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/category',
         '/recipes',
         '/all-recipes',
+        '/blog',
     ].map((route) => ({
         url: `${BASE_URL}${route}`,
         lastModified: new Date(),
@@ -46,5 +48,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.5,
     }));
 
-    return [...statics, ...recipeRoutes, ...categoryRoutes, ...groupRoutes];
+    // 5. Blog Posts
+    const blogPostRoutes = blogPosts.map((post) => ({
+        url: `${BASE_URL}/blog/${post.slug}`,
+        lastModified: new Date(post.publishedAt),
+        changeFrequency: 'monthly' as const,
+        priority: 0.7,
+    }));
+
+    // 6. Blog Categories
+    const blogCategoryRoutes = blogCategories.map((category) => ({
+        url: `${BASE_URL}/blog/category/${category.slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly' as const,
+        priority: 0.6,
+    }));
+
+    return [...statics, ...recipeRoutes, ...categoryRoutes, ...groupRoutes, ...blogPostRoutes, ...blogCategoryRoutes];
 }

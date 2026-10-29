@@ -7,73 +7,49 @@ import { useFavorites } from '@/lib/useFavorites';
 
 interface RecipeCardProps {
     recipe: Recipe;
+    /** 4/5 on editorial rows, 1/1 in the browse grid. */
+    ratio?: 'portrait' | 'square';
 }
 
-export default function RecipeCard({ recipe }: RecipeCardProps) {
+export default function RecipeCard({ recipe, ratio = 'portrait' }: RecipeCardProps) {
     const { isFavorite, toggleFavorite } = useFavorites();
     const isFav = isFavorite(recipe.id);
 
     return (
-        <div className="group relative block overflow-hidden rounded-3xl bg-white border border-sand/30 recipe-shadow recipe-hover">
-            <Link
-                href={`/${recipe.slug}`}
-                className="block"
-            >
-                <div className="relative aspect-[4/5] w-full overflow-hidden">
+        <article className="group">
+            <div className={`relative overflow-hidden rounded-card bg-cream transition duration-300 group-hover:-translate-y-1 ${ratio === 'square' ? 'aspect-square' : 'aspect-[4/5]'}`}>
+                <Link href={`/${recipe.slug}`} aria-label={`Open ${recipe.title}`} className="block h-full">
                     <Image
                         src={recipe.image}
                         alt={recipe.title}
                         fill
-                        className="object-cover transition-transform duration-700 group-hover:scale-110"
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     />
-                    <div className="absolute top-4 left-4 z-10">
-                        <span className="glass rounded-full px-3 py-1 text-[9px] font-bold uppercase tracking-[0.15em] text-terracotta">
-                            {recipe.category}
-                        </span>
-                    </div>
-                    <div className="absolute inset-0 bg-gradient-to-t from-dark-olive/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                </div>
-            </Link>
-
-            <button
-                onClick={(e) => {
-                    e.preventDefault();
-                    toggleFavorite(recipe.id);
-                }}
-                className={`absolute top-4 right-4 z-20 flex h-8 w-8 items-center justify-center rounded-full glass transition-all duration-300 hover:scale-110 active:scale-90 ${isFav ? 'text-terracotta' : 'text-dark-olive/30 hover:text-terracotta'}`}
-                aria-label={isFav ? "Remove from favorites" : "Add to favorites"}
-            >
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill={isFav ? "currentColor" : "none"} viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                </svg>
-            </button>
-
-            <div className="p-6">
-                <Link href={`/${recipe.slug}`}>
-                    <div className="flex flex-col gap-2">
-                        <div className="flex items-center justify-between">
-                            <h3 className="text-xl font-sans font-bold text-dark-olive group-hover:text-terracotta transition-colors">
-                                {recipe.title}
-                            </h3>
-                        </div>
-                        <p className="text-sm text-dark-olive/50 leading-relaxed line-clamp-2">
-                            {recipe.summary}
-                        </p>
-                    </div>
                 </Link>
-                <div className="mt-6 flex items-center justify-between border-t border-sand/40 pt-4">
-                    <div className="flex items-center gap-3">
-                        <div className="flex items-center gap-1">
-                            <span className="text-xs text-terracotta">★</span>
-                            <span className="text-xs font-bold text-dark-olive">{recipe.rating}</span>
-                        </div>
-                        <span className="text-dark-olive/20">•</span>
-                        <span className="text-xs uppercase tracking-wider font-bold text-dark-olive/40">{recipe.prepTime}</span>
-                    </div>
-                    <Link href={`/${recipe.slug}`} className="text-xs font-bold uppercase tracking-wider text-terracotta opacity-0 group-hover:opacity-100 transition-all transform translate-x-1 group-hover:translate-x-0">View →</Link>
-                </div>
+                <span className="absolute left-3 top-3 rounded-full bg-white px-2.5 py-1 text-[0.72rem] font-semibold uppercase tracking-[0.06em] text-ink">
+                    {recipe.cuisine || recipe.category}
+                </span>
+                <button
+                    type="button"
+                    onClick={() => toggleFavorite(recipe.id)}
+                    className={`absolute right-3 top-3 flex h-9 w-9 items-center justify-center rounded-full bg-white transition hover:scale-105 ${isFav ? 'text-tomato' : 'text-ink/40 hover:text-tomato'}`}
+                    aria-label={isFav ? 'Remove from favourites' : 'Add to favourites'}
+                >
+                    <svg className="h-[18px] w-[18px]" fill={isFav ? 'currentColor' : 'none'} viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                </button>
             </div>
-        </div>
+
+            <Link href={`/${recipe.slug}`} className="hover:no-underline">
+                <h3 className="mb-1 mt-3.5 font-serif text-[1.2rem] leading-[1.25] text-ink transition group-hover:text-tomato">{recipe.title}</h3>
+            </Link>
+            <div className="flex flex-wrap gap-x-3 text-[0.83rem] text-muted">
+                <span><b className="font-semibold text-ink">★ {recipe.rating}</b>{recipe.ratingCount ? ` (${recipe.ratingCount})` : ''}</span>
+                <span>{recipe.totalTime || recipe.prepTime}</span>
+                <span>{recipe.difficulty}</span>
+            </div>
+        </article>
     );
 }

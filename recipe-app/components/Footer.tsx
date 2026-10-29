@@ -1,71 +1,45 @@
 import Link from 'next/link';
+import Pip from '@/components/Pip';
+
+const footerLinks = [
+    { title: 'Explore', links: [['All recipes', '/all-recipes'], ['Cuisines', '/recipes-by-cuisines'], ['Collections', '/recipe-directory'], ['Journal', '/blog']] },
+    { title: 'Diet', links: [['Vegan', '/vegan-recipes'], ['Vegetarian', '/vegetarian-recipes'], ['Gluten free', '/recipes-by-dietary-choices'], ['Breakfast', '/breakfast-recipes']] },
+    { title: 'About', links: [['Our test kitchen', '/about'], ['Contact', '/contact'], ['Privacy', '/privacy'], ['Terms', '/terms']] },
+];
 
 export default function Footer() {
     return (
-        <footer className="w-full border-t border-border-soft bg-white py-20">
-            <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-1 gap-12 md:grid-cols-5">
-                    <div className="col-span-1">
-                        <Link href="/" className="text-3xl font-bold text-dark-olive font-sans tracking-tight">Relish Realm</Link>
-                        <p className="mt-6 text-[16px] text-dark-olive/50 leading-relaxed font-sans">
-                            Hi, I'm Chloe. I share my favorite family-tested recipes and kitchen stories,
-                            crafted to bring a little magic back to your table.
-                        </p>
-                    </div>
-                    <div>
-                        <h3 className="text-sm font-bold uppercase tracking-[0.2em] text-dark-olive/40 font-sans">By Continent</h3>
-                        <ul className="mt-6 space-y-4">
-                            <li><Link href="/asia-recipes" className="text-[16px] font-medium text-dark-olive/60 hover:text-terracotta transition-colors hover:no-underline">Asia</Link></li>
-                            <li><Link href="/europe-recipes" className="text-[16px] font-medium text-dark-olive/60 hover:text-terracotta transition-colors hover:no-underline">Europe</Link></li>
-                            <li><Link href="/africa-recipes" className="text-[16px] font-medium text-dark-olive/60 hover:text-terracotta transition-colors hover:no-underline">Africa</Link></li>
-                            <li><Link href="/america-recipes" className="text-[16px] font-medium text-dark-olive/60 hover:text-terracotta transition-colors hover:no-underline">Americas</Link></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 className="text-sm font-bold uppercase tracking-[0.2em] text-dark-olive/40 font-sans">By Diet</h3>
-                        <ul className="mt-6 space-y-4">
-                            <li><Link href="/vegan-recipes" className="text-[16px] font-medium text-dark-olive/60 hover:text-terracotta transition-colors hover:no-underline">Vegan</Link></li>
-                            <li><Link href="/vegetarian-recipes" className="text-[16px] font-medium text-dark-olive/60 hover:text-terracotta transition-colors hover:no-underline">Vegetarian</Link></li>
-                            <li><Link href="/gluten-free-recipes" className="text-[16px] font-medium text-dark-olive/60 hover:text-terracotta transition-colors hover:no-underline">Gluten Free</Link></li>
-                            <li><Link href="/dairy-free-recipes" className="text-[16px] font-medium text-dark-olive/60 hover:text-terracotta transition-colors hover:no-underline">Dairy Free</Link></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 className="text-sm font-bold uppercase tracking-[0.2em] text-dark-olive/40 font-sans">By Cuisine</h3>
-                        <ul className="mt-6 space-y-4">
-                            <li><Link href="/italian-recipes" className="text-[16px] font-medium text-dark-olive/60 hover:text-terracotta transition-colors hover:no-underline">Italian</Link></li>
-                            <li><Link href="/mexican-recipes" className="text-[16px] font-medium text-dark-olive/60 hover:text-terracotta transition-colors hover:no-underline">Mexican</Link></li>
-                            <li><Link href="/indian-recipes" className="text-[16px] font-medium text-dark-olive/60 hover:text-terracotta transition-colors hover:no-underline">Indian</Link></li>
-                            <li><Link href="/japanese-recipes" className="text-[16px] font-medium text-dark-olive/60 hover:text-terracotta transition-colors hover:no-underline">Japanese</Link></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 className="text-sm font-bold uppercase tracking-[0.2em] text-dark-olive/40 font-sans">By Meal Type</h3>
-                        <ul className="mt-6 space-y-4">
-                            <li><Link href="/breakfast-recipes" className="text-[16px] font-medium text-dark-olive/60 hover:text-terracotta transition-colors hover:no-underline">Breakfast</Link></li>
-                            <li><Link href="/lunch-recipes" className="text-[16px] font-medium text-dark-olive/60 hover:text-terracotta transition-colors hover:no-underline">Lunch</Link></li>
-                            <li><Link href="/dinner-recipes" className="text-[16px] font-medium text-dark-olive/60 hover:text-terracotta transition-colors hover:no-underline">Dinner</Link></li>
-                            <li><Link href="/dessert-recipes" className="text-[16px] font-medium text-dark-olive/60 hover:text-terracotta transition-colors hover:no-underline">Dessert</Link></li>
-                        </ul>
-                    </div>
+        <footer className="mt-24 border-t border-line">
+            <div className="mx-auto grid max-w-[1180px] gap-8 px-4 py-14 sm:px-6 md:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr]">
+                <div>
+                    <Link href="/" className="flex items-center gap-2.5 hover:no-underline">
+                        <Pip className="h-9 w-9" />
+                        <span className="font-serif text-[1.35rem] font-bold text-ink">Relish Realm</span>
+                    </Link>
+                    <p className="mt-3 max-w-[300px] text-[0.93rem] leading-6 text-muted">
+                        Modern recipes, timeless flavours. Tested in real kitchens, written for real people.
+                    </p>
                 </div>
-                <div className="mt-24 border-t border-sand/20 pt-12">
-                    <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-                        <div className="flex flex-wrap items-center justify-center gap-6 md:gap-8">
-                            <Link href="/recipe-directory" className="text-sm font-bold uppercase tracking-widest text-terracotta hover:text-dark-olive transition-colors underline decoration-terracotta/30 underline-offset-4">Recipe Directory</Link>
-                            <Link href="/all-recipes" className="text-sm font-bold uppercase tracking-widest text-dark-olive/40 hover:text-terracotta transition-colors">All Recipes</Link>
-                            <Link href="/about" className="text-sm font-bold uppercase tracking-widest text-dark-olive/40 hover:text-terracotta transition-colors">About Us</Link>
-                            <Link href="/contact" className="text-sm font-bold uppercase tracking-widest text-dark-olive/40 hover:text-terracotta transition-colors">Contact</Link>
-                            <a href="/sitemap.xml" className="text-sm font-bold uppercase tracking-widest text-dark-olive/40 hover:text-terracotta transition-colors">Sitemap</a>
-                        </div>
-                        <div className="flex flex-wrap items-center justify-center gap-4 mt-4 md:mt-0">
-                            <Link href="/privacy" className="text-[12px] uppercase tracking-wider text-dark-olive/30 hover:text-terracotta transition-colors">Privacy Policy</Link>
-                            <Link href="/terms" className="text-[12px] uppercase tracking-wider text-dark-olive/30 hover:text-terracotta transition-colors">Terms of Service</Link>
-                            <Link href="/cookie-policy" className="text-[12px] uppercase tracking-wider text-dark-olive/30 hover:text-terracotta transition-colors">Cookie Policy</Link>
-                        </div>
-                        <p className="text-[12px] uppercase tracking-[0.3em] font-bold text-dark-olive/20 font-sans mt-4 md:mt-0">
-                            &copy; {new Date().getFullYear()} Relish Realm. Developed for the curious palate.
-                        </p>
+
+                {footerLinks.map(group => (
+                    <div key={group.title}>
+                        <h4 className="mb-3.5 font-sans text-[0.78rem] font-semibold uppercase tracking-[0.12em] text-muted">{group.title}</h4>
+                        <ul>
+                            {group.links.map(([label, href]) => (
+                                <li key={href} className="py-1 text-[0.93rem]">
+                                    <Link href={href} className="hover:text-tomato hover:no-underline">{label}</Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                ))}
+
+                <div className="col-span-full mt-6 flex flex-col gap-2 border-t border-line pt-6 text-[0.82rem] text-muted sm:flex-row sm:items-center sm:justify-between">
+                    <span>© {new Date().getFullYear()} Relish Realm</span>
+                    <div className="flex flex-wrap gap-5">
+                        <Link href="/cookie-policy">Cookies</Link>
+                        <a href="/sitemap.xml">Sitemap</a>
+                        <span>Made with too much garlic.</span>
                     </div>
                 </div>
             </div>

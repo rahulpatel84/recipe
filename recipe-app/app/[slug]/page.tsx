@@ -4,7 +4,6 @@ import { notFound } from 'next/navigation';
 import RecipeDetail from '@/components/RecipeDetail';
 import GroupPage from '@/components/GroupPage';
 import ItemPage from '@/components/ItemPage';
-import AllRecipes from '@/components/AllRecipes';
 import { Metadata } from 'next';
 
 interface Props {
@@ -133,6 +132,8 @@ export async function generateStaticParams() {
         ...groupParams
     ];
 }
+
+export const dynamicParams = false;
 
 export default async function UniversalRoutePage({ params }: Props) {
     const { slug } = await params;

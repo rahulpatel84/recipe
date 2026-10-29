@@ -145,7 +145,8 @@
       ],
       "tradition": "In Roman trattorias, Carbonara arrives at the table immediately after being tossed, while the sauce is still glossy and coating. It is always served with an extra generous crack of black pepper on top, and true Romans never ask for additional cheese because the ratio is already perfect."
     },
-    "extra": []
+    "extra": [],
+    "appliance": ["Stovetop"]
   },
   {
     "id": "2",
@@ -521,7 +522,8 @@
       ],
       "tradition": "Build your bowl with intention, arranging toppings artfully before eating. The ritual is as important as the nutrition, creating something almost too beautiful to eat before you dig in with your spoon."
     },
-    "extra": []
+    "extra": [],
+    "appliance": ["Blender"]
   },
   {
     "id": "5",
@@ -1413,7 +1415,8 @@
       ],
       "tradition": "Always serve over perfectly steamed jasmine rice that absorbs the fragrant sauce. The rice provides a neutral contrast to the intense spice and creamy coconut, balancing each bite."
     },
-    "extra": []
+    "extra": [],
+    "appliance": ["Stovetop"]
   },
   {
     "id": "12",
@@ -1540,7 +1543,8 @@
       ],
       "tradition": "The pizza must be stretched by hand, never rolled, to preserve the gas bubbles that create the charred, puffy cornicione edge. Add basil leaves after baking to keep them bright green and aromatic."
     },
-    "extra": []
+    "extra": [],
+    "appliance": ["Oven"]
   },
   {
     "id": "13",
@@ -4501,7 +4505,8 @@
     "extra": [
       "Source: https://www.noracooks.com/vegan-banana-bread/",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "appliance": ["Oven"]
   },
   {
     "id": "vegan-shepherds-pie-001",
@@ -4615,7 +4620,8 @@
     "extra": [
       "Source: https://minimalistbaker.com/1-hour-vegan-shepherds-pie/",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "appliance": ["Oven", "Stovetop"]
   },
   {
     "id": "vegan-lasagna-001",
@@ -4729,7 +4735,8 @@
     "extra": [
       "Source: https://www.noracooks.com/vegan-lasagna/",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "appliance": ["Oven"]
   },
   {
     "id": "vegan-alfredo-001",
@@ -4843,7 +4850,8 @@
     "extra": [
       "Source: https://minimalistbaker.com/30-minute-vegan-alfredo-vegan-gf/",
       "Includes nutritional context and step-by-step method from source inspiration."
-    ]
+    ],
+    "appliance": ["Stovetop", "Blender"]
   },
   {
     "id": "vegan-gnocchi-001",

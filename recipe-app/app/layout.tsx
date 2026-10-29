@@ -1,18 +1,29 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Caveat, Fraunces, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
 
 const inter = Inter({
-  variable: "--font-sans",
+  variable: "--font-inter",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
 });
 
-const playfair = Playfair_Display({
-  variable: "--font-serif",
+const fraunces = Fraunces({
+  variable: "--font-fraunces",
   subsets: ["latin"],
+  axes: ["SOFT", "WONK"],
+  display: "swap",
+});
+
+const caveat = Caveat({
+  variable: "--font-caveat",
+  subsets: ["latin"],
+  weight: ["600"],
+  display: "swap",
 });
 
 const siteConfig = {
@@ -68,12 +79,18 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: siteConfig.url,
+    types: {
+      'application/rss+xml': '/feed.xml',
+    },
   },
   icons: {
     icon: "/icon.png",
   },
   verification: {
     google: "KOg0g-zo-WjwKiB5naZDe2DxmA4gk0rj_uQ58IoCxI0",
+    other: {
+      "msvalidate.01": "C164296CAA87682CF023159F60AA784C",
+    },
   },
   other: {
     "p:domain_verify": "e99fcc94e273626e91c61d2d6129a06a",
@@ -88,7 +105,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${playfair.variable} antialiased min-h-screen flex flex-col font-sans`}>
+      <body className={`${inter.variable} ${fraunces.variable} ${caveat.variable} antialiased min-h-screen flex flex-col bg-paper font-sans text-ink`}>
         <Navbar />
         <main className="flex-grow">
           {children}

@@ -9,12 +9,15 @@
     "db:seed": "node scripts/seed-database.js",
     "db:watch": "nodemon --watch data --ext json --exec \"npm run db:seed\"",
     "db:generate": "node scripts/generate-data.js",
-    "lint": "eslint"
+    "lint": "eslint",
+    "deploy": "./deploy.sh",
+    "ping": "node scripts/ping-search-engines.js"
   },
   "dependencies": {
     "next": "16.1.1",
     "react": "19.2.3",
     "react-dom": "19.2.3",
+    "recharts": "^3.8.0",
     "sqlite3": "^5.1.7"
   },
   "devDependencies": {

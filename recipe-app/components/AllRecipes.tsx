@@ -21,10 +21,10 @@ export default function AllRecipes({ recipes }: AllRecipesProps) {
     return (
         <main className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8 bg-white min-h-screen">
             <header className="mb-16 border-b border-border-soft pb-8">
-                <h1 className="text-4xl font-sans font-bold text-dark-olive leading-tight tracking-tight">
+                <h1 className="font-serif text-4xl leading-tight">
                     All Recipes.
                 </h1>
-                <p className="mt-4 text-sm text-dark-olive/40 font-sans leading-relaxed max-w-xl">
+                <p className="mt-4 max-w-xl text-muted">
                     A comprehensive index of every recipe in our collection, designed for easy discovery and search engine optimization.
                 </p>
             </header>
@@ -32,7 +32,7 @@ export default function AllRecipes({ recipes }: AllRecipesProps) {
             <div className="space-y-12">
                 {cuisines.map((cuisine) => (
                     <section key={cuisine}>
-                        <h2 className="text-lg font-sans font-bold text-terracotta uppercase tracking-[0.2em] mb-6 border-l-4 border-terracotta pl-4">
+                        <h2 className="mb-6 border-l-4 border-tomato pl-4 font-serif text-[1.4rem] text-ink">
                             {cuisine}
                         </h2>
                         <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4">

@@ -51,6 +51,7 @@ export interface Recipe {
   story?: string;
   heritage?: RecipeHeritage;
   extra?: string[];
+  appliance?: string[];
 }
 
 export interface Category {
@@ -58,7 +59,7 @@ export interface Category {
   slug: string;
   title: string;
   image: string;
-  type: 'cuisine' | 'continent' | 'dietary' | 'mealType' | 'audience' | 'country';
+  type: 'cuisine' | 'continent' | 'dietary' | 'mealType' | 'audience' | 'country' | 'appliance';
 }
 
 // Import data from JSON files
@@ -77,6 +78,7 @@ export const groupTypeMetadata = {
   mealType: { label: 'Meal Type', plural: 'meal-types', path: 'recipes-by-meal-types' },
   audience: { label: 'For Everyone', plural: 'audiences', path: 'recipes-by-audiences' },
   country: { label: 'By Country', plural: 'countries', path: 'recipes-by-countries' },
+  appliance: { label: 'Appliances', plural: 'appliances', path: 'recipes-by-appliances', hidden: true },
 };
 
 export type GroupType = keyof typeof groupTypeMetadata;

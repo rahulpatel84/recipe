@@ -2,198 +2,62 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import { categories, groupTypeMetadata, GroupType } from '@/lib/data';
+import Pip from '@/components/Pip';
+
+const links = [
+    { href: '/all-recipes', label: 'Recipes' },
+    { href: '/recipes-by-cuisines', label: 'Cuisines' },
+    { href: '/recipes-by-dietary-choices', label: 'Dietary' },
+    { href: '/recipe-directory', label: 'Collections' },
+    { href: '/blog', label: 'Journal' },
+];
 
 export default function Navbar() {
-    const [isRecipesOpen, setIsRecipesOpen] = useState(false);
-    const [activeSubmenu, setActiveSubmenu] = useState<GroupType | null>(null);
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-    const [mobileRecipesOpen, setMobileRecipesOpen] = useState(false);
-    const [mobileActiveSubmenu, setMobileActiveSubmenu] = useState<GroupType | null>(null);
-
-    const recipeGroups = Object.entries(groupTypeMetadata).map(([type, meta]) => ({
-        type: type as GroupType,
-        label: `By ${meta.label}`,
-        href: `/${meta.path}`
-    }));
-
-    const getSubMenuItems = (type: GroupType) => {
-        return categories.filter(c => c.type === type);
-    };
-
-    const closeMenu = () => {
-        setIsMobileMenuOpen(false);
-        setMobileRecipesOpen(false);
-        setMobileActiveSubmenu(null);
-    };
+    const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="sticky top-0 z-[1000] w-full bg-white/90 backdrop-blur-md border-b border-border-soft">
-            <div className="mx-auto flex max-w-[1440px] items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-                <Link href="/" className="flex items-center gap-2">
-                    <span className="text-2xl font-bold tracking-tight text-dark-olive font-sans hover:no-underline">Relish Realm</span>
+        <nav className="sticky top-0 z-[1000] w-full border-b border-line bg-white/90 backdrop-blur-xl" aria-label="Primary navigation">
+            <div className="mx-auto flex h-[72px] max-w-[1180px] items-center justify-between px-4 sm:px-6">
+                <Link href="/" className="flex items-center gap-2.5 hover:no-underline" onClick={() => setIsOpen(false)}>
+                    <Pip className="h-9 w-9" />
+                    <span className="font-serif text-[1.35rem] font-bold text-ink">Relish Realm</span>
                 </Link>
 
-                {/* Desktop Navigation */}
-                <div className="hidden space-x-8 md:flex items-center">
-                    <Link href="/" className="text-[16px] font-medium tracking-tight text-dark-olive/60 hover:text-dark-olive transition-colors hover:no-underline">Home</Link>
-                    <Link href="/recipe-directory" className="text-[16px] font-medium tracking-tight text-dark-olive/60 hover:text-dark-olive transition-colors hover:no-underline">Directory</Link>
-                    <Link href="/category" className="text-[16px] font-medium tracking-tight text-dark-olive/60 hover:text-dark-olive transition-colors hover:no-underline">Categories</Link>
-
-                    {/* Recipes Dropdown */}
-                    <div
-                        className="relative group h-full flex items-center"
-                        onMouseEnter={() => setIsRecipesOpen(true)}
-                        onMouseLeave={() => {
-                            setIsRecipesOpen(false);
-                            setActiveSubmenu(null);
-                        }}
-                    >
-                        <button
-                            className="flex items-center gap-1 text-[16px] font-medium tracking-tight text-dark-olive/60 hover:text-dark-olive transition-colors"
-                        >
-                            Recipes
-                            <svg xmlns="http://www.w3.org/2000/svg" className={`h-3 w-3 transition-transform duration-200 ${isRecipesOpen ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-
-                        {/* First Level Dropdown Menu */}
-                        <div className={`absolute top-full left-0 mt-0 w-64 origin-top-left rounded-b-2xl bg-white p-2 shadow-2xl border border-sand transition-all duration-200 ease-out ${isRecipesOpen ? 'opacity-100 translate-y-0 visible' : 'opacity-0 -translate-y-2 invisible'}`}>
-                            {recipeGroups.map((group) => (
-                                <div
-                                    key={group.type}
-                                    className="relative"
-                                    onMouseEnter={() => setActiveSubmenu(group.type)}
-                                >
-                                    <Link
-                                        href={group.href}
-                                        className={`flex items-center justify-between rounded-xl px-4 py-3 text-[16px] font-medium tracking-tight transition-all hover:no-underline ${activeSubmenu === group.type ? 'text-terracotta bg-sand/10' : 'text-dark-olive/60 hover:text-terracotta hover:bg-sand/10'}`}
-                                    >
-                                        {group.label}
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                        </svg>
-                                    </Link>
-
-                                    {/* Second Level (Sub-submenu) */}
-                                    {activeSubmenu === group.type && (
-                                        <div
-                                            className="absolute right-full top-0 mr-1 w-56 rounded-2xl bg-white p-2 shadow-2xl border border-sand animate-in fade-in slide-in-from-right-2 duration-200"
-                                            onMouseLeave={() => setActiveSubmenu(null)}
-                                        >
-                                            <div className="max-h-[300px] overflow-y-auto custom-scrollbar">
-                                                {getSubMenuItems(group.type).map((item) => (
-                                                    <Link
-                                                        key={item.slug}
-                                                        href={`/${item.slug}-recipes`}
-                                                        className="block rounded-xl px-4 py-3 text-[16px] font-medium text-dark-olive/60 hover:text-terracotta hover:bg-sand/10 transition-all hover:no-underline"
-                                                    >
-                                                        {item.title}
-                                                    </Link>
-                                                ))}
-                                                {getSubMenuItems(group.type).length === 0 && (
-                                                    <span className="block px-4 py-3 text-[10px] text-dark-olive/40 font-serif">Coming soon...</span>
-                                                )}
-                                            </div>
-                                        </div>
-                                    )}
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-
-                    <Link href="/about" className="text-[16px] font-medium tracking-tight text-dark-olive/60 hover:text-dark-olive transition-colors hover:no-underline">About</Link>
+                <div className="hidden items-center gap-7 md:flex">
+                    {links.map(link => (
+                        <Link key={link.href} href={link.href} className="text-[0.93rem] font-medium text-ink transition hover:text-tomato hover:no-underline">
+                            {link.label}
+                        </Link>
+                    ))}
                 </div>
 
-                {/* Mobile Menu Button */}
-                <button
-                    className="md:hidden p-2 text-dark-olive/60 hover:text-dark-olive transition-colors"
-                    onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                    aria-label="Toggle menu"
-                >
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        {isMobileMenuOpen ? (
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                        ) : (
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                        )}
+                <div className="hidden items-center gap-3 md:flex">
+                    <Link href="/all-recipes" className="flex min-w-[200px] items-center gap-2.5 rounded-full border border-line px-4 py-2 text-[0.85rem] text-muted hover:border-ink hover:no-underline">
+                        <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><circle cx="11" cy="11" r="7" /><path d="m20 20-4-4" /></svg>
+                        Search recipes…
+                    </Link>
+                    <Link href="/all-recipes" className="btn btn-ink hover:no-underline">Start cooking</Link>
+                </div>
+
+                <button type="button" onClick={() => setIsOpen(value => !value)} className="flex h-10 w-10 items-center justify-center rounded-full border-[1.5px] border-ink text-ink md:hidden" aria-expanded={isOpen} aria-label="Toggle menu">
+                    <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        {isOpen ? <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /> : <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7h16M4 12h16M4 17h16" />}
                     </svg>
                 </button>
             </div>
 
-            {/* Mobile Menu */}
-            <div className={`md:hidden border-t border-border-soft bg-white transition-all duration-300 ease-in-out ${isMobileMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
-                <div className="px-4 py-2 space-y-1">
-                    <Link href="/" onClick={closeMenu} className="block py-3 text-base font-medium text-dark-olive/60 hover:text-dark-olive transition-colors hover:no-underline">
-                        Home
-                    </Link>
-                    <Link href="/recipe-directory" onClick={closeMenu} className="block py-3 text-base font-medium text-dark-olive/60 hover:text-dark-olive transition-colors hover:no-underline">
-                        Directory
-                    </Link>
-                    <Link href="/category" onClick={closeMenu} className="block py-3 text-base font-medium text-dark-olive/60 hover:text-dark-olive transition-colors hover:no-underline">
-                        Categories
-                    </Link>
-
-                    {/* Mobile Recipes Accordion */}
-                    <div className="border-t border-border-soft">
-                        <button
-                            onClick={() => setMobileRecipesOpen(!mobileRecipesOpen)}
-                            className="flex items-center justify-between w-full py-3 text-base font-medium text-dark-olive/60 hover:text-dark-olive transition-colors"
-                        >
-                            Recipes
-                            <svg xmlns="http://www.w3.org/2000/svg" className={`h-4 w-4 transition-transform duration-200 ${mobileRecipesOpen ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-
-                        {/* Mobile Recipe Groups */}
-                        {mobileRecipesOpen && (
-                            <div className="pl-4 space-y-1 pb-2">
-                                <Link href="/recipes" onClick={closeMenu} className="block py-2 text-sm font-medium text-dark-olive/60 hover:text-dark-olive transition-colors hover:no-underline">
-                                    All Recipes
-                                </Link>
-                                {recipeGroups.map((group) => (
-                                    <div key={group.type} className="border-l-2 border-white/10 pl-3">
-                                        <button
-                                            onClick={() => setMobileActiveSubmenu(mobileActiveSubmenu === group.type ? null : group.type)}
-                                            className="flex items-center justify-between w-full py-2 text-sm font-medium text-dark-olive/60 hover:text-dark-olive transition-colors"
-                                        >
-                                            {group.label}
-                                            <svg xmlns="http://www.w3.org/2000/svg" className={`h-3 w-3 transition-transform duration-200 ${mobileActiveSubmenu === group.type ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                                            </svg>
-                                        </button>
-
-                                        {/* Mobile Sub-categories */}
-                                        {mobileActiveSubmenu === group.type && (
-                                            <div className="pl-3 space-y-1 max-h-[200px] overflow-y-auto">
-                                                {getSubMenuItems(group.type).map((item) => (
-                                                    <Link
-                                                        key={item.slug}
-                                                        href={`/${item.slug}-recipes`}
-                                                        onClick={closeMenu}
-                                                        className="block py-2 text-[13px] font-medium text-dark-olive/60 hover:text-dark-olive transition-colors hover:no-underline"
-                                                    >
-                                                        {item.title}
-                                                    </Link>
-                                                ))}
-                                                {getSubMenuItems(group.type).length === 0 && (
-                                                    <span className="block py-2 text-[10px] text-dark-olive/30 font-sans">Coming soon...</span>
-                                                )}
-                                            </div>
-                                        )}
-                                    </div>
-                                ))}
-                            </div>
-                        )}
+            {isOpen && (
+                <div className="border-t border-line bg-white px-4 py-4 md:hidden">
+                    <div className="mx-auto flex max-w-[1180px] flex-col">
+                        {links.map(link => (
+                            <Link key={link.href} href={link.href} onClick={() => setIsOpen(false)} className="rounded-xl px-3 py-3 text-base font-medium text-ink hover:bg-cream hover:text-tomato hover:no-underline">
+                                {link.label}
+                            </Link>
+                        ))}
+                        <Link href="/all-recipes" onClick={() => setIsOpen(false)} className="btn btn-ink mt-3 hover:no-underline">Start cooking</Link>
                     </div>
-
-                    <Link href="/about" onClick={closeMenu} className="block py-3 text-base font-medium text-dark-olive/60 hover:text-dark-olive transition-colors border-t border-border-soft hover:no-underline">
-                        About
-                    </Link>
                 </div>
-            </div>
+            )}
         </nav>
     );
 }

@@ -1,15 +1,15 @@
 import { recipes } from '@/lib/data';
-import AllRecipes from '@/components/AllRecipes';
+import RecipeExplorer from '@/components/RecipeExplorer';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "All Recipes Index",
-    description: "A complete list of all kitchen-tested recipes at Relish Realm. Discover every dish, from Italian classics to vegan delights.",
+    title: "Explore All Recipes",
+    description: "Search and filter every kitchen-tested recipe at Relish Realm by ingredient, cuisine, diet, meal type, and difficulty.",
     alternates: {
         canonical: "/all-recipes",
     },
 };
 
 export default function AllRecipesPage() {
-    return <AllRecipes recipes={recipes} />;
+    return <RecipeExplorer recipes={recipes} />;
 }

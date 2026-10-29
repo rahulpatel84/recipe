@@ -1,70 +1,221 @@
 @import "tailwindcss";
 
+/* ===========================================================
+   Relish Realm design system
+   Palette: paper / cream / ink / tomato / pickle / mustard
+   Type:    Fraunces (display) · Inter (text) · Caveat (hand)
+   =========================================================== */
+
 @theme {
-  --color-cream: #FFFFFF;
-  --color-sand: #F5F5F5;
-  --color-dark-olive: #2D2D2D;
-  --color-terracotta: #5B6E58;
-  /* Muted Sage for primary actions */
-  --color-sage: #8A9A87;
-  --color-soft-gray: #FAFAFA;
-  --color-border-soft: #EEEEEE;
+  /* new palette */
+  --color-paper: #ffffff;
+  --color-cream: #faf6ef;
+  --color-ink: #1b1a17;
+  --color-muted: #6f6a61;
+  --color-line: #ece6db;
+  --color-tomato: #e5533c;
+  --color-pickle: #4f7a3a;
+  --color-pickle-soft: #e7efdd;
+  --color-mustard: #f4b740;
+  --color-mustard-soft: #fdf1d3;
+  --color-blush: #fbe4de;
+  --color-sky: #e3ecf3;
+
+  /* legacy aliases kept so every existing page inherits the reskin */
+  --color-sand: #ece6db;
+  --color-dark-olive: #1b1a17;
+  --color-terracotta: #e5533c;
+  --color-sage: #4f7a3a;
+  --color-soft-gray: #faf6ef;
+  --color-border-soft: #ece6db;
+
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-serif: var(--font-fraunces), Georgia, serif;
+  --font-hand: var(--font-caveat), cursive;
+
+  --radius-card: 18px;
 }
 
 :root {
-  --background: #FFFFFF;
-  --foreground: #2D2D2D;
+  --background: #ffffff;
+  --foreground: #1b1a17;
 }
 
 body {
   background-color: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
+/* Display type */
 h1,
 h2,
 h3,
 h4,
+.serif,
 .font-serif {
   font-family: var(--font-serif);
+  font-variation-settings: "SOFT" 100, "WONK" 1;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+
+.hand {
+  font-family: var(--font-hand);
+  color: var(--color-tomato);
+  font-size: 1.45rem;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  font-weight: 600;
+}
+
+/* Pill buttons with the sticker shadow */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 20px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.93rem;
+  font-family: inherit;
+  border: 1.5px solid var(--color-ink);
+  background: #fff;
+  color: var(--color-ink);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-ink {
+  background: var(--color-ink);
+  color: #fff;
+}
+
+.btn-ink:hover {
+  background: var(--color-tomato);
+  border-color: var(--color-tomato);
+}
+
+.btn:not(.btn-ink):hover {
+  background: var(--color-ink);
+  color: #fff;
+}
+
+.hard-shadow {
+  box-shadow: 4px 4px 0 var(--color-ink);
+}
+
+.sticker {
+  background: #fff;
+  border: 1.5px solid var(--color-ink);
+  border-radius: 14px;
+  padding: 10px 14px;
+  font-size: 0.85rem;
+  box-shadow: 3px 3px 0 var(--color-ink);
+}
+
+.chip {
+  padding: 7px 14px;
+  border-radius: 999px;
+  background: var(--color-cream);
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.chip:hover {
+  border-color: var(--color-ink);
+}
+
+.dashed-row {
+  border-bottom: 1px dashed #ddd3c3;
 }
 
 .recipe-shadow {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.03);
-  border: 1px solid var(--color-border-soft);
+  box-shadow: 0 1px 2px rgba(27, 26, 23, 0.04);
+  border: 1px solid var(--color-line);
 }
 
 .glass {
   background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid var(--color-border-soft);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--color-line);
 }
 
 .recipe-hover {
-  transition: all 0.2s ease-in-out;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
 .recipe-hover:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  border-color: rgba(91, 110, 88, 0.2);
+  transform: translateY(-4px);
+  border-color: var(--color-ink);
+  box-shadow: 4px 4px 0 var(--color-ink);
 }
 
-/* Universal Link Hover Effect */
+::selection {
+  background: rgba(229, 83, 60, 0.18);
+}
+
+button,
+a,
+select {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-tomato);
+  outline-offset: 3px;
+}
+
 a {
+  color: inherit;
   transition: color 0.2s ease-in-out;
 }
 
-a:hover {
-  text-underline-offset: 4px;
+/* Content links get an underline on hover */
+.content-link:hover,
+article a:hover,
+.prose a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  color: var(--color-tomato);
 }
 
-/* Preserve only cards and specific buttons from decoration if needed */
+/* Preserve cards, buttons, nav, and metadata from effects */
 .recipe-hover,
-button {
+.recipe-hover a,
+button,
+nav a,
+nav a:hover,
+.no-underline,
+.no-underline:hover,
+span,
+span a {
   text-decoration: none !important;
+}
+
+/* Cook mode: bigger method text while cooking */
+body.cook-mode .cook-step p {
+  font-size: 1.25rem;
+  line-height: 1.55;
+}
+
+body.cook-mode .cook-step h4 {
+  font-size: 1.3rem;
 }

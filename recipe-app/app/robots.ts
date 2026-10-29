@@ -10,5 +10,6 @@ export default function robots(): MetadataRoute.Robots {
             disallow: '/private/',
         },
         sitemap: 'https://relishrealm.com/sitemap.xml',
+        host: 'https://relishrealm.com',
     };
 }

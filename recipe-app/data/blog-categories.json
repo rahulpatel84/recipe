@@ -1,0 +1,42 @@
+[
+  {
+    "id": "food-history",
+    "slug": "food-history",
+    "title": "Food History",
+    "description": "Explore the fascinating origins and evolution of foods throughout human civilization",
+    "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=400&fit=crop",
+    "color": "#8B4513"
+  },
+  {
+    "id": "ingredient-origins",
+    "slug": "ingredient-origins",
+    "title": "Ingredient Origins",
+    "description": "Discover where your favorite ingredients come from and how they spread across the world",
+    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=400&fit=crop",
+    "color": "#228B22"
+  },
+  {
+    "id": "culinary-traditions",
+    "slug": "culinary-traditions",
+    "title": "Culinary Traditions",
+    "description": "Stories of cooking traditions, techniques, and cultural food practices from around the globe",
+    "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=400&fit=crop",
+    "color": "#B8860B"
+  },
+  {
+    "id": "food-science",
+    "slug": "food-science",
+    "title": "Food Science & Research",
+    "description": "Latest research, nutrition studies, and scientific discoveries about food and cooking",
+    "image": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=800&h=400&fit=crop",
+    "color": "#4169E1"
+  },
+  {
+    "id": "global-cuisines",
+    "slug": "global-cuisines",
+    "title": "Global Cuisines",
+    "description": "Deep dives into the world's most beloved cuisines and their unique characteristics",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&h=400&fit=crop",
+    "color": "#DC143C"
+  }
+]

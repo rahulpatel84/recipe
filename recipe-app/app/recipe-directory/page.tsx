@@ -149,7 +149,7 @@ export default function RecipeDirectoryPage() {
                     <p className="text-sm text-dark-olive/50 mb-8">
                         Every recipe in our collection, listed alphabetically.
                     </p>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         {[...recipes].sort((a, b) => a.title.localeCompare(b.title)).map((recipe) => (
                             <Link
                                 key={recipe.id}
@@ -249,7 +249,7 @@ export default function RecipeDirectoryPage() {
                     <p className="text-sm text-dark-olive/50 mb-8">
                         Recipes that fit your dietary needs and lifestyle.
                     </p>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         {dietaryOptions.map((dietary) => (
                             <div key={dietary} className="p-5 border border-border-soft rounded-xl hover:border-sage transition-colors">
                                 <h3 className="text-base font-bold text-dark-olive mb-3">

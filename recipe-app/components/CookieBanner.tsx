@@ -10,7 +10,8 @@ export default function CookieBanner() {
     // Check if user has already consented
     const consent = localStorage.getItem('cookie-consent');
     if (!consent) {
-      setShowBanner(true);
+      const timer = window.setTimeout(() => setShowBanner(true), 0);
+      return () => window.clearTimeout(timer);
     }
   }, []);
 
@@ -27,27 +28,27 @@ export default function CookieBanner() {
   if (!showBanner) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-border-soft p-4 md:p-6 shadow-2xl z-50 flex flex-col md:flex-row items-center justify-between gap-6 font-sans">
-      <div className="flex-1 max-w-4xl">
-        <p className="text-sm md:text-base text-dark-olive/80 leading-relaxed">
+    <div className="fixed bottom-4 left-4 right-4 z-50 mx-auto flex max-w-3xl flex-col gap-4 rounded-2xl border border-border-soft bg-white p-5 shadow-[0_20px_60px_rgba(29,41,34,.18)] sm:bottom-6 sm:flex-row sm:items-center sm:justify-between sm:p-6">
+      <div className="flex-1">
+        <p className="text-sm text-dark-olive/65 leading-6">
           We use cookies to improve your experience on our site, show personalized content, and analyze our traffic. 
-          By clicking "Accept All", you consent to our use of cookies. Read our{' '}
+          Read our{' '}
           <Link href="/privacy" className="text-terracotta hover:underline font-medium">Privacy Policy</Link>{' '}
           and{' '}
           <Link href="/cookie-policy" className="text-terracotta hover:underline font-medium">Cookie Policy</Link>{' '}
           for more information.
         </p>
       </div>
-      <div className="flex items-center gap-4 shrink-0 w-full md:w-auto justify-end">
+      <div className="flex shrink-0 items-center justify-end gap-2">
         <button 
           onClick={declineCookies}
-          className="px-6 py-2.5 text-sm font-bold tracking-widest uppercase text-dark-olive bg-sand/30 hover:bg-sand/50 rounded-lg transition-colors"
+          className="rounded-xl px-4 py-2.5 text-sm font-bold text-dark-olive/60 transition hover:bg-soft-gray"
         >
           Decline
         </button>
         <button 
           onClick={acceptCookies}
-          className="px-6 py-2.5 text-sm font-bold tracking-widest uppercase text-white bg-terracotta hover:bg-terracotta/90 rounded-lg transition-colors shadow-sm"
+          className="rounded-xl bg-dark-olive px-4 py-2.5 text-sm font-bold text-white transition hover:bg-terracotta"
         >
           Accept All
         </button>

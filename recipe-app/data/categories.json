@@ -35,6 +35,90 @@
     "type": "cuisine"
   },
   {
+    "id": "33",
+    "slug": "american",
+    "title": "American",
+    "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=400&h=300&fit=crop",
+    "type": "cuisine"
+  },
+  {
+    "id": "34",
+    "slug": "asian-fusion",
+    "title": "Asian Fusion",
+    "image": "https://images.unsplash.com/photo-1617093727343-374698b1b08d?q=80&w=400&h=300&fit=crop",
+    "type": "cuisine"
+  },
+  {
+    "id": "35",
+    "slug": "british",
+    "title": "British",
+    "image": "https://images.unsplash.com/photo-1577906096429-f73b2c6d05a7?q=80&w=400&h=300&fit=crop",
+    "type": "cuisine"
+  },
+  {
+    "id": "36",
+    "slug": "cajun",
+    "title": "Cajun",
+    "image": "https://images.unsplash.com/photo-1604152135912-04a022e23696?q=80&w=400&h=300&fit=crop",
+    "type": "cuisine"
+  },
+  {
+    "id": "37",
+    "slug": "chinese",
+    "title": "Chinese",
+    "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?q=80&w=400&h=300&fit=crop",
+    "type": "cuisine"
+  },
+  {
+    "id": "38",
+    "slug": "global",
+    "title": "Global",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=400&h=300&fit=crop",
+    "type": "cuisine"
+  },
+  {
+    "id": "39",
+    "slug": "greek",
+    "title": "Greek",
+    "image": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?q=80&w=400&h=300&fit=crop",
+    "type": "cuisine"
+  },
+  {
+    "id": "40",
+    "slug": "korean",
+    "title": "Korean",
+    "image": "https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56?q=80&w=400&h=300&fit=crop",
+    "type": "cuisine"
+  },
+  {
+    "id": "41",
+    "slug": "mediterranean",
+    "title": "Mediterranean",
+    "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=400&h=300&fit=crop",
+    "type": "cuisine"
+  },
+  {
+    "id": "42",
+    "slug": "middle-eastern",
+    "title": "Middle Eastern",
+    "image": "https://images.unsplash.com/photo-1542528180-a1208c5169a5?q=80&w=400&h=300&fit=crop",
+    "type": "cuisine"
+  },
+  {
+    "id": "43",
+    "slug": "thai",
+    "title": "Thai",
+    "image": "https://images.unsplash.com/photo-1559314809-0d155014e29e?q=80&w=400&h=300&fit=crop",
+    "type": "cuisine"
+  },
+  {
+    "id": "44",
+    "slug": "turkish",
+    "title": "Turkish",
+    "image": "https://images.unsplash.com/photo-1541518763669-27fef04b14ea?q=80&w=400&h=300&fit=crop",
+    "type": "cuisine"
+  },
+  {
     "id": "6",
     "slug": "asia",
     "title": "Asia",
@@ -222,5 +306,54 @@
     "title": "Dessert",
     "image": "https://images.unsplash.com/photo-1551024506-0bccd828d307?q=80&w=400&h=300&fit=crop",
     "type": "mealType"
+  },
+  {
+    "id": "45",
+    "slug": "air-fryer",
+    "title": "Air Fryer",
+    "image": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=400&h=300&fit=crop",
+    "type": "appliance"
+  },
+  {
+    "id": "46",
+    "slug": "ninja-creami",
+    "title": "Ninja Creami",
+    "image": "https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?q=80&w=400&h=300&fit=crop",
+    "type": "appliance"
+  },
+  {
+    "id": "47",
+    "slug": "instant-pot",
+    "title": "Instant Pot",
+    "image": "https://images.unsplash.com/photo-1585515320310-259814833e62?q=80&w=400&h=300&fit=crop",
+    "type": "appliance"
+  },
+  {
+    "id": "48",
+    "slug": "slow-cooker",
+    "title": "Slow Cooker",
+    "image": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=400&h=300&fit=crop",
+    "type": "appliance"
+  },
+  {
+    "id": "49",
+    "slug": "oven",
+    "title": "Oven",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=400&h=300&fit=crop",
+    "type": "appliance"
+  },
+  {
+    "id": "50",
+    "slug": "stovetop",
+    "title": "Stovetop",
+    "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?q=80&w=400&h=300&fit=crop",
+    "type": "appliance"
+  },
+  {
+    "id": "51",
+    "slug": "blender",
+    "title": "Blender",
+    "image": "https://images.unsplash.com/photo-1622597467836-f3285f2131b8?q=80&w=400&h=300&fit=crop",
+    "type": "appliance"
   }
 ]

@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Relish Realm — Home</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,400..800,100,1&family=Inter:wght@400;500;600&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FFFFFF; --cream:#FAF6EF; --ink:#1B1A17; --muted:#6F6A61; --line:#ECE6DB;
+  --tomato:#E5533C; --pickle:#4F7A3A; --pickle-soft:#E7EFDD; --mustard:#F4B740; --mustard-soft:#FDF1D3; --blush:#FBE4DE; --sky:#E3ECF3;
+  --r:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font:16px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.serif{font-family:Fraunces,Georgia,serif;font-variation-settings:"SOFT" 100,"WONK" 1}
+.hand{font-family:Caveat,cursive;color:var(--tomato);font-size:1.5rem}
+.eyebrow{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:999px;font-weight:600;font-size:.95rem;border:1.5px solid var(--ink);transition:.2s}
+.btn-ink{background:var(--ink);color:#fff}.btn-ink:hover{background:var(--tomato);border-color:var(--tomato)}
+.btn-ghost:hover{background:var(--ink);color:#fff}
+
+/* nav */
+nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{display:flex;align-items:center;gap:10px;font-family:Fraunces,serif;font-weight:700;font-size:1.35rem;font-variation-settings:"SOFT" 100,"WONK" 1}
+.logo svg{width:34px;height:34px}
+.links{display:flex;gap:28px;font-size:.93rem;font-weight:500}
+.links a{position:relative}.links a:hover{color:var(--tomato)}
+.nav-right{display:flex;gap:10px;align-items:center}
+.kbd{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:999px;padding:8px 14px;color:var(--muted);font-size:.85rem;min-width:200px}
+.kbd span{margin-left:auto;border:1px solid var(--line);border-radius:6px;padding:0 6px;font-size:.75rem}
+
+/* hero */
+.hero{padding:72px 0 48px;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(2.6rem,6vw,4.6rem);line-height:1.02;font-weight:600;letter-spacing:-.02em;margin:14px 0 20px}
+.hero h1 em{font-style:italic;color:var(--tomato)}
+.squiggle{display:inline-block;position:relative}
+.squiggle svg{position:absolute;left:0;bottom:-10px;width:100%;height:14px}
+.hero p.lede{font-size:1.15rem;color:var(--muted);max-width:520px}
+.search{margin-top:32px;display:flex;align-items:center;gap:10px;background:#fff;border:1.5px solid var(--ink);border-radius:999px;padding:8px 8px 8px 22px;max-width:560px;box-shadow:4px 4px 0 var(--ink)}
+.search input{flex:1;border:0;outline:0;font:inherit;font-size:1rem;background:transparent}
+.quick{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.chip{padding:7px 14px;border-radius:999px;background:var(--cream);font-size:.85rem;font-weight:500;border:1px solid transparent;cursor:pointer}
+.chip:hover{border-color:var(--ink)}
+.hero-art{position:relative;aspect-ratio:1/1;border-radius:32px;background:var(--mustard-soft);display:grid;place-items:center;overflow:hidden}
+.hero-art .plate{width:72%}
+.sticker{position:absolute;background:#fff;border:1.5px solid var(--ink);border-radius:14px;padding:10px 14px;font-size:.85rem;box-shadow:3px 3px 0 var(--ink)}
+.sticker b{display:block;font-family:Fraunces,serif;font-size:1.05rem}
+.s1{top:24px;left:20px;transform:rotate(-4deg)}
+.s2{bottom:28px;right:18px;transform:rotate(3deg)}
+.pip-hero{position:absolute;bottom:-6px;left:22px;width:96px}
+
+/* trust strip */
+.strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:40px}
+.strip .wrap{display:flex;justify-content:space-between;gap:24px;padding:22px 24px;flex-wrap:wrap}
+.strip div{display:flex;align-items:center;gap:10px;font-weight:500;font-size:.95rem}
+.dot{width:10px;height:10px;border-radius:50%}
+
+/* sections */
+section{padding:80px 0 0}
+.sec-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:28px;gap:20px}
+.sec-head h2{font-size:clamp(1.8rem,3.4vw,2.6rem);font-weight:600;line-height:1.1;letter-spacing:-.01em}
+.sec-head a{font-weight:600;border-bottom:1.5px solid var(--ink);padding-bottom:2px;white-space:nowrap}
+.sec-head a:hover{color:var(--tomato);border-color:var(--tomato)}
+
+/* tiles (browse by) */
+.tiles{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.tile{border-radius:var(--r);padding:20px 18px;min-height:150px;display:flex;flex-direction:column;justify-content:space-between;transition:.25s;border:1.5px solid transparent}
+.tile:hover{transform:translateY(-4px);border-color:var(--ink)}
+.tile svg{width:38px;height:38px}
+.tile h3{font-family:Fraunces,serif;font-size:1.15rem;font-weight:600}
+.tile p{font-size:.8rem;color:var(--muted)}
+
+/* cards */
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.card .img{aspect-ratio:4/5;border-radius:var(--r);display:grid;place-items:center;position:relative;overflow:hidden;transition:.3s}
+.card:hover .img{transform:scale(.98)}
+.card .img svg{width:62%}
+.card .save{position:absolute;top:12px;right:12px;width:36px;height:36px;border-radius:50%;background:#fff;display:grid;place-items:center}
+.card .tag{position:absolute;top:12px;left:12px;background:#fff;border-radius:999px;padding:4px 10px;font-size:.72rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.card h3{font-family:Fraunces,serif;font-size:1.2rem;font-weight:600;margin:14px 0 4px;line-height:1.25}
+.card:hover h3{color:var(--tomato)}
+.meta{display:flex;gap:12px;font-size:.83rem;color:var(--muted)}
+.meta b{color:var(--ink);font-weight:600}
+
+/* feature */
+.feature{display:grid;grid-template-columns:1fr 1fr;gap:0;border-radius:28px;overflow:hidden;background:var(--cream)}
+.feature .art{background:var(--pickle-soft);display:grid;place-items:center;min-height:440px;position:relative}
+.feature .art svg.big{width:60%}
+.feature .txt{padding:56px}
+.feature h2{font-size:2.4rem;line-height:1.08;margin:12px 0 16px;font-weight:600}
+.feature p{color:var(--muted);margin-bottom:24px}
+.feature ul{list-style:none;margin-bottom:28px}
+.feature li{padding:10px 0;border-bottom:1px dashed #d9d0c0;display:flex;justify-content:space-between;font-size:.95rem}
+
+/* collections row */
+.coll{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.coll a{border:1px solid var(--line);border-radius:var(--r);padding:28px;display:flex;flex-direction:column;gap:14px;transition:.2s}
+.coll a:hover{border-color:var(--ink);box-shadow:4px 4px 0 var(--ink)}
+.coll .stack{display:flex}
+.coll .stack span{width:46px;height:46px;border-radius:50%;border:3px solid #fff;margin-right:-12px}
+.coll h3{font-family:Fraunces,serif;font-size:1.4rem;font-weight:600}
+.coll p{color:var(--muted);font-size:.9rem}
+
+/* pip note */
+.pipnote{margin-top:80px;display:flex;gap:28px;align-items:center;background:var(--blush);border-radius:28px;padding:36px 44px}
+.pipnote svg{width:110px;flex:none}
+.pipnote h3{font-family:Fraunces,serif;font-size:1.7rem;font-weight:600;line-height:1.2}
+.pipnote form{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap}
+.pipnote input{flex:1;min-width:220px;padding:13px 20px;border-radius:999px;border:1.5px solid var(--ink);font:inherit;background:#fff}
+
+footer{margin-top:96px;border-top:1px solid var(--line);padding:56px 0 40px}
+footer .wrap{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px}
+footer h4{font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin-bottom:14px}
+footer li{list-style:none;padding:4px 0;font-size:.93rem}
+footer li a:hover{color:var(--tomato)}
+.fine{grid-column:1/-1;border-top:1px solid var(--line);padding-top:24px;margin-top:24px;font-size:.82rem;color:var(--muted);display:flex;justify-content:space-between}
+
+@media (max-width:980px){
+  .hero,.feature{grid-template-columns:1fr}.links,.kbd{display:none}
+  .tiles{grid-template-columns:repeat(3,1fr)}.cards{grid-template-columns:repeat(2,1fr)}.coll{grid-template-columns:1fr}
+  footer .wrap{grid-template-columns:1fr 1fr}.feature .txt{padding:32px}
+}
+@media (max-width:560px){
+  .wrap{padding:0 16px}.tiles{grid-template-columns:repeat(2,1fr)}.cards{gap:16px}
+  .pipnote{flex-direction:column;align-items:flex-start;padding:28px}
+}
+</style>
+</head>
+<body>
+
+<!-- Pip the pickle: brand mascot, reused via <use> -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <symbol id="pip" viewBox="0 0 100 120">
+      <ellipse cx="50" cy="114" rx="30" ry="5" fill="#1B1A17" opacity=".08"/>
+      <path d="M50 8c22 0 32 18 32 50s-10 52-32 52-32-20-32-52S28 8 50 8z" fill="#7BA84F" stroke="#1B1A17" stroke-width="3"/>
+      <circle cx="34" cy="34" r="3" fill="#5A8A37"/><circle cx="66" cy="44" r="3" fill="#5A8A37"/><circle cx="30" cy="78" r="3" fill="#5A8A37"/><circle cx="70" cy="86" r="3" fill="#5A8A37"/><circle cx="52" cy="98" r="2.5" fill="#5A8A37"/>
+      <circle cx="40" cy="56" r="5" fill="#1B1A17"/><circle cx="62" cy="56" r="5" fill="#1B1A17"/>
+      <circle cx="41.5" cy="54.5" r="1.6" fill="#fff"/><circle cx="63.5" cy="54.5" r="1.6" fill="#fff"/>
+      <path d="M42 68q9 9 18 0" fill="none" stroke="#1B1A17" stroke-width="3" stroke-linecap="round"/>
+      <ellipse cx="32" cy="66" rx="5" ry="3" fill="#F29C8A" opacity=".8"/><ellipse cx="70" cy="66" rx="5" ry="3" fill="#F29C8A" opacity=".8"/>
+      <path d="M50 8q4-8 12-6" fill="none" stroke="#1B1A17" stroke-width="3" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="bowl" viewBox="0 0 200 160">
+      <path d="M30 70h140c0 40-30 66-70 66S30 110 30 70z" fill="#fff" stroke="#1B1A17" stroke-width="3"/>
+      <path d="M44 70c6-22 28-30 56-30s50 8 56 30" fill="#F4B740" stroke="#1B1A17" stroke-width="3"/>
+      <path d="M60 58q10-10 20 0t20 0 20 0 20 0" fill="none" stroke="#1B1A17" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="78" cy="50" r="6" fill="#E5533C" stroke="#1B1A17" stroke-width="2"/><circle cx="118" cy="48" r="6" fill="#E5533C" stroke="#1B1A17" stroke-width="2"/>
+      <path d="M96 40q4-10 12-8M132 52q6-6 12-2" fill="none" stroke="#4F7A3A" stroke-width="3" stroke-linecap="round"/>
+      <path d="M140 24l30-20M150 30l30-18" stroke="#1B1A17" stroke-width="3" stroke-linecap="round"/>
+      <path d="M80 18q-4-8 0-14M100 16q-4-8 0-14" fill="none" stroke="#1B1A17" stroke-width="2" stroke-linecap="round" opacity=".4"/>
+    </symbol>
+  </defs>
+</svg>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="index.html"><svg><use href="#pip"/></svg>Relish Realm</a>
+    <div class="links"><a href="browse.html">Recipes</a><a href="browse.html">Cuisines</a><a href="browse.html">Dietary</a><a href="#">Collections</a><a href="#">Journal</a></div>
+    <div class="nav-right">
+      <div class="kbd">Search recipes… <span>⌘K</span></div>
+      <a class="btn btn-ink" href="#">Sign in</a>
+    </div>
+  </div>
+</nav>
+
+<header class="wrap hero">
+  <div>
+    <span class="eyebrow">Kitchen-tested · Globally inspired</span>
+    <h1 class="serif">Good food,<br>made <span class="squiggle"><em>easy</em><svg viewBox="0 0 200 14" preserveAspectRatio="none"><path d="M2 9q25-8 50 0t50 0 50 0 46-2" fill="none" stroke="#F4B740" stroke-width="5" stroke-linecap="round"/></svg></span> to love.</h1>
+    <p class="lede">Hundreds of tested recipes from 40+ cuisines — written clearly, measured precisely, and ready when you are.</p>
+    <form class="search" onsubmit="location.href='browse.html';return false">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+      <input placeholder="What's in your fridge? Try “chickpeas”">
+      <button class="btn btn-ink">Search</button>
+    </form>
+    <div class="quick"><span class="chip">Under 30 min</span><span class="chip">One-pot</span><span class="chip">Vegetarian</span><span class="chip">Weeknight pasta</span><span class="chip">Meal prep</span></div>
+  </div>
+  <div class="hero-art">
+    <svg class="plate" viewBox="0 0 200 160"><use href="#bowl"/></svg>
+    <div class="sticker s1"><b>★ 4.9</b>Chicken Tikka Masala</div>
+    <div class="sticker s2"><b>45 min</b>Tonight's pick</div>
+    <svg class="pip-hero" viewBox="0 0 100 120"><use href="#pip"/></svg>
+  </div>
+</header>
+
+<div class="strip">
+  <div class="wrap">
+    <div><span class="dot" style="background:var(--tomato)"></span>Every recipe tested 3× in a home kitchen</div>
+    <div><span class="dot" style="background:var(--pickle)"></span>Nutrition on every page</div>
+    <div><span class="dot" style="background:var(--mustard)"></span>Metric &amp; US measurements</div>
+    <div><span class="dot" style="background:var(--ink)"></span>No life story — jump straight to cooking</div>
+  </div>
+</div>
+
+<section class="wrap">
+  <div class="sec-head"><div><span class="hand">find your way in</span><h2 class="serif">Browse the realm</h2></div><a href="browse.html">Full directory →</a></div>
+  <div class="tiles">
+    <a class="tile" href="browse.html" style="background:var(--blush)"><svg viewBox="0 0 40 40" fill="none" stroke="#1B1A17" stroke-width="2.2"><circle cx="20" cy="20" r="15"/><path d="M5 20h30M20 5c6 6 6 24 0 30M20 5c-6 6-6 24 0 30"/></svg><div><h3>Cuisine</h3><p>Italian, Indian, Mexican…</p></div></a>
+    <a class="tile" href="browse.html" style="background:var(--pickle-soft)"><svg viewBox="0 0 40 40" fill="none" stroke="#1B1A17" stroke-width="2.2"><path d="M20 35C10 28 6 20 8 10c8 0 14 4 12 25zM20 35c10-7 14-15 12-25-8 0-14 4-12 25z"/></svg><div><h3>Dietary</h3><p>Vegan, Keto, Gluten-free…</p></div></a>
+    <a class="tile" href="browse.html" style="background:var(--mustard-soft)"><svg viewBox="0 0 40 40" fill="none" stroke="#1B1A17" stroke-width="2.2"><circle cx="20" cy="20" r="7"/><path d="M20 4v5M20 31v5M4 20h5M31 20h5M8.7 8.7l3.5 3.5M27.8 27.8l3.5 3.5M8.7 31.3l3.5-3.5M27.8 12.2l3.5-3.5"/></svg><div><h3>Meal type</h3><p>Breakfast to late snacks</p></div></a>
+    <a class="tile" href="browse.html" style="background:var(--sky)"><svg viewBox="0 0 40 40" fill="none" stroke="#1B1A17" stroke-width="2.2"><path d="M8 34V14l12-8 12 8v20zM16 34V24h8v10"/></svg><div><h3>Continent</h3><p>Asia, Europe, Americas…</p></div></a>
+    <a class="tile" href="browse.html" style="background:var(--cream)"><svg viewBox="0 0 40 40" fill="none" stroke="#1B1A17" stroke-width="2.2"><circle cx="14" cy="13" r="5"/><circle cx="28" cy="15" r="4"/><path d="M5 34c0-7 4-11 9-11s9 4 9 11M22 34c0-5 2-9 6-9s7 4 7 9"/></svg><div><h3>For everyone</h3><p>Kids, athletes, seniors</p></div></a>
+    <a class="tile" href="browse.html" style="background:var(--blush)"><svg viewBox="0 0 40 40" fill="none" stroke="#1B1A17" stroke-width="2.2"><path d="M20 36s-11-11-11-19a11 11 0 0 1 22 0c0 8-11 19-11 19z"/><circle cx="20" cy="17" r="4"/></svg><div><h3>Country</h3><p>India, Japan, Italy…</p></div></a>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="sec-head"><div><span class="hand">people can't stop making these</span><h2 class="serif">Most-loved this week</h2></div><a href="browse.html">See all →</a></div>
+  <div class="cards">
+    <a class="card" href="recipe.html"><div class="img" style="background:var(--blush)"><span class="tag">Italian</span><span class="save">♡</span><svg viewBox="0 0 200 160"><use href="#bowl"/></svg></div><h3>Classic Carbonara</h3><div class="meta"><span><b>★ 4.8</b> (1.2k)</span><span>20 min</span><span>Easy</span></div></a>
+    <a class="card" href="recipe.html"><div class="img" style="background:var(--mustard-soft)"><span class="tag">Indian</span><span class="save">♡</span><svg viewBox="0 0 200 160"><use href="#bowl"/></svg></div><h3>Chicken Tikka Masala</h3><div class="meta"><span><b>★ 4.9</b> (2.4k)</span><span>45 min</span><span>Medium</span></div></a>
+    <a class="card" href="recipe.html"><div class="img" style="background:var(--sky)"><span class="tag">Japanese</span><span class="save">♡</span><svg viewBox="0 0 200 160"><use href="#bowl"/></svg></div><h3>Hearty Miso Ramen</h3><div class="meta"><span><b>★ 4.9</b> (880)</span><span>40 min</span><span>Medium</span></div></a>
+    <a class="card" href="recipe.html"><div class="img" style="background:var(--pickle-soft)"><span class="tag">Mexican</span><span class="save">♡</span><svg viewBox="0 0 200 160"><use href="#bowl"/></svg></div><h3>Street-Style Beef Tacos</h3><div class="meta"><span><b>★ 4.6</b> (640)</span><span>30 min</span><span>Easy</span></div></a>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="feature">
+    <div class="art"><svg class="big" viewBox="0 0 200 160"><use href="#bowl"/></svg><svg viewBox="0 0 100 120" style="position:absolute;width:90px;bottom:24px;right:28px;transform:rotate(8deg)"><use href="#pip"/></svg></div>
+    <div class="txt">
+      <span class="eyebrow">Recipe of the week</span>
+      <h2 class="serif">Spiced Lentil Soup that tastes like a hug</h2>
+      <p>Red lentils, cumin and a squeeze of lemon. One pot, 35 minutes, and it's even better tomorrow.</p>
+      <ul><li><span>Prep</span><b>10 min</b></li><li><span>Cook</span><b>25 min</b></li><li><span>Serves</span><b>4</b></li><li><span>Per serving</span><b>310 kcal · 18g protein</b></li></ul>
+      <a class="btn btn-ink" href="recipe.html">Cook this →</a>
+    </div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="sec-head"><div><span class="hand">hand-picked by our editors</span><h2 class="serif">Collections</h2></div><a href="#">All collections →</a></div>
+  <div class="coll">
+    <a href="browse.html"><div class="stack"><span style="background:var(--tomato)"></span><span style="background:var(--mustard)"></span><span style="background:var(--pickle)"></span></div><h3>Weeknight in 20</h3><p>36 recipes for when you're tired but still want something good.</p></a>
+    <a href="browse.html"><div class="stack"><span style="background:var(--pickle)"></span><span style="background:#A8C686"></span><span style="background:var(--mustard)"></span></div><h3>Plants, mostly</h3><p>52 vegetarian &amp; vegan dishes nobody will call "a side".</p></a>
+    <a href="browse.html"><div class="stack"><span style="background:var(--mustard)"></span><span style="background:var(--tomato)"></span><span style="background:var(--ink)"></span></div><h3>Sunday slow-cooks</h3><p>24 low-and-slow recipes that make the whole house smell amazing.</p></a>
+  </div>
+
+  <div class="pipnote">
+    <svg viewBox="0 0 100 120"><use href="#pip"/></svg>
+    <div style="flex:1">
+      <span class="hand">psst — Pip here</span>
+      <h3>Get three dinner ideas in your inbox every Friday.</h3>
+      <form onsubmit="return false"><input placeholder="you@email.com"><button class="btn btn-ink">Count me in</button></form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><a class="logo" href="#"><svg><use href="#pip"/></svg>Relish Realm</a><p style="color:var(--muted);margin-top:12px;max-width:300px;font-size:.93rem">Modern recipes, timeless flavours. Tested in real kitchens, written for real people.</p></div>
+    <div><h4>Explore</h4><ul><li><a href="browse.html">All recipes</a></li><li><a href="#">Cuisines</a></li><li><a href="#">Collections</a></li></ul></div>
+    <div><h4>Diet</h4><ul><li><a href="#">Vegan</a></li><li><a href="#">Gluten-free</a></li><li><a href="#">High-protein</a></li></ul></div>
+    <div><h4>About</h4><ul><li><a href="#">Our test kitchen</a></li><li><a href="#">Contact</a></li><li><a href="#">Privacy</a></li></ul></div>
+    <div class="fine"><span>© 2026 Relish Realm</span><span>Made with too much garlic.</span></div>
+  </div>
+</footer>
+</body>
+</html>
