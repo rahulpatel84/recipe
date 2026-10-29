@@ -9,7 +9,7 @@ const links = [
     { href: '/recipes-by-cuisines', label: 'Cuisines' },
     { href: '/recipes-by-dietary-choices', label: 'Dietary' },
     { href: '/vegan-recipes', label: 'Vegan' },
-    { href: '/blog', label: 'Journal' },
+    { href: '/blog', label: 'Blog' },
 ];
 
 export default function Navbar() {

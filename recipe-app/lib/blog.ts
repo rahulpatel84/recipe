@@ -47,6 +47,11 @@ export interface BlogPost {
   relatedPosts: string[];
   /** One line of copy handing the reader on to the kitchen. */
   cookNext?: string;
+  /** 'draft' posts are withheld from the site. */
+  status?: 'published' | 'draft';
+  draftReason?: string;
+  /** Real, checkable references, shown at the foot of the piece. */
+  sources?: { label: string; url: string }[];
   /** Recipe slugs that belong with this piece of reading. */
   relatedRecipes?: string[];
 }
@@ -60,7 +65,13 @@ export interface BlogCategory {
   color: string;
 }
 
-export const blogPosts: BlogPost[] = blogPostsData as BlogPost[];
+const allBlogPosts: BlogPost[] = blogPostsData as BlogPost[];
+
+/** What the site serves. Drafts are withheld deliberately. */
+export const blogPosts: BlogPost[] = allBlogPosts.filter(post => post.status !== 'draft');
+
+/** Everything, drafts included. For tooling, not for pages. */
+export const blogPostsIncludingDrafts: BlogPost[] = allBlogPosts;
 export const blogCategories: BlogCategory[] = blogCategoriesData as BlogCategory[];
 
 // Get all blog posts

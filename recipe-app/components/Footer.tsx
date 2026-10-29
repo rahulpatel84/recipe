@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Pip from '@/components/Pip';
 
 const footerLinks = [
-    { title: 'Explore', links: [['All recipes', '/all-recipes'], ['Cuisines', '/recipes-by-cuisines'], ['Collections', '/recipe-directory'], ['Journal', '/blog']] },
+    { title: 'Explore', links: [['All recipes', '/all-recipes'], ['Cuisines', '/recipes-by-cuisines'], ['Collections', '/recipe-directory'], ['Blog', '/blog']] },
     { title: 'Diet', links: [['Vegan', '/vegan-recipes'], ['Vegetarian', '/vegetarian-recipes'], ['Gluten free', '/recipes-by-dietary-choices'], ['Breakfast', '/breakfast-recipes']] },
     { title: 'About', links: [['Our test kitchen', '/about'], ['Contact', '/contact'], ['Privacy', '/privacy'], ['Terms', '/terms']] },
 ];

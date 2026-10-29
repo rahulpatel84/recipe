@@ -81,7 +81,7 @@ export default async function BlogPostPage({ params }: Props) {
         }}
       />
 
-      <article className="min-h-screen bg-warm-cream">
+      <article className="min-h-screen bg-cream">
         {/* Hero Section */}
         <header className="relative">
           <div className="relative h-[50vh] sm:h-[60vh] overflow-hidden">
@@ -128,23 +128,23 @@ export default async function BlogPostPage({ params }: Props) {
                 )}
 
                 {/* Title */}
-                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-white mb-4 leading-tight">
+                <h1 className="mb-4 font-serif text-3xl leading-tight text-white sm:text-4xl lg:text-[3.2rem]">
                   {post.title}
                 </h1>
 
                 {/* Meta Info */}
                 <div className="flex flex-wrap items-center gap-4 text-white/80">
-                  <Link href="/about" className="flex items-center gap-2 hover:text-white transition-colors">
-                    <div className="w-10 h-10 rounded-full overflow-hidden bg-white/20">
+                  <Link href="/about" className="flex items-center gap-2 transition-colors hover:text-white">
+                    <div className="h-10 w-10 overflow-hidden rounded-full bg-white/20">
                       <Image
-                        src="/mom.jpeg"
-                        alt="Chloe"
+                        src={post.author.avatar}
+                        alt={post.author.name}
                         width={40}
                         height={40}
                         className="object-cover"
                       />
                     </div>
-                    <span className="font-medium">Chloe</span>
+                    <span className="font-medium">{post.author.name}</span>
                   </Link>
                   <span className="hidden sm:inline">-</span>
                   <span>{formatDate(post.publishedAt)}</span>
@@ -162,7 +162,7 @@ export default async function BlogPostPage({ params }: Props) {
             {/* Main Content */}
             <div className="lg:col-span-2">
               {/* Excerpt/Lead */}
-              <p className="text-xl text-deep-brown/90 font-medium leading-relaxed mb-8 pb-8 border-b border-border-soft">
+              <p className="mb-8 border-b border-line pb-8 text-[1.25rem] leading-relaxed text-ink/80">
                 {post.excerpt}
               </p>
 
@@ -183,9 +183,31 @@ export default async function BlogPostPage({ params }: Props) {
                 </section>
               )}
 
+              {/* Where the figures come from */}
+              {post.sources && post.sources.length > 0 && (
+                <section className="mt-14 rounded-[22px] bg-cream p-7">
+                  <span className="hand">check our work</span>
+                  <h2 className="mb-4 font-serif text-[1.5rem]">Sources</h2>
+                  <ol className="list-decimal pl-5">
+                    {post.sources.map(source => (
+                      <li key={source.url} className="dashed-row py-2.5 text-[0.95rem] last:border-0">
+                        <a
+                          href={source.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-ink underline decoration-line underline-offset-4 hover:decoration-tomato"
+                        >
+                          {source.label}
+                        </a>
+                      </li>
+                    ))}
+                  </ol>
+                </section>
+              )}
+
               {/* Tags */}
-              <div className="mt-12 pt-8 border-t border-border-soft">
-                <h4 className="text-sm font-semibold text-muted-text uppercase tracking-wider mb-4">
+              <div className="mt-12 pt-8 border-t border-line">
+                <h4 className="text-sm font-semibold text-muted uppercase tracking-wider mb-4">
                   Tagged In
                 </h4>
                 <div className="flex flex-wrap gap-2">
@@ -193,7 +215,7 @@ export default async function BlogPostPage({ params }: Props) {
                     <Link
                       key={tag}
                       href={`/blog/tag/${tag}`}
-                      className="px-4 py-2 bg-soft-gray text-deep-brown text-sm rounded-full hover:bg-terracotta hover:text-white transition-colors"
+                      className="px-4 py-2 bg-cream text-ink text-sm rounded-full hover:bg-tomato hover:text-white transition-colors"
                     >
                       #{tag}
                     </Link>
@@ -202,8 +224,8 @@ export default async function BlogPostPage({ params }: Props) {
               </div>
 
               {/* Share Section */}
-              <div className="mt-8 pt-8 border-t border-border-soft">
-                <h4 className="text-sm font-semibold text-muted-text uppercase tracking-wider mb-4">
+              <div className="mt-8 pt-8 border-t border-line">
+                <h4 className="text-sm font-semibold text-muted uppercase tracking-wider mb-4">
                   Share This Article
                 </h4>
                 <ShareButtons
@@ -214,23 +236,23 @@ export default async function BlogPostPage({ params }: Props) {
               </div>
 
               {/* Author Box */}
-              <Link href="/about" className="block mt-12 p-6 sm:p-8 bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow">
-                <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
-                  <div className="w-20 h-20 rounded-full overflow-hidden flex-shrink-0 mx-auto sm:mx-0">
+              <Link href="/about" className="group mt-12 block rounded-[22px] border border-line p-7 transition hover:border-ink hover:shadow-[4px_4px_0_var(--color-ink)] hover:no-underline">
+                <div className="flex flex-col gap-5 sm:flex-row">
+                  <div className="mx-auto h-20 w-20 flex-shrink-0 overflow-hidden rounded-full bg-cream sm:mx-0">
                     <Image
-                      src="/mom.jpeg"
-                      alt="Chloe"
+                      src={post.author.avatar}
+                      alt={post.author.name}
                       width={80}
                       height={80}
                       className="object-cover"
                     />
                   </div>
                   <div className="text-center sm:text-left">
-                    <span className="text-xs text-muted-text uppercase tracking-wider">Written by</span>
-                    <h4 className="font-serif text-xl font-bold text-deep-brown mt-1 hover:text-terracotta transition-colors">Chloe</h4>
-                    <p className="text-muted-text mt-2">
-                      A mother of two and passionate home cook. I manually vet, test, and share every recipe.
-                      I believe good food should be simple, reliable, and made to be enjoyed with the people you love.
+                    <span className="eyebrow">Written by</span>
+                    <h4 className="mt-1 font-serif text-[1.3rem] text-ink group-hover:text-tomato">{post.author.name}</h4>
+                    <p className="mt-2 text-muted">
+                      We write about where food comes from and cook the recipes we publish. Figures are sourced at
+                      the foot of every piece, and anything we cannot stand behind does not go up.
                     </p>
                   </div>
                 </div>
@@ -247,8 +269,8 @@ export default async function BlogPostPage({ params }: Props) {
 
           {/* Related Posts - Full Width */}
           {relatedPosts.length > 0 && (
-            <section className="mt-16 pt-16 border-t border-border-soft">
-              <h2 className="text-2xl sm:text-3xl font-serif font-bold text-deep-brown mb-8">
+            <section className="mt-16 pt-16 border-t border-line">
+              <h2 className="text-2xl sm:text-3xl font-serif font-bold text-ink mb-8">
                 You Might Also Enjoy
               </h2>
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -263,10 +285,10 @@ export default async function BlogPostPage({ params }: Props) {
                           className="object-cover transition-transform duration-500 group-hover:scale-105"
                         />
                       </div>
-                      <h3 className="font-serif text-lg font-bold text-deep-brown group-hover:text-terracotta transition-colors line-clamp-2">
+                      <h3 className="font-serif text-lg font-bold text-ink group-hover:text-tomato transition-colors line-clamp-2">
                         {relatedPost.title}
                       </h3>
-                      <p className="text-sm text-muted-text mt-2">{relatedPost.readTime}</p>
+                      <p className="text-sm text-muted mt-2">{relatedPost.readTime}</p>
                     </Link>
                   </article>
                 ))}

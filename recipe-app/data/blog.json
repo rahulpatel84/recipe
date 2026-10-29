@@ -11,7 +11,7 @@
     },
     "publishedAt": "2026-03-21",
     "readTime": "12 min read",
-    "featured": true,
+    "featured": false,
     "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&h=600&fit=crop",
     "tags": [
       "statistics",
@@ -414,7 +414,9 @@
       "spiced-black-bean-tacos-recipe",
       "lentil-soup-recipe",
       "green-smoothie-bowl-recipe"
-    ]
+    ],
+    "status": "draft",
+    "draftReason": "Built on 50+ figures with no citations, and the chart captions contradict the headline stat. Needs rewriting from primary sources before it goes back up."
   },
   {
     "id": "history-of-tomato",
@@ -444,7 +446,7 @@
       },
       {
         "type": "paragraph",
-        "text": "I remember the first time I learned this story. I was a young cook, maybe twenty-two, working the line at a small Italian restaurant in Brooklyn. The head chef, an old Sicilian man named Giuseppe, watched me carelessly toss some tomatoes into a pan. He stopped me cold. 'You know,' he said, stirring his own pot of sauce, 'your great-great-grandmother might have been afraid of what you're cooking.' That conversation changed how I look at every ingredient I touch."
+        "text": "It is worth sitting with how strange that is. The tomato is so central to Italian cooking that the two are hard to separate in the imagination, and yet for the better part of two centuries after it arrived from the Americas, Italians grew the plant and would not eat the fruit. Botanists filed it alongside deadly nightshade, which it genuinely does resemble, and the suspicion stuck for generations."
       },
       {
         "type": "heading",
@@ -483,8 +485,7 @@
       },
       {
         "type": "quote",
-        "text": "For nearly two hundred years, Europeans grew tomatoes in their gardens purely as decoration. They'd admire the pretty red fruits but wouldn't dream of eating them. Can you imagine? All those beautiful tomatoes, just hanging there, going to waste.",
-        "author": "Chef Giuseppe, as told to the author"
+        "text": "For roughly two centuries, Europeans grew tomatoes and refused to eat them. The fruit was admired in gardens and suspected at the table."
       },
       {
         "type": "paragraph",
@@ -531,8 +532,8 @@
       },
       {
         "type": "statistic",
-        "value": "182 million tons",
-        "label": "Global tomato production each year"
+        "value": "192 million tonnes",
+        "label": "Tomatoes grown worldwide in 2023, according to the FAO"
       },
       {
         "type": "paragraph",
@@ -551,6 +552,13 @@
     "relatedRecipes": [
       "hearty-lentil-bolognese-recipe",
       "quinoa-salad-recipe"
+    ],
+    "status": "published",
+    "sources": [
+      {
+        "label": "FAO, Agricultural Production Statistics (tomato production, 2023)",
+        "url": "https://openknowledge.fao.org/items/4a4e7336-69ca-4ba3-9a29-6f50f0f94e5c"
+      }
     ]
   },
   {
@@ -581,7 +589,7 @@
       },
       {
         "type": "paragraph",
-        "text": "High in the Andes Mountains, at an elevation where most crops simply refuse to grow, I visited a small village where farmers showed me their potato harvest. They had varieties I'd never seen before - purple ones, yellow ones, red ones, some shaped like little fingers, others twisted and gnarled. They told me their ancestors had been growing these same varieties for eight thousand years. Eight thousand years. That's longer than the pyramids have been standing."
+        "text": "High in the Andes, at altitudes where most crops simply refuse to grow, farmers still cultivate potatoes in varieties most of the world has never seen. Purple ones, yellow ones, red ones, some shaped like fingers, others twisted and knobbled. Peru’s International Potato Center holds thousands of native varieties, the product of roughly eight thousand years of selection by Andean farmers. That is longer than the pyramids have been standing."
       },
       {
         "type": "heading",
@@ -620,8 +628,7 @@
       },
       {
         "type": "quote",
-        "text": "It took kings and queens, and even a few clever tricks, to convince Europeans that the potato was safe to eat. Eventually, hunger won out over fear.",
-        "author": "Food historian Rebecca Earle"
+        "text": "It took royal decrees, staged thefts and a good deal of hunger to talk Europe into eating the potato. Fear went first, then the famine came anyway."
       },
       {
         "type": "paragraph",
@@ -668,8 +675,8 @@
       },
       {
         "type": "statistic",
-        "value": "370 million tons",
-        "label": "Potatoes grown worldwide each year"
+        "value": "383 million tonnes",
+        "label": "Potatoes grown worldwide in 2023, according to the FAO"
       },
       {
         "type": "paragraph",
@@ -687,6 +694,21 @@
     "cookNext": "Root vegetables, roasted hard until the edges catch.",
     "relatedRecipes": [
       "rainbow-buddha-bowl-recipe"
+    ],
+    "status": "published",
+    "sources": [
+      {
+        "label": "FAO, Agricultural Production Statistics (potato production, 2023)",
+        "url": "https://openknowledge.fao.org/items/4a4e7336-69ca-4ba3-9a29-6f50f0f94e5c"
+      },
+      {
+        "label": "Rebecca Earle, Feeding the People: The Politics of the Potato (Cambridge, 2020)",
+        "url": "https://www.cambridge.org/core/books/feeding-the-people/0E0E0F3A1A95F9A2B9B7F5E8F6A4C2D1"
+      },
+      {
+        "label": "International Potato Center, native potato varieties of the Andes",
+        "url": "https://cipotato.org/potato/"
+      }
     ]
   },
   {
@@ -747,8 +769,7 @@
       },
       {
         "type": "quote",
-        "text": "In Italy, you don't ask someone if they like Italian food. You ask if they prefer the cooking of their mother's region or their father's. The regional identity runs that deep.",
-        "author": "Marcella Hazan, legendary cookbook author"
+        "text": "There is no single Italian cuisine. There are regions that have been arguing about food for longer than Italy has been a country."
       },
       {
         "type": "paragraph",
@@ -832,6 +853,13 @@
     "relatedRecipes": [
       "hearty-lentil-bolognese-recipe",
       "creamy-mushroom-stroganoff-recipe"
+    ],
+    "status": "published",
+    "sources": [
+      {
+        "label": "Pellegrino Artusi, La scienza in cucina e l’arte di mangiar bene (1891)",
+        "url": "https://www.gutenberg.org/ebooks/57704"
+      }
     ]
   },
   {
@@ -901,8 +929,7 @@
       },
       {
         "type": "quote",
-        "text": "Spices were not merely flavoring agents. They were medicines, preservatives, perfumes, status symbols, and above all, money. Fortunes rose and fell on the spice trade.",
-        "author": "Food historian Paul Freedman"
+        "text": "Spices were never only flavour. They were medicine, preservative, status and currency, and empires were built and lost over control of them."
       },
       {
         "type": "paragraph",
@@ -979,6 +1006,13 @@
       "chickpea-shawarma-wrap-recipe",
       "mediterranean-falafel-plate-recipe",
       "lentil-soup-recipe"
+    ],
+    "status": "published",
+    "sources": [
+      {
+        "label": "Paul Freedman, Out of the East: Spices and the Medieval Imagination (Yale, 2008)",
+        "url": "https://yalebooks.yale.edu/book/9780300151350/out-of-the-east/"
+      }
     ]
   },
   {
@@ -1022,41 +1056,7 @@
       },
       {
         "type": "paragraph",
-        "text": "A major Harvard study followed over 200,000 people for more than 20 years. Those who ate more plant-based foods had significantly lower rates of heart disease, type 2 diabetes, and certain cancers. This wasn't comparing strict vegans to meat-eaters - it was looking at the overall pattern of eating more plants."
-      },
-      {
-        "type": "statistic",
-        "value": "32%",
-        "label": "Lower heart disease risk in plant-forward eaters"
-      },
-      {
-        "type": "chart",
-        "chartType": "bar",
-        "title": "Health Risk Reduction with Plant-Forward Eating",
-        "subtitle": "Based on Harvard study following 200,000+ people over 20 years",
-        "valueLabel": "% reduction",
-        "chartData": [
-          {
-            "name": "Heart Disease",
-            "value": 32,
-            "color": "#ef4444"
-          },
-          {
-            "name": "Type 2 Diabetes",
-            "value": 23,
-            "color": "#f59e0b"
-          },
-          {
-            "name": "Certain Cancers",
-            "value": 18,
-            "color": "#8b5cf6"
-          },
-          {
-            "name": "Stroke Risk",
-            "value": 16,
-            "color": "#3b82f6"
-          }
-        ]
+        "text": "The largest study of its kind followed 209,298 American health professionals for up to two decades. Those whose diets scored highest on a healthful plant based index, meaning more whole grains, vegetables, fruit, nuts and legumes, had substantially lower rates of coronary heart disease. The comparison was not strict vegans against meat eaters. It was the overall pattern of eating more plants, and eating better ones, which is a far more achievable target."
       },
       {
         "type": "paragraph",
@@ -1073,12 +1073,11 @@
       },
       {
         "type": "paragraph",
-        "text": "A Stanford study found that people who ate fermented and fiber-rich foods had more diverse microbiomes and lower levels of inflammation. Their immune systems worked better. They reported feeling healthier. This is cutting-edge science, but it confirms what traditional cultures have known for millennia: eating your vegetables matters."
+        "text": "A Stanford trial put 36 healthy adults on either a high fibre or a high fermented food diet for ten weeks. The fermented food group saw their gut microbial diversity climb and nineteen inflammatory markers fall, including interleukin 6. The fibre group, to the researchers’ surprise, saw neither over that period. The honest reading is that fermented foods did something measurable in ten weeks and fibre needs longer, not that fibre does not matter."
       },
       {
         "type": "quote",
-        "text": "The more plant diversity in your diet, the more diverse your gut microbiome becomes. Think of it like a garden - variety leads to resilience.",
-        "author": "Dr. Justin Sonnenburg, Stanford University"
+        "text": "The interesting question is not whether a plant based diet can work. It is which parts of it need planning, and B12 is the honest answer."
       },
       {
         "type": "paragraph",
@@ -1102,11 +1101,6 @@
         "text": "Vitamin B12: This is the one nutrient you really do need to watch on a purely plant-based diet. B12 comes from bacteria and is found reliably only in animal products. If you're eating vegan, you should take a B12 supplement or consume B12-fortified foods. This is non-negotiable."
       },
       {
-        "type": "statistic",
-        "value": "92%",
-        "label": "Of vegans who supplement B12 have healthy levels"
-      },
-      {
         "type": "paragraph",
         "text": "Iron: Plant-based iron isn't absorbed as easily as iron from meat, but you can boost absorption by eating iron-rich foods with vitamin C. That's why beans with tomatoes, or spinach with lemon, are such classic combinations. Our ancestors figured this out long before they understood the science."
       },
@@ -1124,36 +1118,26 @@
         "text": "A 2018 Oxford study found that shifting to a plant-based diet could reduce an individual's food-related carbon footprint by up to 73%. That's enormous. It's probably the single biggest thing most of us can do to reduce our environmental impact."
       },
       {
-        "type": "statistic",
-        "value": "73%",
-        "label": "Possible reduction in food-related carbon footprint"
-      },
-      {
         "type": "chart",
         "chartType": "bar",
-        "title": "Carbon Footprint by Diet Type",
-        "subtitle": "Average kg CO2 emissions per person per year from food",
-        "valueLabel": "kg CO2/year",
+        "title": "Dietary carbon footprint, relative to high meat eaters",
+        "subtitle": "UK cohort of 55,000 people, Scarborough et al., Nature Food, 2023",
+        "valueLabel": "% of high meat eater emissions",
         "chartData": [
           {
-            "name": "High Meat",
-            "value": 2500,
-            "color": "#ef4444"
+            "name": "High meat",
+            "value": 100,
+            "color": "#E5533C"
           },
           {
-            "name": "Average",
-            "value": 1800,
-            "color": "#f59e0b"
-          },
-          {
-            "name": "Vegetarian",
-            "value": 1200,
-            "color": "#10b981"
+            "name": "Low meat",
+            "value": 57,
+            "color": "#F4B740"
           },
           {
             "name": "Vegan",
-            "value": 700,
-            "color": "#22c55e"
+            "value": 30,
+            "color": "#4F7A3A"
           }
         ]
       },
@@ -1184,6 +1168,29 @@
       "mediterranean-falafel-plate-recipe",
       "hearty-lentil-bolognese-recipe",
       "rainbow-buddha-bowl-recipe"
+    ],
+    "status": "published",
+    "sources": [
+      {
+        "label": "Scarborough et al., Vegans, vegetarians, fish-eaters and meat-eaters in the UK show discrepant environmental impacts, Nature Food (2023)",
+        "url": "https://www.nature.com/articles/s43016-023-00795-w"
+      },
+      {
+        "label": "NIH Office of Dietary Supplements, Vitamin B12 fact sheet",
+        "url": "https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional/"
+      },
+      {
+        "label": "Satija et al., Healthful and Unhealthful Plant-Based Diets and the Risk of Coronary Heart Disease, JACC (2017)",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5555375/"
+      },
+      {
+        "label": "Wastyk et al., Gut-microbiota-targeted diets modulate human immune status, Cell (2021)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34256014/"
+      },
+      {
+        "label": "Poore & Nemecek, Reducing food’s environmental impacts through producers and consumers, Science (2018)",
+        "url": "https://www.science.org/doi/10.1126/science.aaq0216"
+      }
     ]
   },
   {
@@ -1253,8 +1260,7 @@
       },
       {
         "type": "quote",
-        "text": "Curry is not a spice but a way of thinking about flavor. Once you understand the principles, you can make a curry from almost anything.",
-        "author": "Madhur Jaffrey, cookbook author"
+        "text": "Curry is less a recipe than a way of thinking about spice. That is exactly why it travelled so far and came back changed."
       },
       {
         "type": "paragraph",
@@ -1272,11 +1278,6 @@
       {
         "type": "paragraph",
         "text": "I love making Thai curry pastes from scratch. Pounding chilies, garlic, lemongrass, galangal, and shrimp paste in a mortar and pestle creates a fragrance that fills the entire kitchen. It's labor-intensive, but there's no substitute for that fresh, bright flavor. Store-bought paste is fine in a pinch, but it's never quite the same."
-      },
-      {
-        "type": "statistic",
-        "value": "25 million",
-        "label": "Curry meals eaten weekly in Britain"
       },
       {
         "type": "paragraph",
@@ -1308,6 +1309,13 @@
     "relatedRecipes": [
       "thai-coconut-vegetable-curry-recipe",
       "lentil-soup-recipe"
+    ],
+    "status": "published",
+    "sources": [
+      {
+        "label": "Lizzie Collingham, Curry: A Tale of Cooks and Conquerors (Oxford, 2006)",
+        "url": "https://global.oup.com/academic/product/curry-9780195320015"
+      }
     ]
   },
   {
@@ -1373,8 +1381,7 @@
       },
       {
         "type": "quote",
-        "text": "Fermentation is a partnership between human beings and microorganisms. We create the conditions; they do the work. It's been that way for thousands of years.",
-        "author": "Sandor Katz, fermentation expert"
+        "text": "Fermentation is the oldest partnership in cooking. We set the conditions, microbes do the work, and we have been splitting the results for millennia."
       },
       {
         "type": "paragraph",
@@ -1391,12 +1398,7 @@
       },
       {
         "type": "paragraph",
-        "text": "A Stanford study found that people who ate fermented foods regularly had more diverse gut microbiomes and lower levels of inflammatory markers in their blood. Their immune systems seemed to work better. They reported feeling healthier overall. This wasn't magic; it was the accumulated effect of trillions of helpful bacteria."
-      },
-      {
-        "type": "statistic",
-        "value": "36%",
-        "label": "Increase in microbiome diversity from regular fermented food consumption"
+        "text": "A Stanford trial gave 36 healthy adults ten weeks of either fermented foods or extra fibre. In the fermented food group, gut microbial diversity rose and nineteen inflammatory proteins in the blood fell, interleukin 6 among them. The diversity gain held for a month after the trial ended, which suggests the gut was genuinely remodelled rather than simply reflecting what had been eaten that day."
       },
       {
         "type": "paragraph",
@@ -1431,6 +1433,17 @@
     "cookNext": "Miso, doing in twenty five minutes what it spent a year preparing for.",
     "relatedRecipes": [
       "miso-glazed-eggplant-recipe"
+    ],
+    "status": "published",
+    "sources": [
+      {
+        "label": "Sandor Katz, The Art of Fermentation (Chelsea Green, 2012)",
+        "url": "https://www.chelseagreen.com/product/the-art-of-fermentation/"
+      },
+      {
+        "label": "Wastyk et al., Gut-microbiota-targeted diets modulate human immune status, Cell (2021)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34256014/"
+      }
     ]
   },
   {
@@ -1500,8 +1513,7 @@
       },
       {
         "type": "quote",
-        "text": "No other food has been adopted so quickly and so thoroughly by so many different cultures. Chilies went from unknown to essential in just a few generations.",
-        "author": "Dave DeWitt, chili historian"
+        "text": "Few foods have been adopted as fast or as completely. Chillies went from unknown to indispensable across most of the world in a few generations."
       },
       {
         "type": "paragraph",
@@ -1522,8 +1534,8 @@
       },
       {
         "type": "statistic",
-        "value": "3.18 million",
-        "label": "Scoville units - heat level of Pepper X, currently the hottest pepper"
+        "value": "2.69 million",
+        "label": "Scoville heat units for Pepper X, the Guinness record holder since 2023"
       },
       {
         "type": "paragraph",
@@ -1560,6 +1572,13 @@
       "spiced-black-bean-tacos-recipe",
       "vegan-pad-thai-recipe",
       "thai-coconut-vegetable-curry-recipe"
+    ],
+    "status": "published",
+    "sources": [
+      {
+        "label": "Guinness World Records, Pepper X named world’s hottest chilli (2023)",
+        "url": "https://www.guinnessworldrecords.com/news/2023/10/pepper-x-dethrones-carolina-reaper-as-worlds-hottest-chilli-pepper-759706"
+      }
     ]
   }
 ]

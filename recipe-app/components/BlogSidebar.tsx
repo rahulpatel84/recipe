@@ -23,17 +23,17 @@ export default function BlogSidebar({ currentPost, relatedPosts = [] }: BlogSide
   return (
     <aside className="space-y-8">
       {/* About Section */}
-      <div className="rounded-xl bg-white p-6 shadow-md">
-        <h3 className="font-serif text-lg font-bold text-deep-brown mb-4">About Our Blog</h3>
-        <p className="text-sm text-muted-text leading-relaxed">
+      <div className="rounded-[22px] border border-line bg-cream p-6">
+        <h3 className="mb-4 font-serif text-[1.25rem] text-ink">About Our Blog</h3>
+        <p className="text-sm text-muted leading-relaxed">
           Explore the fascinating stories behind the food we eat. From the ancient origins of ingredients
           to the latest nutrition research, we bring you thoughtful content about culinary history, science, and culture.
         </p>
       </div>
 
       {/* Categories */}
-      <div className="rounded-xl bg-white p-6 shadow-md">
-        <h3 className="font-serif text-lg font-bold text-deep-brown mb-4">Categories</h3>
+      <div className="rounded-[22px] border border-line bg-cream p-6">
+        <h3 className="mb-4 font-serif text-[1.25rem] text-ink">Categories</h3>
         <ul className="space-y-3">
           {categories.map(category => (
             <li key={category.id}>
@@ -46,11 +46,11 @@ export default function BlogSidebar({ currentPost, relatedPosts = [] }: BlogSide
                     className="w-2 h-2 rounded-full"
                     style={{ backgroundColor: category.color }}
                   />
-                  <span className="text-sm text-deep-brown group-hover:text-terracotta transition-colors">
+                  <span className="text-sm text-ink group-hover:text-tomato transition-colors">
                     {category.title}
                   </span>
                 </span>
-                <span className="text-xs text-muted-text bg-soft-gray px-2 py-0.5 rounded-full">
+                <span className="text-xs text-muted bg-cream px-2 py-0.5 rounded-full">
                   {getPostCountByCategory(category.slug)}
                 </span>
               </Link>
@@ -61,8 +61,8 @@ export default function BlogSidebar({ currentPost, relatedPosts = [] }: BlogSide
 
       {/* Related or Featured Posts */}
       {(relatedPosts.length > 0 || featuredPosts.length > 0) && (
-        <div className="rounded-xl bg-white p-6 shadow-md">
-          <h3 className="font-serif text-lg font-bold text-deep-brown mb-4">
+        <div className="rounded-[22px] border border-line bg-cream p-6">
+          <h3 className="mb-4 font-serif text-[1.25rem] text-ink">
             {relatedPosts.length > 0 ? 'Related Articles' : 'Popular Articles'}
           </h3>
           <div className="space-y-4">
@@ -81,10 +81,10 @@ export default function BlogSidebar({ currentPost, relatedPosts = [] }: BlogSide
                   />
                 </div>
                 <div className="flex-1 min-w-0">
-                  <h4 className="text-sm font-medium text-deep-brown group-hover:text-terracotta transition-colors line-clamp-2">
+                  <h4 className="text-sm font-medium text-ink group-hover:text-tomato transition-colors line-clamp-2">
                     {post.title}
                   </h4>
-                  <span className="text-xs text-muted-text">{formatDate(post.publishedAt)}</span>
+                  <span className="text-xs text-muted">{formatDate(post.publishedAt)}</span>
                 </div>
               </Link>
             ))}
@@ -93,14 +93,14 @@ export default function BlogSidebar({ currentPost, relatedPosts = [] }: BlogSide
       )}
 
       {/* Tags */}
-      <div className="rounded-xl bg-white p-6 shadow-md">
-        <h3 className="font-serif text-lg font-bold text-deep-brown mb-4">Popular Tags</h3>
+      <div className="rounded-[22px] border border-line bg-cream p-6">
+        <h3 className="mb-4 font-serif text-[1.25rem] text-ink">Popular Tags</h3>
         <div className="flex flex-wrap gap-2">
           {tags.slice(0, 15).map(tag => (
             <Link
               key={tag}
               href={`/blog/tag/${tag}`}
-              className="text-xs px-3 py-1.5 bg-soft-gray text-deep-brown rounded-full hover:bg-terracotta hover:text-white transition-colors"
+              className="text-xs px-3 py-1.5 bg-cream text-ink rounded-full hover:bg-tomato hover:text-white transition-colors"
             >
               {tag}
             </Link>
@@ -109,14 +109,14 @@ export default function BlogSidebar({ currentPost, relatedPosts = [] }: BlogSide
       </div>
 
       {/* Newsletter CTA */}
-      <div className="rounded-xl bg-gradient-to-br from-terracotta to-deep-brown p-6 text-white">
+      <div className="rounded-xl bg-gradient-to-br from-tomato to-ink p-6 text-white">
         <h3 className="font-serif text-lg font-bold mb-2">Stay Curious</h3>
         <p className="text-sm text-white/80 mb-4">
           Get weekly stories about food history, science, and culture delivered to your inbox.
         </p>
         <Link
           href="/contact"
-          className="inline-block w-full text-center bg-white text-terracotta font-semibold py-2.5 rounded-lg hover:bg-soft-gray transition-colors"
+          className="inline-block w-full text-center bg-white text-tomato font-semibold py-2.5 rounded-lg hover:bg-cream transition-colors"
         >
           Subscribe
         </Link>

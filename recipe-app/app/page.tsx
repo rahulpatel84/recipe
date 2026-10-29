@@ -189,12 +189,12 @@ export default function Home() {
           ))}
         </div>
 
-        {/* From the journal */}
+        {/* From the blog */}
         <div className="mt-20 border-t border-line pt-10">
           <div className="mb-7 flex items-end justify-between gap-5">
             <div>
               <span className="hand">why we eat what we eat</span>
-              <h2 className="font-serif text-[clamp(1.8rem,3.4vw,2.6rem)] leading-[1.1]">From the journal</h2>
+              <h2 className="font-serif text-[clamp(1.8rem,3.4vw,2.6rem)] leading-[1.1]">From the blog</h2>
             </div>
             <Link href="/blog" className="hidden whitespace-nowrap border-b-[1.5px] border-ink pb-0.5 font-semibold hover:border-tomato hover:text-tomato hover:no-underline sm:block">All writing →</Link>
           </div>
@@ -224,7 +224,7 @@ export default function Home() {
             </p>
             <div className="mt-4 flex flex-wrap gap-2.5">
               <Link href="/all-recipes" className="btn btn-ink hover:no-underline">Browse every recipe</Link>
-              <Link href="/blog" className="btn hover:no-underline">Read the journal</Link>
+              <Link href="/blog" className="btn hover:no-underline">Read the blog</Link>
             </div>
           </div>
         </div>

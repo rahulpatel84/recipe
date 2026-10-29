@@ -36,7 +36,7 @@ export default function ShareButtons({ title, url, image }: ShareButtonsProps) {
         href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(fullUrl)}`}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center justify-center w-10 h-10 rounded-full bg-soft-gray text-deep-brown hover:bg-[#1DA1F2] hover:text-white transition-colors"
+        className="flex items-center justify-center w-10 h-10 rounded-full bg-cream text-ink hover:bg-[#1DA1F2] hover:text-white transition-colors"
         aria-label="Share on Twitter"
       >
         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -47,7 +47,7 @@ export default function ShareButtons({ title, url, image }: ShareButtonsProps) {
         href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(fullUrl)}`}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center justify-center w-10 h-10 rounded-full bg-soft-gray text-deep-brown hover:bg-[#1877F2] hover:text-white transition-colors"
+        className="flex items-center justify-center w-10 h-10 rounded-full bg-cream text-ink hover:bg-[#1877F2] hover:text-white transition-colors"
         aria-label="Share on Facebook"
       >
         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -58,7 +58,7 @@ export default function ShareButtons({ title, url, image }: ShareButtonsProps) {
         href={`https://pinterest.com/pin/create/button/?url=${encodeURIComponent(fullUrl)}&media=${encodeURIComponent(image)}&description=${encodeURIComponent(title)}`}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center justify-center w-10 h-10 rounded-full bg-soft-gray text-deep-brown hover:bg-[#E60023] hover:text-white transition-colors"
+        className="flex items-center justify-center w-10 h-10 rounded-full bg-cream text-ink hover:bg-[#E60023] hover:text-white transition-colors"
         aria-label="Pin on Pinterest"
       >
         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -70,7 +70,7 @@ export default function ShareButtons({ title, url, image }: ShareButtonsProps) {
         className={`flex items-center justify-center w-10 h-10 rounded-full transition-colors outline-none focus:outline-none focus:ring-0 ${
           copied
             ? 'bg-green-500 text-white'
-            : 'bg-soft-gray text-deep-brown hover:bg-deep-brown hover:text-white'
+            : 'bg-cream text-ink hover:bg-ink hover:text-white'
         }`}
         aria-label="Copy link"
         title={copied ? 'Copied!' : 'Copy link'}

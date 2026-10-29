@@ -14,7 +14,7 @@ export default function BlogContent({ content }: BlogContentProps) {
         switch (block.type) {
           case 'paragraph':
             return (
-              <p key={index} className="text-deep-brown/80 leading-relaxed mb-6">
+              <p key={index} className="mb-6 text-[1.08rem] leading-[1.75] text-ink/80">
                 {block.text}
               </p>
             );
@@ -22,45 +22,43 @@ export default function BlogContent({ content }: BlogContentProps) {
           case 'heading':
             if (block.level === 2) {
               return (
-                <h2 key={index} className="font-serif text-2xl font-bold text-deep-brown mt-10 mb-4">
+                <h2 key={index} className="mb-4 mt-12 font-serif text-[1.9rem] text-ink">
                   {block.text}
                 </h2>
               );
             }
             if (block.level === 3) {
               return (
-                <h3 key={index} className="font-serif text-xl font-bold text-deep-brown mt-8 mb-3">
+                <h3 key={index} className="mb-3 mt-9 font-serif text-[1.4rem] text-ink">
                   {block.text}
                 </h3>
               );
             }
             return (
-              <h4 key={index} className="font-serif text-lg font-bold text-deep-brown mt-6 mb-2">
+              <h4 key={index} className="font-serif text-lg font-bold text-ink mt-6 mb-2">
                 {block.text}
               </h4>
             );
 
           case 'quote':
             return (
-              <blockquote key={index} className="my-8 border-l-4 border-terracotta pl-6 py-2 bg-soft-gray/50 rounded-r-lg">
-                <p className="text-lg italic text-deep-brown/90 mb-2">
-                  "{block.text}"
+              <blockquote key={index} className="my-10 border-l-[3px] border-mustard py-1 pl-6">
+                <p className="font-serif text-[1.45rem] leading-[1.35] text-ink">
+                  {block.text}
                 </p>
                 {block.author && (
-                  <cite className="text-sm text-muted-text not-italic">
-                    - {block.author}
-                  </cite>
+                  <cite className="mt-2 block text-sm not-italic text-muted">{block.author}</cite>
                 )}
               </blockquote>
             );
 
           case 'statistic':
             return (
-              <div key={index} className="my-8 flex items-center gap-6 p-6 bg-gradient-to-r from-terracotta/10 to-transparent rounded-xl border-l-4 border-terracotta">
-                <div className="text-4xl sm:text-5xl font-serif font-bold text-terracotta">
+              <div key={index} className="my-9 flex flex-wrap items-baseline gap-x-5 gap-y-1 rounded-[22px] bg-mustard-soft px-7 py-6">
+                <div className="font-serif text-[2.4rem] leading-none text-ink sm:text-[2.8rem]">
                   {block.value}
                 </div>
-                <div className="text-deep-brown/70 text-sm sm:text-base">
+                <div className="flex-1 text-[0.98rem] text-ink/75">
                   {block.label}
                 </div>
               </div>
@@ -75,7 +73,7 @@ export default function BlogContent({ content }: BlogContentProps) {
                   className="w-full rounded-xl"
                 />
                 {block.alt && (
-                  <figcaption className="text-center text-sm text-muted-text mt-2">
+                  <figcaption className="text-center text-sm text-muted mt-2">
                     {block.alt}
                   </figcaption>
                 )}
@@ -86,8 +84,8 @@ export default function BlogContent({ content }: BlogContentProps) {
             return (
               <ul key={index} className="my-6 space-y-2">
                 {block.items?.map((item, i) => (
-                  <li key={i} className="flex items-start gap-3 text-deep-brown/80">
-                    <span className="w-1.5 h-1.5 rounded-full bg-terracotta mt-2.5 flex-shrink-0" />
+                  <li key={i} className="flex items-start gap-3 text-ink/80">
+                    <span className="w-1.5 h-1.5 rounded-full bg-tomato mt-2.5 flex-shrink-0" />
                     <span>{item}</span>
                   </li>
                 ))}

@@ -18,7 +18,7 @@ interface BlogChartProps {
   showPercentage?: boolean;
 }
 
-const COLORS = ['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6', '#ec4899', '#06b6d4', '#84cc16'];
+const COLORS = ['#E3ECF3', '#4F7A3A', '#F4B740', '#E5533C', '#4F7A3A', '#ec4899', '#06b6d4', '#84cc16'];
 
 function ChartContent({ type, data, valueLabel = '', showPercentage }: Omit<BlogChartProps, 'title' | 'subtitle'>) {
   const {
@@ -41,7 +41,7 @@ function ChartContent({ type, data, valueLabel = '', showPercentage }: Omit<Blog
     if (active && payload && payload.length) {
       return (
         <div className="bg-white px-4 py-2 rounded-lg shadow-lg border border-gray-100">
-          <p className="font-medium text-deep-brown">{label || payload[0].name}</p>
+          <p className="font-medium text-ink">{label || payload[0].name}</p>
           <p className="text-blue-600 font-semibold">
             {payload[0].value}{showPercentage ? '%' : ''} {valueLabel}
           </p>
@@ -134,7 +134,7 @@ function ChartContent({ type, data, valueLabel = '', showPercentage }: Omit<Blog
               dataKey="value"
               stroke="#3b82f6"
               strokeWidth={3}
-              dot={{ fill: '#3b82f6', strokeWidth: 2, r: 5 }}
+              dot={{ fill: '#E3ECF3', strokeWidth: 2, r: 5 }}
               activeDot={{ r: 8 }}
             />
           </LineChart>
@@ -156,12 +156,12 @@ export default function BlogChart({ type, data, title, subtitle, valueLabel = ''
 
   if (!mounted) {
     return (
-      <div className="my-8 p-5 bg-white rounded-2xl border border-border-soft shadow-sm">
+      <div className="my-8 p-5 bg-white rounded-2xl border border-line shadow-sm">
         <div className="mb-4">
-          <h4 className="text-base font-bold text-deep-brown">{title}</h4>
-          {subtitle && <p className="text-sm text-muted-text mt-1">{subtitle}</p>}
+          <h4 className="text-base font-bold text-ink">{title}</h4>
+          {subtitle && <p className="text-sm text-muted mt-1">{subtitle}</p>}
         </div>
-        <div className="h-[300px] flex items-center justify-center text-muted-text">
+        <div className="h-[300px] flex items-center justify-center text-muted">
           Loading chart...
         </div>
       </div>
@@ -170,12 +170,12 @@ export default function BlogChart({ type, data, title, subtitle, valueLabel = ''
 
   if (error) {
     return (
-      <div className="my-8 p-5 bg-white rounded-2xl border border-border-soft shadow-sm">
+      <div className="my-8 p-5 bg-white rounded-2xl border border-line shadow-sm">
         <div className="mb-4">
-          <h4 className="text-base font-bold text-deep-brown">{title}</h4>
-          {subtitle && <p className="text-sm text-muted-text mt-1">{subtitle}</p>}
+          <h4 className="text-base font-bold text-ink">{title}</h4>
+          {subtitle && <p className="text-sm text-muted mt-1">{subtitle}</p>}
         </div>
-        <div className="h-[200px] flex items-center justify-center text-muted-text">
+        <div className="h-[200px] flex items-center justify-center text-muted">
           Chart unavailable
         </div>
       </div>
@@ -183,10 +183,10 @@ export default function BlogChart({ type, data, title, subtitle, valueLabel = ''
   }
 
   return (
-    <div className="my-8 p-5 bg-white rounded-2xl border border-border-soft shadow-sm">
+    <div className="my-8 p-5 bg-white rounded-2xl border border-line shadow-sm">
       <div className="mb-4">
-        <h4 className="text-base font-bold text-deep-brown">{title}</h4>
-        {subtitle && <p className="text-sm text-muted-text mt-1">{subtitle}</p>}
+        <h4 className="text-base font-bold text-ink">{title}</h4>
+        {subtitle && <p className="text-sm text-muted mt-1">{subtitle}</p>}
       </div>
       <ChartContent type={type} data={data} valueLabel={valueLabel} showPercentage={showPercentage} />
     </div>

@@ -500,7 +500,7 @@ function KitchenNotesSection({ notes }: { notes: KitchenNotes }) {
     );
 }
 
-/** Links through to the journal pieces that give the dish its context. */
+/** Links through to the blog pieces that give the dish its context. */
 function ReadingSection({ slugs }: { slugs: string[] }) {
     const posts = slugs.map(slug => getPostBySlug(slug)).filter(Boolean);
     if (posts.length === 0) return null;
