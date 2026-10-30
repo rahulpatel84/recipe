@@ -9,7 +9,7 @@ import { getAllPosts } from '@/lib/blog';
 
 export const metadata: Metadata = {
   title: 'Vegan Recipes, Written Out in Full | Relish Realm',
-  description: 'Plant based recipes from around the world, with the part most sites leave out: what the dish looks like when it works, what usually goes wrong, and how to fix it.',
+  description: 'Plant based recipes from around the world, with what most sites leave out: what it looks like when it works, what goes wrong, and how to fix it.',
   alternates: { canonical: '/' },
 };
 
