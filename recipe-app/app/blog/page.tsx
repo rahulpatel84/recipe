@@ -5,7 +5,7 @@ import { getAllPosts, getAllCategories, getPostCountByCategory, formatDate } fro
 import BlogCard from '@/components/BlogCard';
 
 export const metadata: Metadata = {
-  title: 'The Blog | Food history, origins and the science underneath',
+  title: 'Food History and the Science of Cooking',
   description: 'Where our ingredients come from and why we cook them the way we do. Sourced writing on food history, ingredient origins and the research behind plant based eating.',
   alternates: { canonical: '/blog' },
   openGraph: {

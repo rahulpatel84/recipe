@@ -35,7 +35,7 @@ const siteConfig = {
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} | Plant Based Recipes, Written Out In Full`,
+    default: `${siteConfig.name} | Vegan Recipes Written Out in Full`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: `${siteConfig.name} | Plant Based Recipes, Written Out In Full`,
+    title: `${siteConfig.name} | Vegan Recipes Written Out in Full`,
     description: siteConfig.description,
     images: [
       {
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} | Plant Based Recipes, Written Out In Full`,
+    title: `${siteConfig.name} | Vegan Recipes Written Out in Full`,
     description: siteConfig.description,
     images: ["/og-image.jpg"],
     creator: "@relishrealm",
