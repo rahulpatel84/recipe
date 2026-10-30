@@ -8,7 +8,7 @@ import { collections, plantBasedRecipes, recipesInCollection } from '@/lib/data'
 import { getAllPosts } from '@/lib/blog';
 
 export const metadata: Metadata = {
-  title: 'Vegan Recipes, Written Out in Full',
+  title: 'Vegan Recipes, Written Out in Full | Relish Realm',
   description: 'Plant based recipes from around the world, with the part most sites leave out: what the dish looks like when it works, what usually goes wrong, and how to fix it.',
   alternates: { canonical: '/' },
 };
