@@ -6,17 +6,17 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Recipe Library",
-  description: "Browse our comprehensive collection of kitchen-tested recipes. From Italian classics to Japanese zen, vegan delights to gourmet dinners - find your next favorite dish.",
+  description: "Browse our comprehensive collection of plant based recipes, written out in full, from Italian classics to Thai curries.",
   openGraph: {
     title: "Recipe Library | Relish Realm",
-    description: "Browse our comprehensive collection of kitchen-tested recipes. From Italian classics to Japanese zen, vegan delights to gourmet dinners.",
+    description: "Browse our comprehensive collection of plant based recipes, written out in full, from Italian classics to Thai curries.",
     url: "/recipes",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Recipe Library | Relish Realm",
-    description: "Browse our comprehensive collection of kitchen-tested recipes. From Italian classics to Japanese zen, vegan delights to gourmet dinners.",
+    description: "Browse our comprehensive collection of plant based recipes, written out in full, from Italian classics to Thai curries.",
   },
   alternates: {
     canonical: "/recipes",

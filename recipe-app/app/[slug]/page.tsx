@@ -76,7 +76,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             ? recipe.title
             : `${recipe.title} Recipe`;
         const fullTitle = `${title} | Relish Realm`;
-        const description = recipe.description || `Learn how to make ${recipe.title} with our easy-to-follow, kitchen-tested recipe.`;
+        const description = recipe.description || `How to make ${recipe.title}, written out in full with ingredients, method and notes on what to watch for.`;
         return {
             title,
             description,

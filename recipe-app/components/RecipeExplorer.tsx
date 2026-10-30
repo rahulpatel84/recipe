@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
-import { Recipe } from '@/lib/data';
+import { getCollection, mealTypesOf, Recipe, searchableText, timeInMinutes } from '@/lib/data';
 import Pip from '@/components/Pip';
 import RecipeCard from '@/components/RecipeCard';
 
@@ -12,13 +12,6 @@ interface RecipeExplorerProps {
 type SortOption = 'recommended' | 'quickest' | 'name';
 const PAGE_SIZE = 24;
 const TIME_FILTERS = [15, 30, 60];
-
-function timeInMinutes(value?: string) {
-    if (!value) return Number.MAX_SAFE_INTEGER;
-    const hours = value.match(/(\d+(?:\.\d+)?)\s*(?:h|hr|hour)/i);
-    const minutes = value.match(/(\d+)\s*(?:m|min|minute)/i);
-    return (hours ? Number(hours[1]) * 60 : 0) + (minutes ? Number(minutes[1]) : 0) || Number.MAX_SAFE_INTEGER;
-}
 
 function toggleInSet(set: Set<string>, value: string) {
     const next = new Set(set);
@@ -33,30 +26,39 @@ export default function RecipeExplorer({ recipes }: RecipeExplorerProps) {
     const [dietFilters, setDietFilters] = useState<Set<string>>(new Set());
     const [maxTime, setMaxTime] = useState(0);
     const [sortBy, setSortBy] = useState<SortOption>('recommended');
+    const [collectionSlug, setCollectionSlug] = useState('');
     const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
 
+    const collection = getCollection(collectionSlug);
+
     useEffect(() => {
-        const initialQuery = new URLSearchParams(window.location.search).get('q');
-        if (!initialQuery) return;
-        const timer = window.setTimeout(() => setQuery(initialQuery), 0);
+        const params = new URLSearchParams(window.location.search);
+        const initialQuery = params.get('q');
+        const initialCollection = params.get('collection');
+        if (!initialQuery && !initialCollection) return;
+        const timer = window.setTimeout(() => {
+            if (initialQuery) setQuery(initialQuery);
+            if (initialCollection) setCollectionSlug(initialCollection);
+        }, 0);
         return () => window.clearTimeout(timer);
     }, []);
 
     const cuisines = useMemo(() => [...new Set(recipes.map(recipe => recipe.cuisine).filter(Boolean))].sort(), [recipes]);
     const diets = useMemo(() => [...new Set(recipes.flatMap(recipe => recipe.dietary))].sort(), [recipes]);
-    const mealTypes = useMemo(() => [...new Set(recipes.map(recipe => recipe.mealType).filter(Boolean))].sort(), [recipes]);
+    const mealTypes = useMemo(() => {
+        const order = ['Breakfast', 'Brunch', 'Lunch', 'Dinner', 'Snack', 'Dessert'];
+        const found = new Set(recipes.flatMap(mealTypesOf));
+        return [...order.filter(type => found.has(type)), ...[...found].filter(type => !order.includes(type)).sort()];
+    }, [recipes]);
 
     const filteredRecipes = useMemo(() => {
         const search = query.trim().toLowerCase();
         const matches = recipes.filter(recipe => {
-            const searchable = [
-                recipe.title, recipe.summary, recipe.description, recipe.cuisine,
-                recipe.category, recipe.country, recipe.mealType, ...recipe.dietary,
-                ...recipe.ingredients.map(ingredient => ingredient.name),
-            ].filter(Boolean).join(' ').toLowerCase();
+            const searchable = searchableText(recipe);
 
             return (!search || searchable.includes(search))
-                && (!mealType || recipe.mealType === mealType)
+                && (!collection || collection.match(recipe))
+                && (!mealType || mealTypesOf(recipe).includes(mealType))
                 && (!cuisineFilters.size || cuisineFilters.has(recipe.cuisine))
                 && [...dietFilters].every(diet => recipe.dietary.includes(diet))
                 && (!maxTime || timeInMinutes(recipe.totalTime || recipe.prepTime) <= maxTime);
@@ -68,10 +70,10 @@ export default function RecipeExplorer({ recipes }: RecipeExplorerProps) {
             // Recipes with written cook's notes first, then the rest.
             return Number(Boolean(b.notes)) - Number(Boolean(a.notes));
         });
-    }, [recipes, query, mealType, cuisineFilters, dietFilters, maxTime, sortBy]);
+    }, [recipes, query, mealType, cuisineFilters, dietFilters, maxTime, sortBy, collection]);
 
     const activeTags = [...cuisineFilters, ...dietFilters, ...(maxTime ? [`≤ ${maxTime} min`] : [])];
-    const hasFilters = Boolean(query || mealType || activeTags.length) || sortBy !== 'recommended';
+    const hasFilters = Boolean(query || mealType || collectionSlug || activeTags.length) || sortBy !== 'recommended';
 
     const resetAll = () => {
         setQuery('');
@@ -80,6 +82,7 @@ export default function RecipeExplorer({ recipes }: RecipeExplorerProps) {
         setDietFilters(new Set());
         setMaxTime(0);
         setSortBy('recommended');
+        setCollectionSlug('');
         setVisibleCount(PAGE_SIZE);
         window.history.replaceState({}, '', window.location.pathname);
     };
@@ -89,8 +92,12 @@ export default function RecipeExplorer({ recipes }: RecipeExplorerProps) {
             <header className="flex flex-wrap items-end justify-between gap-6 pb-8 pt-14">
                 <div>
                     <span className="hand">everything that is ready to cook</span>
-                    <h1 className="font-serif text-[clamp(2.4rem,5vw,3.6rem)] leading-[1.05]">All recipes</h1>
-                    <p className="mt-2 text-muted">{recipes.length} recipes, written out in full. Filter until you find tonight’s dinner.</p>
+                    <h1 className="font-serif text-[clamp(2.4rem,5vw,3.6rem)] leading-[1.05]">
+                        {collection ? collection.title : 'All recipes'}
+                    </h1>
+                    <p className="mt-2 text-muted">
+                        {collection ? collection.copy : `${recipes.length} recipes, written out in full. Filter until you find tonight’s dinner.`}
+                    </p>
                 </div>
                 <div className="hard-shadow flex min-w-[320px] flex-1 items-center gap-2.5 rounded-full border-[1.5px] border-ink px-5 py-3 sm:max-w-[380px]">
                     <svg className="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-4-4" /></svg>
@@ -168,6 +175,7 @@ export default function RecipeExplorer({ recipes }: RecipeExplorerProps) {
                     <div className="mb-5 flex flex-wrap items-center justify-between gap-3 text-[0.9rem] text-muted">
                         <div className="flex flex-wrap items-center gap-2">
                             <span><b className="font-semibold text-ink">{filteredRecipes.length}</b> recipes</span>
+                            {collection && <span className="rounded-full bg-pickle-soft px-2.5 py-1 text-[0.8rem] text-ink">{collection.title}</span>}
                             {activeTags.map(tag => <span key={tag} className="rounded-full bg-cream px-2.5 py-1 text-[0.8rem] text-ink">{tag}</span>)}
                             {hasFilters && <button onClick={resetAll} className="font-semibold text-tomato hover:underline">reset</button>}
                         </div>

@@ -4,7 +4,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
     title: "Recipe Directory - Complete Recipe Index",
-    description: "Browse our complete directory of kitchen-tested recipes. Find recipes by cuisine, meal type, dietary preference, and more. Your gateway to discovering delicious dishes from around the world.",
+    description: "Browse our complete directory of plant based recipes. Find recipes by cuisine, meal type, dietary preference, and more. Your gateway to discovering delicious dishes from around the world.",
     keywords: [
         "recipe directory",
         "recipe index",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     },
     openGraph: {
         title: "Recipe Directory - Complete Recipe Index | Relish Realm",
-        description: "Browse our complete directory of kitchen-tested recipes organized by cuisine, meal type, and dietary preference.",
+        description: "Browse our complete directory of plant based recipes organized by cuisine, meal type, and dietary preference.",
         url: "/recipe-directory",
         type: "website",
     },

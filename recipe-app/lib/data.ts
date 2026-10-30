@@ -125,3 +125,72 @@ export function getCategoryByItemSlug(slug: string) {
   const originalSlug = slug.replace('-recipes', '');
   return categories.find(c => c.slug === originalSlug);
 }
+
+/** Minutes from a string like "35 mins" or "1 hr 10 min". */
+export function timeInMinutes(value?: string) {
+  if (!value) return Number.MAX_SAFE_INTEGER;
+  const hours = value.match(/(\d+(?:\.\d+)?)\s*(?:h|hr|hour)/i);
+  const minutes = value.match(/(\d+)\s*(?:m|min|minute)/i);
+  return (hours ? Number(hours[1]) * 60 : 0) + (minutes ? Number(minutes[1]) : 0) || Number.MAX_SAFE_INTEGER;
+}
+
+export function totalMinutes(recipe: Recipe) {
+  return timeInMinutes(recipe.totalTime || recipe.prepTime);
+}
+
+/** "Breakfast/Lunch" is two meal types, not one. */
+export function mealTypesOf(recipe: Recipe): string[] {
+  return (recipe.mealType || '').split('/').map(part => part.trim()).filter(Boolean);
+}
+
+/** The text a search runs against. */
+export function searchableText(recipe: Recipe) {
+  return [
+    recipe.title, recipe.summary, recipe.description, recipe.cuisine,
+    recipe.category, recipe.country, recipe.mealType, ...recipe.dietary,
+    ...recipe.ingredients.map(ingredient => ingredient.name),
+  ].filter(Boolean).join(' ').toLowerCase();
+}
+
+/**
+ * Collections are defined by what the recipes actually are, not by a text
+ * query typed into a link. A hand written ?q=stew link silently returned
+ * nothing the moment the matching recipe was unpublished.
+ */
+export const collections = [
+  {
+    slug: 'quick',
+    title: 'Cooks in half an hour',
+    copy: 'For the evenings when you are tired and still want something good.',
+    colors: ['bg-tomato', 'bg-mustard', 'bg-pickle'],
+    match: (recipe: Recipe) => totalMinutes(recipe) <= 30,
+  },
+  {
+    slug: 'protein',
+    title: 'Protein without the meat',
+    copy: 'Lentils, chickpeas, beans and tofu doing the heavy lifting.',
+    colors: ['bg-pickle', 'bg-[#A8C686]', 'bg-mustard'],
+    match: (recipe: Recipe) => /lentil|chickpea|tofu|bean|tempeh|quinoa/i.test(
+      recipe.ingredients.map(ingredient => ingredient.name).join(' ')
+    ),
+  },
+  {
+    slug: 'keeps',
+    title: 'Better the next day',
+    copy: 'The ones you make on Sunday and are glad of on Tuesday.',
+    colors: ['bg-mustard', 'bg-tomato', 'bg-ink'],
+    match: (recipe: Recipe) => Boolean(recipe.notes && /better|keeps|freeze/i.test(recipe.notes.leftovers)),
+  },
+] as const;
+
+export type CollectionSlug = (typeof collections)[number]['slug'];
+
+export function getCollection(slug?: string | null) {
+  return collections.find(collection => collection.slug === slug);
+}
+
+/** Always derived from the live set, so a collection can never render empty. */
+export function recipesInCollection(slug: string, from: Recipe[] = recipes) {
+  const collection = getCollection(slug);
+  return collection ? from.filter(collection.match) : [];
+}

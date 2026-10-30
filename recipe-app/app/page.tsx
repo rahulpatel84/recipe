@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Pip from '@/components/Pip';
 import RecipeCard from '@/components/RecipeCard';
 import SearchBar from '@/components/SearchBar';
-import { plantBasedRecipes, recipes } from '@/lib/data';
+import { collections, plantBasedRecipes, recipesInCollection } from '@/lib/data';
 import { getAllPosts } from '@/lib/blog';
 
 export const metadata: Metadata = {
@@ -37,18 +37,17 @@ const strip = [
   { dot: 'bg-ink', text: 'No life story, no sign up, no pop ups' },
 ];
 
-const collections = [
-  { title: 'Cooks in half an hour', copy: 'For the evenings when you are tired and still want something good.', href: '/all-recipes?q=quick', colors: ['bg-tomato', 'bg-mustard', 'bg-pickle'] },
-  { title: 'Protein without the meat', copy: 'Lentils, chickpeas and tofu doing the heavy lifting.', href: '/all-recipes?q=lentil', colors: ['bg-pickle', 'bg-[#A8C686]', 'bg-mustard'] },
-  { title: 'Better the next day', copy: 'The ones you make on Sunday and are glad of on Tuesday.', href: '/all-recipes?q=stew', colors: ['bg-mustard', 'bg-tomato', 'bg-ink'] },
-];
-
 export default function Home() {
   const flagships = plantBasedRecipes.filter(recipe => recipe.flagship);
   const featured = flagships.find(recipe => recipe.slug === 'hearty-lentil-bolognese-recipe') || flagships[0];
   const popular = flagships.filter(recipe => recipe.slug !== featured.slug).slice(0, 4);
   const ofTheWeek = flagships.find(recipe => recipe.slug === 'mediterranean-falafel-plate-recipe') || flagships[1];
   const posts = getAllPosts().slice(0, 3);
+
+  // Built from the live recipes, so a collection with nothing in it never renders.
+  const liveCollections = collections
+    .map(collection => ({ ...collection, matches: recipesInCollection(collection.slug) }))
+    .filter(collection => collection.matches.length > 0);
 
   return (
     <div>
@@ -176,8 +175,12 @@ export default function Home() {
           <Link href="/recipe-directory" className="hidden whitespace-nowrap border-b-[1.5px] border-ink pb-0.5 font-semibold hover:border-tomato hover:text-tomato hover:no-underline sm:block">All collections →</Link>
         </div>
         <div className="grid gap-6 lg:grid-cols-3">
-          {collections.map(collection => (
-            <Link key={collection.title} href={collection.href} className="flex flex-col gap-3.5 rounded-card border border-line p-7 transition hover:border-ink hover:shadow-[4px_4px_0_var(--color-ink)] hover:no-underline">
+          {liveCollections.map(collection => (
+            <Link
+              key={collection.slug}
+              href={`/all-recipes?collection=${collection.slug}`}
+              className="flex flex-col gap-3.5 rounded-card border border-line p-7 transition hover:border-ink hover:shadow-[4px_4px_0_var(--color-ink)] hover:no-underline"
+            >
               <div className="flex">
                 {collection.colors.map((color, index) => (
                   <span key={index} className={`-mr-3 h-[46px] w-[46px] rounded-full border-[3px] border-white ${color}`} />
@@ -185,6 +188,7 @@ export default function Home() {
               </div>
               <h3 className="font-serif text-[1.4rem]">{collection.title}</h3>
               <p className="text-[0.9rem] text-muted">{collection.copy}</p>
+              <span className="text-[0.85rem] font-semibold text-tomato">{collection.matches.length} recipes</span>
             </Link>
           ))}
         </div>

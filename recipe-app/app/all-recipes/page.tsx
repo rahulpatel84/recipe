@@ -4,7 +4,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
     title: "Explore All Recipes",
-    description: "Search and filter every kitchen-tested recipe at Relish Realm by ingredient, cuisine, diet, meal type, and difficulty.",
+    description: "Search and filter every plant based recipe at Relish Realm by ingredient, cuisine, diet, meal type and difficulty.",
     alternates: {
         canonical: "/all-recipes",
     },

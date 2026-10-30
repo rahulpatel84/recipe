@@ -34,12 +34,17 @@ export function parseTimeToISO8601(timeStr: string | undefined | null): string |
     return iso;
 }
 
+/** Pinterest Rich Pins and Google both need absolute image URLs. */
+const SITE_URL = 'https://relishrealm.com';
+const absolute = (path: string) => (path.startsWith('http') ? path : `${SITE_URL}${path}`);
+
 export function generateRecipeSchema(recipe: Recipe) {
     const schema: Record<string, unknown> = {
         '@context': 'https://schema.org',
         '@type': 'Recipe',
         name: recipe.title,
-        image: recipe.image,
+        image: [absolute(recipe.image)],
+        url: `${SITE_URL}/${recipe.slug}`,
         description: recipe.description,
         recipeCuisine: recipe.cuisine,
         recipeCategory: recipe.category,
