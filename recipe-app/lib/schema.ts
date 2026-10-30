@@ -38,6 +38,9 @@ export function parseTimeToISO8601(timeStr: string | undefined | null): string |
 const SITE_URL = 'https://relishrealm.com';
 const absolute = (path: string) => (path.startsWith('http') ? path : `${SITE_URL}${path}`);
 
+/** Profiles that belong to this site, for entity resolution. */
+export const SAME_AS = ['https://uk.pinterest.com/relishrealm/'];
+
 export function generateRecipeSchema(recipe: Recipe) {
     const schema: Record<string, unknown> = {
         '@context': 'https://schema.org',
@@ -62,14 +65,17 @@ export function generateRecipeSchema(recipe: Recipe) {
         author: {
             '@type': 'Organization',
             name: 'Relish Realm',
-            url: 'https://relishrealm.com'
+            url: SITE_URL,
+            sameAs: SAME_AS,
         },
         publisher: {
             '@type': 'Organization',
             name: 'Relish Realm',
+            url: SITE_URL,
+            sameAs: SAME_AS,
             logo: {
                 '@type': 'ImageObject',
-                url: 'https://relishrealm.com/logo.png'
+                url: `${SITE_URL}/logo.png`
             }
         },
         datePublished: '2024-01-01',
