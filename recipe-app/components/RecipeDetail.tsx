@@ -6,6 +6,7 @@ import Link from 'next/link';
 import RelatedRecipeCard from './RelatedRecipeCard';
 import RecipeStory from './RecipeStory';
 import Pip from '@/components/Pip';
+import PinButton from '@/components/PinButton';
 import { getPostBySlug } from '@/lib/blog';
 import { useFavorites } from '@/lib/useFavorites';
 import { useEffect, useState } from 'react';
@@ -123,14 +124,25 @@ export default function RecipeDetail({ recipe, relatedRecipes }: RecipeDetailPro
                             {isFav ? '♥ Saved' : '♡ Save'}
                         </button>
                         <button type="button" onClick={handlePrint} className="btn">Print</button>
+                        <PinButton
+                            variant="inline"
+                            url={`/${recipe.slug}`}
+                            image={recipe.image}
+                            description={`${recipe.title}. ${recipe.summary || recipe.description}`}
+                        />
                     </div>
                 </div>
 
                 {/* Real photo of this recipe */}
-                <div className="relative">
+                <div className="group/pin relative">
                     <div className="relative aspect-[5/4] overflow-hidden rounded-[28px] bg-mustard-soft">
                         <Image src={recipe.image} alt={recipe.title} fill priority sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
                     </div>
+                    <PinButton
+                        url={`/${recipe.slug}`}
+                        image={recipe.image}
+                        description={`${recipe.title}. ${recipe.summary || recipe.description}`}
+                    />
                     {recipe.dietary.includes('Vegan') && (
                         <div className="absolute right-5 top-5 grid h-24 w-24 rotate-[10deg] place-items-center rounded-full border-2 border-dashed border-white bg-pickle text-center font-hand text-[1.2rem] leading-none text-white outline outline-[6px] outline-pickle">
                             plants<br />only
